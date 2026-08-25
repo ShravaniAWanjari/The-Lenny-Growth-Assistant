@@ -106,7 +106,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('/static/assets/enhanced_3ee965fe0832d732c2a34555102a7a55.png'), url('/static/assets/hero.jpg'), url('/static/assets/hero.svg');
+  background-image: url('/static/public/assets/enhanced_3ee965fe0832d732c2a34555102a7a55.png'), url('/static/public/assets/hero.jpg'), url('/static/public/assets/hero.svg');
   background-size: cover;
   background-position: center;
   opacity: 0.88;
