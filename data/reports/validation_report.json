@@ -1,0 +1,2892 @@
+{
+  "timestamp": "2026-08-25T06:44:27.622913Z",
+  "source_commit": "be8ab89a890a833cbba2c892178f823fff178c65",
+  "summary": {
+    "total_scanned": 393,
+    "accepted_transcripts": 297,
+    "accepted_indexes": 89,
+    "rejected_files": 6,
+    "skipped_scripts_or_executables": 1,
+    "warnings_count": 0
+  },
+  "accepted_transcripts": [
+    {
+      "slug": "ada-chen-rekhi",
+      "guest": "Ada Chen Rekhi",
+      "title": "Feeling stuck? Here's how to know when it's time to leave your job | Ada Chen Rekhi",
+      "video_id": "l-T8sNRcWQk",
+      "publish_date": "2023-04-21",
+      "size_bytes": 87618
+    },
+    {
+      "slug": "adam-fishman",
+      "guest": "Adam Fishman",
+      "title": "How to build a high-performing growth team | Adam Fishman (Patreon, Lyft, Imperfect Foods)",
+      "video_id": "wP8YyWH524A",
+      "publish_date": "2022-10-13",
+      "size_bytes": 70758
+    },
+    {
+      "slug": "adam-grenier",
+      "guest": "Adam Grenier",
+      "title": "When to invest in new acquisition channels | Adam Grenier (Uber, MasterClass)",
+      "video_id": "-PDsvl2WCZU",
+      "publish_date": "2022-09-15",
+      "size_bytes": 74355
+    },
+    {
+      "slug": "aishwarya-naresh-reganti-kiriti-badam",
+      "guest": "Aishwarya Naresh Reganti + Kiriti Badam",
+      "title": "Why most AI products fail: Lessons from 50+ AI deployments at OpenAI, Google & Amazon",
+      "video_id": "z7T1pCxgvlA",
+      "publish_date": "2026-01-11",
+      "size_bytes": 99376
+    },
+    {
+      "slug": "albert-cheng",
+      "guest": "Albert Cheng",
+      "title": "Finding hidden growth opportunities in your product | Albert Cheng (Duolingo, Grammarly, Chess.com)",
+      "video_id": "2BKmNmnEj9w",
+      "publish_date": "2025-10-05",
+      "size_bytes": 98857
+    },
+    {
+      "slug": "alex-hardimen",
+      "guest": "Alex Hardimen",
+      "title": "An inside look at how the New York Times builds product | Alex Hardiman (CPO, the New York Times)",
+      "video_id": "y3-cwoHMwQs",
+      "publish_date": "2022-11-13",
+      "size_bytes": 79168
+    },
+    {
+      "slug": "alex-komoroske",
+      "guest": "Alex Komoroske",
+      "title": "Thinking like a gardener, slime mold, the adjacent possible: Product advice from Alex Komoroske",
+      "video_id": "PoWRYBWSqpU",
+      "publish_date": "2024-10-03",
+      "size_bytes": 105381
+    },
+    {
+      "slug": "alexander-embiricos",
+      "guest": "Alexander Embiricos",
+      "title": "How to drive word of mouth | Nilan Peiris (CPO of Wise)",
+      "video_id": "xZifSLGOrrw",
+      "publish_date": "2023-09-24",
+      "size_bytes": 98117
+    },
+    {
+      "slug": "alisa-cohn",
+      "guest": "Alisa Cohn",
+      "title": "Scripts for navigating difficult conversations | Alisa Cohn (executive coach)",
+      "video_id": "bvF0ZM8DjuI",
+      "publish_date": "2025-01-05",
+      "size_bytes": 98066
+    },
+    {
+      "slug": "ami-vora",
+      "guest": "Ami Vora",
+      "title": "Making an impact through authenticity and curiosity | Ami Vora (CPO at Faire, ex-WhatsApp, FB, IG)",
+      "video_id": "6UHAop9fhNU",
+      "publish_date": "2024-06-23",
+      "size_bytes": 93244
+    },
+    {
+      "slug": "amjad-masad",
+      "guest": "Amjad Masad",
+      "title": "Behind the product: Replit | Amjad Masad (co-founder and CEO)",
+      "video_id": "Bp_h674oIhw",
+      "publish_date": "2024-11-21",
+      "size_bytes": 59373
+    },
+    {
+      "slug": "andrew-wilkinson",
+      "guest": "Andrew Wilkinson",
+      "title": "I\u2019ve run 75+ businesses. Here\u2019s why you\u2019re probably chasing the wrong idea. | Andrew Wilkinson",
+      "video_id": "VxAwUb86MUE",
+      "publish_date": "2025-07-03",
+      "size_bytes": 94338
+    },
+    {
+      "slug": "andy-johns",
+      "guest": "Andy Johns",
+      "title": "When enough is enough | Andy Johns (ex-FB, Twitter, Quora)",
+      "video_id": "_93m4PriHyc",
+      "publish_date": "2023-09-10",
+      "size_bytes": 74497
+    },
+    {
+      "slug": "andy-raskin",
+      "guest": "Andy Raskin",
+      "title": "The power of strategic narrative | Andy Raskin",
+      "video_id": "dkVJnaxDlXE",
+      "publish_date": "2023-05-28",
+      "size_bytes": 63176
+    },
+    {
+      "slug": "andy-raskin_",
+      "guest": "Andy Raskin",
+      "title": "The power of strategic narrative | Andy Raskin",
+      "video_id": "dkVJnaxDlXE",
+      "publish_date": "2023-05-28",
+      "size_bytes": 63168
+    },
+    {
+      "slug": "anneka-gupta",
+      "guest": "Anneka Gupta",
+      "title": "Becoming more strategic, navigating difficult colleagues, founder mode, more | Anneka Gupta",
+      "video_id": "E3dUveqt9Bw",
+      "publish_date": "2024-10-17",
+      "size_bytes": 76981
+    },
+    {
+      "slug": "annie-duke",
+      "guest": "Annie Duke",
+      "title": "This will make you a better decision maker | Annie Duke (Thinking In Bets, former pro poker player)",
+      "video_id": "svQMODvIGAE",
+      "publish_date": "2024-05-02",
+      "size_bytes": 81679
+    },
+    {
+      "slug": "annie-pearl",
+      "guest": "Annie Pearl",
+      "title": "Behind the scenes of Calendly\u2019s rapid growth | Annie Pearl (CPO)",
+      "video_id": "-tUIGpgmsZw",
+      "publish_date": "2023-02-26",
+      "size_bytes": 75581
+    },
+    {
+      "slug": "anton-osika",
+      "guest": "Anton Osika",
+      "title": "Building Lovable: $10M ARR in 60 days with 15 people | Anton Osika (CEO and co-founder)",
+      "video_id": "DZtGxNs9AVg",
+      "publish_date": "2025-03-09",
+      "size_bytes": 69259
+    },
+    {
+      "slug": "anuj-rathi",
+      "guest": "Anuj Rathi",
+      "title": "The full-stack PM | Anuj Rathi (Swiggy, Jupiter Money, Flipkart)",
+      "video_id": "1sClhfuCxP0",
+      "publish_date": "2023-12-07",
+      "size_bytes": 79095
+    },
+    {
+      "slug": "aparna-chennapragada",
+      "guest": "Aparna Chennapragada",
+      "title": "Microsoft CPO: If you aren\u2019t prototyping with AI you\u2019re doing it wrong | Aparna Chennapragada",
+      "video_id": "HbbfXAWcuUo",
+      "publish_date": "2025-05-18",
+      "size_bytes": 64173
+    },
+    {
+      "slug": "april-dunford",
+      "guest": "April Dunford",
+      "title": "A step-by-step guide to crafting a sales pitch that wins | April Dunford (author of Sales Pitch)",
+      "video_id": "-VqmFI9vY7w",
+      "publish_date": "2023-10-22",
+      "size_bytes": 103389
+    },
+    {
+      "slug": "april-dunford-20",
+      "guest": "April Dunford 2.0",
+      "title": "How to nail your product positioning | April Dunford (Obviously Awesome)",
+      "video_id": "hdjlCLb9Hl8",
+      "publish_date": "2023-01-22",
+      "size_bytes": 103331
+    },
+    {
+      "slug": "archie-abrams",
+      "guest": "Archie Abrams",
+      "title": "How to speak more confidently and persuasively | Matt Abrahams (professor, speaker, author)",
+      "video_id": "LpbBzmXrzEY",
+      "publish_date": "2024-03-31",
+      "size_bytes": 83868
+    },
+    {
+      "slug": "arielle-jackson",
+      "guest": "Arielle Jackson",
+      "title": "The art of building legendary brands | Arielle Jackson (Google, Square, First Round Capital)",
+      "video_id": "mJEWns2hyDs",
+      "publish_date": "2022-08-18",
+      "size_bytes": 90393
+    },
+    {
+      "slug": "asha-sharma",
+      "guest": "Asha Sharma",
+      "title": "How 80,000 companies build with AI: Products as organisms and the death of org charts | Asha Sharma",
+      "video_id": "J9UWaltU-7Q",
+      "publish_date": "2025-08-28",
+      "size_bytes": 60052
+    },
+    {
+      "slug": "austin-hay",
+      "guest": "Austin Hay",
+      "title": "The ultimate guide to Martech | Austin Hay (Reforge, Ramp, Runway)",
+      "video_id": "B79p85DHLkU",
+      "publish_date": "2023-08-13",
+      "size_bytes": 97309
+    },
+    {
+      "slug": "ayo-omojola",
+      "guest": "Ayo Omojola",
+      "title": "Frameworks for product differentiation, team building, and first principles thinking | Ayo Omojola",
+      "video_id": "EW6K8ZOWoIs",
+      "publish_date": "2023-05-14",
+      "size_bytes": 56200
+    },
+    {
+      "slug": "bangaly-kaba",
+      "guest": "Bangaly Kaba",
+      "title": "Unorthodox frameworks for growing your product, career, and impact | Bangaly Kaba (YT, IG, FB)",
+      "video_id": "Ub9UkWByFIQ",
+      "publish_date": "2024-05-26",
+      "size_bytes": 115163
+    },
+    {
+      "slug": "barbra-gago",
+      "guest": "Barbra Gago",
+      "title": "Category creation and brand building | Barbra Gago (Pando, Miro, Greenhouse, Culture Amp)",
+      "video_id": "gCEaUfZUuI0",
+      "publish_date": "2022-10-27",
+      "size_bytes": 57650
+    },
+    {
+      "slug": "ben-horowitz",
+      "guest": "Ben Horowitz",
+      "title": "$46B of hard truths: Why founders fail and why you need to run toward fear | Ben Horowitz (a16z)",
+      "video_id": "KPxTekxQjzc",
+      "publish_date": "2025-09-11",
+      "size_bytes": 90042
+    },
+    {
+      "slug": "ben-williams",
+      "guest": "Ben Williams",
+      "title": "How Snyk built a product-led growth juggernaut | Ben Williams (VP of Product at Snyk)",
+      "video_id": "21sFTZzIfUk",
+      "publish_date": "2022-11-06",
+      "size_bytes": 99199
+    },
+    {
+      "slug": "benjamin-lauzier",
+      "guest": "Benjamin Lauzier",
+      "title": "How marketplaces win: Liquidity, growth levers, quality, more | Benjamin Lauzier (Lyft, Thumbtack)",
+      "video_id": "CYwgStMln6U",
+      "publish_date": "2024-09-29",
+      "size_bytes": 92471
+    },
+    {
+      "slug": "benjamin-mann",
+      "guest": "Benjamin Mann",
+      "title": "How marketplaces win: Liquidity, growth levers, quality, more | Benjamin Lauzier (Lyft, Thumbtack)",
+      "video_id": "CYwgStMln6U",
+      "publish_date": "2024-09-29",
+      "size_bytes": 76596
+    },
+    {
+      "slug": "bill-carr",
+      "guest": "Bill Carr",
+      "title": "Unpacking Amazon\u2019s unique ways of working | Bill Carr (author of Working Backwards)",
+      "video_id": "S9WHQa_AJQo",
+      "publish_date": "2023-11-02",
+      "size_bytes": 93802
+    },
+    {
+      "slug": "bob-baxley",
+      "guest": "Bob Baxley",
+      "title": "35 years of product design wisdom from Apple, Disney, Pinterest and beyond | Bob Baxley",
+      "video_id": "X-83gvgVaWc",
+      "publish_date": "2025-06-12",
+      "size_bytes": 121071
+    },
+    {
+      "slug": "bob-moesta",
+      "guest": "Bob Moesta",
+      "title": "How to find work you love | Bob Moesta (Jobs-to-be-Done co-creator, author of \"Job Moves\u201d)",
+      "video_id": "2wypVv9wZtI",
+      "publish_date": "2025-02-23",
+      "size_bytes": 79774
+    },
+    {
+      "slug": "bob-moesta-20",
+      "guest": "Bob Moesta 2.0",
+      "title": "The ultimate guide to JTBD | Bob Moesta (co-creator of the framework)",
+      "video_id": "xQV7HVyAJjc",
+      "publish_date": "2023-08-24",
+      "size_bytes": 102210
+    },
+    {
+      "slug": "boz",
+      "guest": "Boz",
+      "title": "Making Meta | Andrew \u2018Boz\u2019 Bosworth (CTO)",
+      "video_id": "_XqDB2Upr3s",
+      "publish_date": "2024-03-03",
+      "size_bytes": 121618
+    },
+    {
+      "slug": "brandon-chu",
+      "guest": "Brandon Chu",
+      "title": "AI prompt engineering in 2025: What works and what doesn\u2019t | Sander Schulhoff",
+      "video_id": "eKuFqQKYRrA",
+      "publish_date": "2025-06-19",
+      "size_bytes": 55833
+    },
+    {
+      "slug": "brendan-foody",
+      "guest": "Brendan Foody",
+      "title": "Why experts writing AI evals is creating the fastest-growing companies in history | Brendan Foody",
+      "video_id": "ja6fWTDPQl4",
+      "publish_date": "2025-09-18",
+      "size_bytes": 73164
+    },
+    {
+      "slug": "bret-taylor",
+      "guest": "Bret Taylor",
+      "title": "He saved OpenAI, invented the \u201cLike\u201d button, and built Google Maps: Bret Taylor (Sierra)",
+      "video_id": "qImgGtnNbx0",
+      "publish_date": "2025-07-31",
+      "size_bytes": 94255
+    },
+    {
+      "slug": "brian-balfour",
+      "guest": "Brian Balfour",
+      "title": "Why ChatGPT will be the next big growth channel (and how to capitalize on it) | Brian Balfour",
+      "video_id": "cX4cL6B-_aU",
+      "publish_date": "2025-08-17",
+      "size_bytes": 91723
+    },
+    {
+      "slug": "brian-chesky",
+      "guest": "Brian Chesky",
+      "title": "Brian Chesky\u2019s new playbook",
+      "video_id": "4ef0juAMqoE",
+      "publish_date": "2023-11-12",
+      "size_bytes": 80431
+    },
+    {
+      "slug": "brian-tolkin",
+      "guest": "Brian Tolkin",
+      "title": "Lessons from scaling Uber and Opendoor | Brian Tolkin (Head of Product at Opendoor, ex-Uber)",
+      "video_id": "sRukk520Fds",
+      "publish_date": "2024-08-04",
+      "size_bytes": 77364
+    },
+    {
+      "slug": "cam-adams",
+      "guest": "Cam Adams",
+      "title": "Inside Canva: Coaches not managers, giving away your Legos, and embracing AI | Cameron Adams",
+      "video_id": "wgrJNHlYUA8",
+      "publish_date": "2024-06-02",
+      "size_bytes": 65733
+    },
+    {
+      "slug": "camille-fournier",
+      "guest": "Camille Fournier",
+      "title": "The things engineers are desperate for PMs to understand | Camille Fournier (\u201cThe Manager\u2019s Path\u201d)",
+      "video_id": "hZSh0rs20uI",
+      "publish_date": "2024-09-15",
+      "size_bytes": 88368
+    },
+    {
+      "slug": "camille-hearst",
+      "guest": "Camille Hearst",
+      "title": "Monetizing passions, scaling marketplaces, and stories from a creator economy vet | Camille Hearst",
+      "video_id": "oB-BjEjxHNw",
+      "publish_date": "2023-08-20",
+      "size_bytes": 68941
+    },
+    {
+      "slug": "camille-ricketts",
+      "guest": "Camille Ricketts",
+      "title": "How Notion leveraged community to build a $10B business | Camille Ricketts",
+      "video_id": "bY5KC9Gguz8",
+      "publish_date": "2022-12-11",
+      "size_bytes": 78014
+    },
+    {
+      "slug": "carilu-dietrich",
+      "guest": "Carilu Dietrich",
+      "title": "How to achieve hypergrowth in your business and career | Carilu Dietrich (Atlassian)",
+      "video_id": "Pm7QSWDIEUc",
+      "publish_date": "2023-04-30",
+      "size_bytes": 70821
+    },
+    {
+      "slug": "carole-robin",
+      "guest": "Carole Robin",
+      "title": "How to build deeper, more robust relationships | Carole Robin (Stanford professor, \u201cTouchy Feely\u201d)",
+      "video_id": "Cew9-GlC_yk",
+      "publish_date": "2024-04-25",
+      "size_bytes": 82355
+    },
+    {
+      "slug": "casey-winters",
+      "guest": "Casey Winters",
+      "title": "Why most product managers are unprepared for the demands of a real startup | Casey Winters",
+      "video_id": "WlRfyEpAKxw",
+      "publish_date": "2023-04-14",
+      "size_bytes": 58835
+    },
+    {
+      "slug": "casey-winters_",
+      "guest": "Casey Winters",
+      "title": "How to sell your ideas and rise within your company | Casey Winters, Eventbrite",
+      "video_id": "6XMUDEYf2OE",
+      "publish_date": "2022-07-21",
+      "size_bytes": 86643
+    },
+    {
+      "slug": "chandra-janakiraman",
+      "guest": "Chandra Janakiraman",
+      "title": "An operator\u2019s guide to product strategy | Chandra Janakiraman (CPO at VRChat, ex-Meta, Headspace)",
+      "video_id": "WFLH8Af2f30",
+      "publish_date": "2025-01-26",
+      "size_bytes": 111421
+    },
+    {
+      "slug": "chip-conley",
+      "guest": "Chip Conley",
+      "title": "Mastering product strategy and growing as a PM | Maggie Crowley (Toast, Drift, TripAdvisor)",
+      "video_id": "4LjddcccYIo",
+      "publish_date": "2023-11-05",
+      "size_bytes": 79700
+    },
+    {
+      "slug": "chip-huyen",
+      "guest": "Chip Huyen",
+      "title": "Al Engineering 101 with Chip Huyen (Nvidia, Stanford, Netflix)",
+      "video_id": "qbvY0dQgSJ4",
+      "publish_date": "2025-10-23",
+      "size_bytes": 88766
+    },
+    {
+      "slug": "chris-hutchins",
+      "guest": "Chris Hutchins",
+      "title": "Launching and growing a podcast | Chris Hutchins (All the Hacks, Wealthfront, Google)",
+      "video_id": "kc1XhB4k0Eg",
+      "publish_date": "2022-12-18",
+      "size_bytes": 91756
+    },
+    {
+      "slug": "christian-idiodi",
+      "guest": "Christian Idiodi",
+      "title": "The essence of product management | Christian Idiodi (SVPG)",
+      "video_id": "SXYc5RoU3Lg",
+      "publish_date": "2023-12-21",
+      "size_bytes": 100382
+    },
+    {
+      "slug": "christina-wodtke",
+      "guest": "Christina Wodtke",
+      "title": "The ultimate guide to OKRs | Christina Wodtke (Stanford)",
+      "video_id": "kvkL18Ue0dE",
+      "publish_date": "2023-03-16",
+      "size_bytes": 84451
+    },
+    {
+      "slug": "christine-itwaru",
+      "guest": "Christine Itwaru",
+      "title": "Understanding the role of product ops | Christine Itwaru (Pendo)",
+      "video_id": "tGS-NhxrN_Q",
+      "publish_date": "2023-02-16",
+      "size_bytes": 74631
+    },
+    {
+      "slug": "christopher-lochhead",
+      "guest": "Christopher Lochhead",
+      "title": "How to become a category pirate | Christopher Lochhead (Author of Play Bigger, Niche Down, more)",
+      "video_id": "mS4B541m9xg",
+      "publish_date": "2023-09-17",
+      "size_bytes": 96440
+    },
+    {
+      "slug": "christopher-miller",
+      "guest": "Christopher Miller",
+      "title": "Relentless curiosity, radical accountability, and HubSpot\u2019s winning growth formula | Chris Miller",
+      "video_id": "SzKKJwuRFZI",
+      "publish_date": "2023-08-10",
+      "size_bytes": 97134
+    },
+    {
+      "slug": "claire-butler",
+      "guest": "Claire Butler",
+      "title": "An inside look at Figma\u2019s unique GTM motion | Claire Butler (first GTM hire)",
+      "video_id": "UmirRfy-gzA",
+      "publish_date": "2023-09-07",
+      "size_bytes": 111164
+    },
+    {
+      "slug": "claire-hughes-johnson",
+      "guest": "Claire Hughes Johnson",
+      "title": "Lessons from scaling Stripe | Claire Hughes Johnson (ex-COO of Stripe)",
+      "video_id": "Mv0o9o4MRh0",
+      "publish_date": "2023-03-05",
+      "size_bytes": 87279
+    },
+    {
+      "slug": "claire-vo",
+      "guest": "Claire Vo",
+      "title": "Bending the universe in your favor | Claire Vo (LaunchDarkly, Color, Optimizely, ChatPRD)",
+      "video_id": "aXGo1o_baBo",
+      "publish_date": "2024-04-07",
+      "size_bytes": 90780
+    },
+    {
+      "slug": "crystal-w",
+      "guest": "Crystal W",
+      "title": "How to scrappily hire for, measure, and unlock growth | Crystal Widjaja, Gojek and Kumu",
+      "video_id": "lYaiyi2ZX6Q",
+      "publish_date": "2022-07-31",
+      "size_bytes": 63321
+    },
+    {
+      "slug": "dalton-caldwell",
+      "guest": "Dalton Caldwell",
+      "title": "Lessons from 1,000+ YC startups: Resilience, tar pit ideas, pivoting, more | Dalton Caldwell (YC)",
+      "video_id": "m7LvNTbaqSI",
+      "publish_date": "2024-04-18",
+      "size_bytes": 89342
+    },
+    {
+      "slug": "dan-hockenmaier",
+      "guest": "Dan Hockenmaier",
+      "title": "Developing a growth model + marketplace growth strategy | Dan Hockenmaier",
+      "video_id": "AlTQ6O2qooI",
+      "publish_date": "2022-10-09",
+      "size_bytes": 81201
+    },
+    {
+      "slug": "dan-shipper",
+      "guest": "Dan Shipper",
+      "title": "The AI-native startup: 5 products, 7-figure revenue, 100% AI-written code. | Dan Shipper (Every)",
+      "video_id": "crMrVozp_h8",
+      "publish_date": "2025-07-17",
+      "size_bytes": 106509
+    },
+    {
+      "slug": "david-placek",
+      "guest": "David Placek",
+      "title": "Building a culture of excellence | David Singleton (CTO of Stripe)",
+      "video_id": "F0_IKKY3HCk",
+      "publish_date": "2023-05-04",
+      "size_bytes": 77012
+    },
+    {
+      "slug": "david-singleton",
+      "guest": "David Singleton",
+      "title": "Building a culture of excellence | David Singleton (CTO of Stripe)",
+      "video_id": "F0_IKKY3HCk",
+      "publish_date": "2023-05-04",
+      "size_bytes": 104304
+    },
+    {
+      "slug": "deb-liu",
+      "guest": "Deb Liu",
+      "title": "Succeeding as an introvert, building zero-to-one, and PM\u2019ing your career like a product | Deb Liu",
+      "video_id": "MajB5CQUKDA",
+      "publish_date": "2024-08-22",
+      "size_bytes": 85500
+    },
+    {
+      "slug": "dhanji-r-prasanna",
+      "guest": "Dhanji R. Prasanna",
+      "title": "How Block is becoming the most AI-native enterprise in the world | Dhanji R. Prasanna",
+      "video_id": "JMeXWVw0r3E",
+      "publish_date": "2025-10-26",
+      "size_bytes": 85231
+    },
+    {
+      "slug": "dharmesh-shah",
+      "guest": "Dharmesh Shah",
+      "title": "Zigging vs. zagging: How HubSpot built a $30B company | Dharmesh Shah (co-founder/CTO)",
+      "video_id": "dpw9Ue1HU48",
+      "publish_date": "2024-04-04",
+      "size_bytes": 116248
+    },
+    {
+      "slug": "dmitry-zlokazov",
+      "guest": "Dmitry Zlokazov",
+      "title": "How Revolut trains world-class PMs: The \u201cLocal CEO\u201d model, raw intellect & building wow products",
+      "video_id": "-kPpd21bFrE",
+      "publish_date": "2025-05-15",
+      "size_bytes": 68397
+    },
+    {
+      "slug": "donna-lichaw",
+      "guest": "Donna Lichaw",
+      "title": "How to discover your superpowers, own your story, and unlock personal growth | Donna Lichaw",
+      "video_id": "7fA8DMMUNPI",
+      "publish_date": "2024-02-25",
+      "size_bytes": 81531
+    },
+    {
+      "slug": "dr-fei-fei-li",
+      "guest": "Dr. Fei Fei Li",
+      "title": "The Godmother of AI on jobs, robots & why world models are next | Dr. Fei-Fei Li",
+      "video_id": "Ctjiatnd6Xk",
+      "publish_date": "2025-11-16",
+      "size_bytes": 67878
+    },
+    {
+      "slug": "drew-houston",
+      "guest": "Drew Houston",
+      "title": "Behind the founder | Drew Houston (Dropbox)",
+      "video_id": "egdYKLBswgk",
+      "publish_date": "2025-01-09",
+      "size_bytes": 106388
+    },
+    {
+      "slug": "dylan-field",
+      "guest": "Dylan Field",
+      "title": "Figma\u2019s CEO: Why AI makes design, craft, and quality the new moat for startups | Dylan Field",
+      "video_id": "WyJV6VwEGA8",
+      "publish_date": "2025-10-16",
+      "size_bytes": 47899
+    },
+    {
+      "slug": "dylan-field-20",
+      "guest": "Dylan Field 2.0",
+      "title": "Dylan Field live at Figma's Config: Intuition, simplicity, and the future of design",
+      "video_id": "yJQYBjto41s",
+      "publish_date": "2024-06-30",
+      "size_bytes": 86271
+    },
+    {
+      "slug": "ebi-atawodi",
+      "guest": "Ebi Atawodi",
+      "title": "Crafting a compelling product vision | Ebi Atawodi (YouTube, Netflix, Uber)",
+      "video_id": "tBPTwUmaxDs",
+      "publish_date": "2023-12-03",
+      "size_bytes": 105618
+    },
+    {
+      "slug": "edwin-chen",
+      "guest": "Edwin Chen",
+      "title": "The $1B Al company training ChatGPT, Claude & Gemini on the path to responsible AGI | Edwin Chen",
+      "video_id": "dduQeaqmpnI",
+      "publish_date": "2025-12-07",
+      "size_bytes": 85313
+    },
+    {
+      "slug": "eeke-de-milliano",
+      "guest": "Eeke de Milliano",
+      "title": "How to foster innovation and big thinking | Eeke de Milliano (Retool, Stripe)",
+      "video_id": "2ezz4KJe7kA",
+      "publish_date": "2023-02-02",
+      "size_bytes": 76846
+    },
+    {
+      "slug": "elena-verna",
+      "guest": "Elena Verna",
+      "title": "10 growth tactics that never work | Elena Verna (Amplitude, Miro, Dropbox, SurveyMonkey)",
+      "video_id": "IHwS2By9UKM",
+      "publish_date": "2025-01-19",
+      "size_bytes": 98494
+    },
+    {
+      "slug": "elena-verna-20",
+      "guest": "Elena Verna 2.0",
+      "title": "The ultimate guide to product-led sales | Elena Verna",
+      "video_id": "bxghtN-OlJQ",
+      "publish_date": "2023-04-23",
+      "size_bytes": 79794
+    },
+    {
+      "slug": "elena-verna-30",
+      "guest": "Elena Verna 3.0",
+      "title": "The ultimate guide to product-led sales | Elena Verna",
+      "video_id": "bxghtN-OlJQ",
+      "publish_date": "2023-04-23",
+      "size_bytes": 98416
+    },
+    {
+      "slug": "elena-verna-40",
+      "guest": "Elena Verna 4.0",
+      "title": "The new AI growth playbook for 2026 | How Lovable hit $200M ARR in one year",
+      "video_id": "6qAB6aUMIeA",
+      "publish_date": "2025-12-18",
+      "size_bytes": 101195
+    },
+    {
+      "slug": "eli-schwartz",
+      "guest": "Eli Schwartz",
+      "title": "Rethinking SEO in the age of AI | Eli Schwartz (SEO advisor, author)",
+      "video_id": "Z71yGshPTwk",
+      "publish_date": "2024-09-19",
+      "size_bytes": 132074
+    },
+    {
+      "slug": "elizabeth-stone",
+      "guest": "Elizabeth Stone",
+      "title": "How Netflix builds a culture of excellence | Elizabeth Stone (CTO)",
+      "video_id": "2XgU6T4DalY",
+      "publish_date": "2024-02-22",
+      "size_bytes": 71220
+    },
+    {
+      "slug": "emilie-gerber",
+      "guest": "Emilie Gerber",
+      "title": "The ultimate guide to PR | Emilie Gerber (founder of Six Eastern)",
+      "video_id": "jW9GzaaRPxk",
+      "publish_date": "2024-03-21",
+      "size_bytes": 106373
+    },
+    {
+      "slug": "emily-kramer",
+      "guest": "Emily Kramer",
+      "title": "How to build a powerful marketing machine | Emily Kramer (Asana, Carta, MKT1)",
+      "video_id": "gzs61z9Fekw",
+      "publish_date": "2022-09-11",
+      "size_bytes": 85737
+    },
+    {
+      "slug": "eoghan-mccabe",
+      "guest": "Eoghan McCabe",
+      "title": "How Intercom rose from the ashes by betting everything on AI | Eoghan McCabe (founder and CEO)",
+      "video_id": "0_opWSfmN8M",
+      "publish_date": "2025-08-21",
+      "size_bytes": 79368
+    },
+    {
+      "slug": "eoy-review",
+      "guest": "Various (Year-End Review)",
+      "title": "Countdown of the top 10 episodes of the year",
+      "video_id": "f4cskASqAsg",
+      "publish_date": "2022-12-29",
+      "size_bytes": 63293
+    },
+    {
+      "slug": "eric-ries",
+      "guest": "Eric Ries",
+      "title": "Reflections on a movement | Eric Ries (creator of the Lean Startup methodology)",
+      "video_id": "xzebbzIntFc",
+      "publish_date": "2023-10-29",
+      "size_bytes": 159707
+    },
+    {
+      "slug": "eric-simons",
+      "guest": "Eric Simons",
+      "title": "Inside Bolt: From near-death to one of the fastest-growing products in history | Eric Simons",
+      "video_id": "L22DtAHLmzs",
+      "publish_date": "2025-03-13",
+      "size_bytes": 95703
+    },
+    {
+      "slug": "ethan-evans",
+      "guest": "Ethan Evans",
+      "title": "Taking control of your career | Ethan Evans (Amazon)",
+      "video_id": "GB0P0_nFPTA",
+      "publish_date": "2024-01-14",
+      "size_bytes": 83103
+    },
+    {
+      "slug": "ethan-evans-20",
+      "guest": "Ethan Evans 2.0",
+      "title": "Taking control of your career | Ethan Evans (Amazon)",
+      "video_id": "GB0P0_nFPTA",
+      "publish_date": "2024-01-14",
+      "size_bytes": 83094
+    },
+    {
+      "slug": "ethan-smith",
+      "guest": "Ethan Smith",
+      "title": "The ultimate guide to AEO: How to get ChatGPT to recommend your product | Ethan Smith (Graphite)",
+      "video_id": "iT7kq-R3Gjc",
+      "publish_date": "2025-09-14",
+      "size_bytes": 83833
+    },
+    {
+      "slug": "evan-lapointe",
+      "guest": "Evan LaPointe",
+      "title": "Improve strategy, influence, and decision-making by understanding your brain | Evan LaPointe",
+      "video_id": "GECtyEj9UPA",
+      "publish_date": "2024-08-11",
+      "size_bytes": 137439
+    },
+    {
+      "slug": "failure",
+      "guest": "Failure",
+      "title": "Failure",
+      "video_id": "9euy9gC48lc",
+      "publish_date": "2023-12-13",
+      "size_bytes": 65335
+    },
+    {
+      "slug": "fareed-mosavat",
+      "guest": "Fareed Mosavat",
+      "title": "How to build trust and grow as a product leader | Fareed Mosavat (Reforge, Slack, Instacart, Pixar)",
+      "video_id": "oo0jSep7pzc",
+      "publish_date": "2022-10-23",
+      "size_bytes": 76260
+    },
+    {
+      "slug": "farhan-thawar",
+      "guest": "Farhan Thawar",
+      "title": "How Shopify builds a high-intensity culture | Farhan Thawar (VP and Head of Eng)",
+      "video_id": "C_lhMOjG7PE",
+      "publish_date": "2024-12-19",
+      "size_bytes": 123631
+    },
+    {
+      "slug": "fei-fei",
+      "guest": "Fei Fei",
+      "title": "The Godmother of AI on jobs, robots & why world models are next | Dr. Fei-Fei Li",
+      "video_id": "Ctjiatnd6Xk",
+      "publish_date": "2025-11-16",
+      "size_bytes": 67892
+    },
+    {
+      "slug": "garrett-lord",
+      "guest": "Garrett Lord",
+      "title": "Inside the expert network training every frontier AI model | Garrett Lord",
+      "video_id": "0qdR-XwHJ9o",
+      "publish_date": "2025-08-24",
+      "size_bytes": 76754
+    },
+    {
+      "slug": "gaurav-misra",
+      "guest": "Gaurav Misra",
+      "title": "Mastering onboarding | Lauryn Isford (Head of Growth at Airtable)",
+      "video_id": "dLku0AiGPVA",
+      "publish_date": "2023-02-12",
+      "size_bytes": 95245
+    },
+    {
+      "slug": "geoff-charles",
+      "guest": "Geoff Charles",
+      "title": "Velocity over everything: How Ramp became the fastest-growing SaaS startup ever | Geoff Charles",
+      "video_id": "aNJDZ_RzTVk",
+      "publish_date": "2023-08-06",
+      "size_bytes": 81199
+    },
+    {
+      "slug": "geoffrey-moore",
+      "guest": "Geoffrey Moore",
+      "title": "Geoffrey Moore on finding your beachhead, crossing the chasm, and dominating a market",
+      "video_id": "RBbINB5HSHk",
+      "publish_date": "2024-01-25",
+      "size_bytes": 88671
+    },
+    {
+      "slug": "gergely",
+      "guest": "Gergely",
+      "title": "Leaving big tech to build the #1 technology newsletter | Gergely Orosz (The Pragmatic Engineer)",
+      "video_id": "CtB0O0M7YS0",
+      "publish_date": "2022-11-17",
+      "size_bytes": 84635
+    },
+    {
+      "slug": "gia-laudi",
+      "guest": "Gia Laudi",
+      "title": "Customer-led growth | Georgiana Laudi (Forget The Funnel)",
+      "video_id": "0FgZ1VVxEBo",
+      "publish_date": "2022-09-29",
+      "size_bytes": 71858
+    },
+    {
+      "slug": "gibson-biddle",
+      "guest": "Gibson Biddle",
+      "title": "35 years of product design wisdom from Apple, Disney, Pinterest and beyond | Bob Baxley",
+      "video_id": "X-83gvgVaWc",
+      "publish_date": "2025-06-12",
+      "size_bytes": 72207
+    },
+    {
+      "slug": "gina-gotthilf",
+      "guest": "Gina Gotthilf",
+      "title": "Scaling Duolingo, embracing failure, and insight into Latin America\u2019s tech scene | Gina Gotthilf",
+      "video_id": "sWClFYdbkRA",
+      "publish_date": "2023-10-19",
+      "size_bytes": 111228
+    },
+    {
+      "slug": "gokul-rajaram",
+      "guest": "Gokul Rajaram",
+      "title": "Gokul Rajaram on designing your product development process, when and how to hire your first PM, a playbook for hiring leaders, getting ahead in your career, how to get started angel investing, and more",
+      "video_id": "gokul-rajaram",
+      "publish_date": "2022-01-01",
+      "size_bytes": 74742
+    },
+    {
+      "slug": "graham-weaver",
+      "guest": "Graham Weaver",
+      "title": "How to break out of autopilot and create the life you want | Graham Weaver (Stanford GSB professor)",
+      "video_id": "UpGR9P0Ufts",
+      "publish_date": "2025-01-16",
+      "size_bytes": 73162
+    },
+    {
+      "slug": "grant-lee",
+      "guest": "Grant Lee",
+      "title": "\u201cDumbest idea I\u2019ve heard\u201d to $100M ARR: Inside the rise of Gamma | Grant Lee (co-founder)",
+      "video_id": "3H0ngGU5pbM",
+      "publish_date": "2025-11-13",
+      "size_bytes": 137218
+    },
+    {
+      "slug": "guillermo-rauch",
+      "guest": "Guillermo Rauch",
+      "title": "Everyone\u2019s an engineer now: Inside v0\u2019s mission to create 100 million builders | Guillermo Rauch",
+      "video_id": "-QsTmu2CqhA",
+      "publish_date": "2025-04-13",
+      "size_bytes": 85172
+    },
+    {
+      "slug": "gustaf-alstromer",
+      "guest": "Gustaf Alstromer",
+      "title": "Lessons from working with 600+ YC startups | Gustaf Alstr\u00f6mer (Y Combinator, Airbnb)",
+      "video_id": "ZoKLofsp8u0",
+      "publish_date": "2023-03-02",
+      "size_bytes": 98160
+    },
+    {
+      "slug": "gustav-s\u00f6derstr\u00f6m",
+      "guest": "Gustav S\u00f6derstr\u00f6m",
+      "title": "The science of product, big bets, and how AI is impacting the future of music | Gustav S\u00f6derstr\u00f6m",
+      "video_id": "QtJoYFyrdPI",
+      "publish_date": "2023-05-21",
+      "size_bytes": 88766
+    },
+    {
+      "slug": "hamel-husain-shreya-shankar",
+      "guest": "Hamel Husain & Shreya Shankar",
+      "title": "Why AI evals are the hottest new skill for product builders | Hamel Husain & Shreya Shankar",
+      "video_id": "BsWxPI9UM4c",
+      "publish_date": "2025-09-25",
+      "size_bytes": 110766
+    },
+    {
+      "slug": "hamelshreya",
+      "guest": "Hamel+Shreya",
+      "title": "Why AI evals are the hottest new skill for product builders | Hamel Husain & Shreya Shankar",
+      "video_id": "BsWxPI9UM4c",
+      "publish_date": "2025-09-25",
+      "size_bytes": 110752
+    },
+    {
+      "slug": "hamilton-helmer",
+      "guest": "Hamilton Helmer",
+      "title": "Business strategy with Hamilton Helmer (author of 7 Powers)",
+      "video_id": "hKq1_KPSqy0",
+      "publish_date": "2024-05-05",
+      "size_bytes": 58583
+    },
+    {
+      "slug": "hari-srinivasan",
+      "guest": "Hari Srinivasan",
+      "title": "LinkedIn\u2019s product evolution and the art of building complex systems | Hari Srinivasan (LinkedIn)",
+      "video_id": "ZUwkTs_QWqg",
+      "publish_date": "2023-07-16",
+      "size_bytes": 81943
+    },
+    {
+      "slug": "heidi-helfand",
+      "guest": "Heidi Helfand",
+      "title": "The art and wisdom of changing teams | Heidi Helfand (Author of Dynamic Reteaming)",
+      "video_id": "0wN5wSImUdY",
+      "publish_date": "2024-01-18",
+      "size_bytes": 67892
+    },
+    {
+      "slug": "hila-qu",
+      "guest": "Hila Qu",
+      "title": "The ultimate guide to adding a PLG motion | Hila Qu (Reforge, GitLab)",
+      "video_id": "7l1fIxk7SnA",
+      "publish_date": "2023-04-02",
+      "size_bytes": 89048
+    },
+    {
+      "slug": "hilary-gridley",
+      "guest": "Hilary Gridley",
+      "title": "How to build a team that can \u201ctake a punch\u201d | Hilary Gridley (Head of Core Product, Whoop)",
+      "video_id": "xm5QAzAlqEY",
+      "publish_date": "2025-06-15",
+      "size_bytes": 128441
+    },
+    {
+      "slug": "howie-liu",
+      "guest": "Howie Liu",
+      "title": "How we restructured Airtable's entire org for AI | Howie Liu (co-founder and CEO)",
+      "video_id": "GT0jtVjRy2E",
+      "publish_date": "2025-08-31",
+      "size_bytes": 103631
+    },
+    {
+      "slug": "ian-mcallister",
+      "guest": "Ian McAllister",
+      "title": "What it takes to become a top 1% PM | Ian McAllister (Uber, Amazon, Airbnb)",
+      "video_id": "7gaPPrAd7nc",
+      "publish_date": "2022-11-20",
+      "size_bytes": 74212
+    },
+    {
+      "slug": "inbal-s",
+      "guest": "Inbal S",
+      "title": "The future of AI in software development | Inbal Shani (CPO of GitHub)",
+      "video_id": "f10s3rxKaJw",
+      "publish_date": "2023-12-01",
+      "size_bytes": 55122
+    },
+    {
+      "slug": "interview-q-compilation",
+      "guest": "Interview Q Compilation",
+      "title": "I\u2019ve run 75+ businesses. Here\u2019s why you\u2019re probably chasing the wrong idea. | Andrew Wilkinson",
+      "video_id": "VxAwUb86MUE",
+      "publish_date": "2025-07-03",
+      "size_bytes": 22806
+    },
+    {
+      "slug": "itamar-gilad",
+      "guest": "Itamar Gilad",
+      "title": "Becoming evidence-guided | Itamar Gilad (Gmail, YouTube, Microsoft)",
+      "video_id": "aJWSn-tz3jQ",
+      "publish_date": "2023-09-21",
+      "size_bytes": 76423
+    },
+    {
+      "slug": "ivan-zhao",
+      "guest": "Ivan Zhao",
+      "title": "Notion's lost years, near collapse during COVID, staying small to move fast, building horizontal",
+      "video_id": "IIPKMixTMfE",
+      "publish_date": "2025-03-06",
+      "size_bytes": 74280
+    },
+    {
+      "slug": "jackie-bavaro",
+      "guest": "Jackie Bavaro",
+      "title": "Bending the universe in your favor | Claire Vo (LaunchDarkly, Color, Optimizely, ChatPRD)",
+      "video_id": "aXGo1o_baBo",
+      "publish_date": "2024-04-07",
+      "size_bytes": 61879
+    },
+    {
+      "slug": "jackson-shuttleworth",
+      "guest": "Jackson Shuttleworth",
+      "title": "Behind the product: Duolingo streaks | Jackson Shuttleworth (Group PM, Retention Team)",
+      "video_id": "_CCwoQZH5hI",
+      "publish_date": "2024-12-15",
+      "size_bytes": 101459
+    },
+    {
+      "slug": "jag-duggal",
+      "guest": "Jag Duggal",
+      "title": "Be fundamentally different, not incrementally better | Jag Duggal (Nubank, Facebook, Google)",
+      "video_id": "8A7wXK2MncQ",
+      "publish_date": "2024-05-16",
+      "size_bytes": 88431
+    },
+    {
+      "slug": "jake-knapp-john-zeratsky",
+      "guest": "Jake Knapp + John Zeratsky",
+      "title": "Making time for what matters | Jake Knapp and John Zeratsky (Authors of Make Time, Character VC)",
+      "video_id": "cuce7zvOFHY",
+      "publish_date": "2024-02-11",
+      "size_bytes": 102773
+    },
+    {
+      "slug": "jake-knapp-john-zeratsky-20",
+      "guest": "Jake Knapp + John Zeratsky 2.0",
+      "title": "Making time for what matters | Jake Knapp and John Zeratsky (Authors of Make Time, Character VC)",
+      "video_id": "cuce7zvOFHY",
+      "publish_date": "2024-02-11",
+      "size_bytes": 113777
+    },
+    {
+      "slug": "janna-bastow",
+      "guest": "Janna Bastow",
+      "title": "Building better roadmaps | Janna Bastow (Mind the Product, ProdPad)",
+      "video_id": "W3cvqPCGcck",
+      "publish_date": "2022-10-16",
+      "size_bytes": 64470
+    },
+    {
+      "slug": "jason-droege",
+      "guest": "Jason Droege",
+      "title": "Scale AI CEO on Meta's $14B deal, scaling Uber Eats to $80B, & what frontier labs are building next",
+      "video_id": "W99jdYZOlN0",
+      "publish_date": "2025-10-09",
+      "size_bytes": 94347
+    },
+    {
+      "slug": "jason-feifer",
+      "guest": "Jason Feifer",
+      "title": "How to get press for your product | Jason Feifer (editor in chief of Entrepreneur magazine)",
+      "video_id": "LZLdoAq3R7Y",
+      "publish_date": "2023-10-12",
+      "size_bytes": 111044
+    },
+    {
+      "slug": "jason-fried",
+      "guest": "Jason Fried",
+      "title": "Jason Fried challenges your thinking on fundraising, goals, growth, and more",
+      "video_id": "dAnF0tk0di8",
+      "publish_date": "2023-12-17",
+      "size_bytes": 125580
+    },
+    {
+      "slug": "jason-m-lemkin",
+      "guest": "Jason M Lemkin",
+      "title": "We replaced our sales team with 20 AI agents\u2014here\u2019s what happened next | Jason Lemkin (SaaStr)",
+      "video_id": "I-R1bc1rlFs",
+      "publish_date": "2026-01-01",
+      "size_bytes": 142592
+    },
+    {
+      "slug": "jason-shah",
+      "guest": "Jason Shah",
+      "title": "Building a meaningful career | Jason Shah (Airbnb, Amazon, Microsoft, Alchemy)",
+      "video_id": "nMsA5VeLoOM",
+      "publish_date": "2022-09-18",
+      "size_bytes": 83569
+    },
+    {
+      "slug": "jeanne-grosser",
+      "guest": "Jeanne Grosser",
+      "title": "What world-class GTM looks like in 2026 | Jeanne DeWitt Grosser (Vercel, Stripe, Google)",
+      "video_id": "RmnWHz8HD74",
+      "publish_date": "2025-11-30",
+      "size_bytes": 86228
+    },
+    {
+      "slug": "jeff-weinstein",
+      "guest": "Jeff Weinstein",
+      "title": "Building product at Stripe: craft, metrics, and customer obsession | Jeff Weinstein (Product lead)",
+      "video_id": "qbZQjprTnrU",
+      "publish_date": "2024-07-11",
+      "size_bytes": 149295
+    },
+    {
+      "slug": "jeffrey-pfeffer",
+      "guest": "Jeffrey Pfeffer",
+      "title": "The paths to power: How to grow your influence and advance your career | Jeffrey Pfeffer (Stanford)",
+      "video_id": "etVCBDRXUH8",
+      "publish_date": "2024-06-13",
+      "size_bytes": 82100
+    },
+    {
+      "slug": "jen-abel",
+      "guest": "Jen Abel",
+      "title": "The ultimate guide to founder-led sales | Jen Abel (co-founder of JJELLYFISH)",
+      "video_id": "969dwgu98qc",
+      "publish_date": "2024-11-24",
+      "size_bytes": 83723
+    },
+    {
+      "slug": "jen-abel-20",
+      "guest": "Jen Abel 2.0",
+      "title": "$1M to $10M: The enterprise sales playbook with Jen Abel",
+      "video_id": "37fKFWdrMyA",
+      "publish_date": "2025-11-09",
+      "size_bytes": 88106
+    },
+    {
+      "slug": "jeremy-henrickson",
+      "guest": "Jeremy Henrickson",
+      "title": "Moving fast and navigating uncertainty | Jeremy Henrickson (Rippling, Coinbase)",
+      "video_id": "CsruQYKISYI",
+      "publish_date": "2023-06-04",
+      "size_bytes": 80078
+    },
+    {
+      "slug": "jerry-colonna",
+      "guest": "Jerry Colonna",
+      "title": "How have I been complicit in creating the conditions I say I don\u2019t want? | Jerry Colonna",
+      "video_id": "PJE7etZQ9us",
+      "publish_date": "2025-05-08",
+      "size_bytes": 66431
+    },
+    {
+      "slug": "jess-lachs",
+      "guest": "Jess Lachs",
+      "title": "Building a world-class data org | Jessica Lachs (VP of Analytics and Data Science at DoorDash)",
+      "video_id": "D4PDb_C8Dww",
+      "publish_date": "2024-07-14",
+      "size_bytes": 78875
+    },
+    {
+      "slug": "jessica-hische",
+      "guest": "Jessica Hische",
+      "title": "How to see like a designer: The hidden power of typography and logos | Jessica Hische",
+      "video_id": "tLLqE6Ia8-U",
+      "publish_date": "2024-10-20",
+      "size_bytes": 83745
+    },
+    {
+      "slug": "jessica-livingston",
+      "guest": "Jessica Livingston",
+      "title": "The social radar: Y Combinator\u2019s secret weapon | Jessica Livingston (co-founder of YC, author)",
+      "video_id": "h9MUuhsDJOM",
+      "publish_date": "2024-06-27",
+      "size_bytes": 84016
+    },
+    {
+      "slug": "jiaona-zhang",
+      "guest": "Jiaona Zhang",
+      "title": "Building minimum lovable products, stories from WeWork & Airbnb, and thriving as a PM | Jiaona Zhang",
+      "video_id": "gLFZNzeylCc",
+      "publish_date": "2023-07-02",
+      "size_bytes": 79475
+    },
+    {
+      "slug": "joe-hudson",
+      "guest": "Joe Hudson",
+      "title": "How embracing your emotions will accelerate your career | Joe Hudson (Art of Accomplishment)",
+      "video_id": "DYkE1gf37ts",
+      "publish_date": "2024-08-08",
+      "size_bytes": 79029
+    },
+    {
+      "slug": "john-cutler",
+      "guest": "John Cutler",
+      "title": "What differentiates the highest-performing product teams | John Cutler (The Beautiful Mess)",
+      "video_id": "Y4PdUItyXUk",
+      "publish_date": "2023-01-15",
+      "size_bytes": 115046
+    },
+    {
+      "slug": "john-mark-nickels",
+      "guest": "John Mark Nickels",
+      "title": "Conscious leadership: Unlocking vision, strategy and purpose | JM Nickels (Uber, Waymo, DoorDash)",
+      "video_id": "W7o40qcYHlM",
+      "publish_date": "2024-10-06",
+      "size_bytes": 86346
+    },
+    {
+      "slug": "jonathan-becker",
+      "guest": "Jonathan Becker",
+      "title": "The crazy story of landing Uber as a client | Jonathan Becker (Thrive Digital)",
+      "video_id": "rG4zxf0CAv0",
+      "publish_date": "2023-05-12",
+      "size_bytes": 96780
+    },
+    {
+      "slug": "jonathan-lowenhar",
+      "guest": "Jonathan Lowenhar",
+      "title": "How a great founder becomes a great CEO | Jonathan Lowenhar (co-founder of Enjoy The Work)",
+      "video_id": "s0jn7eE33nk",
+      "publish_date": "2024-12-05",
+      "size_bytes": 96681
+    },
+    {
+      "slug": "jonny-miller",
+      "guest": "Jonny Miller",
+      "title": "Managing nerves, anxiety, and burnout | Jonny Miller (Nervous Systems Mastery)",
+      "video_id": "-kN8Agqee4w",
+      "publish_date": "2024-01-28",
+      "size_bytes": 77659
+    },
+    {
+      "slug": "josh-miller",
+      "guest": "Josh Miller",
+      "title": "Competing with giants: An inside look at how The Browser Company builds product | Josh Miller (CEO)",
+      "video_id": "AZpo5785v8A",
+      "publish_date": "2023-03-19",
+      "size_bytes": 97026
+    },
+    {
+      "slug": "judd-antin",
+      "guest": "Judd Antin",
+      "title": "The UX Research reckoning is here | Judd Antin (Airbnb, Meta)",
+      "video_id": "L6RKi9ZvkT4",
+      "publish_date": "2024-01-04",
+      "size_bytes": 81286
+    },
+    {
+      "slug": "jules-walter",
+      "guest": "Jules Walter",
+      "title": "Leveraging mentors to uplevel your career | Jules Walter (YouTube, Slack)",
+      "video_id": "zn2JNbZwf00",
+      "publish_date": "2023-01-05",
+      "size_bytes": 77112
+    },
+    {
+      "slug": "julia-schottenstein",
+      "guest": "Julia Schottenstein",
+      "title": "M&A, competition, pricing, and investing | Julia Schottenstein (dbt Labs)",
+      "video_id": "y9hmrMBRPDI",
+      "publish_date": "2023-07-13",
+      "size_bytes": 63104
+    },
+    {
+      "slug": "julian-shapiro",
+      "guest": "Julian Shapiro",
+      "title": "From managing people to managing AI: The leadership skills everyone needs now | Julie Zhuo",
+      "video_id": "c_w0LaFahxk",
+      "publish_date": "2025-09-21",
+      "size_bytes": 67443
+    },
+    {
+      "slug": "julie-zhuo",
+      "guest": "Julie Zhuo",
+      "title": "From managing people to managing AI: The leadership skills everyone needs now | Julie Zhuo",
+      "video_id": "c_w0LaFahxk",
+      "publish_date": "2025-09-21",
+      "size_bytes": 107802
+    },
+    {
+      "slug": "julie-zhuo-20",
+      "guest": "Julie Zhuo 2.0",
+      "title": "How To Win Friends & Influence Decisions (Julie Zhuo) | Lenny & Friends Summit 2024",
+      "video_id": "0Z5FCYDeZXs",
+      "publish_date": "2024-12-12",
+      "size_bytes": 107781
+    },
+    {
+      "slug": "karina-nguyen",
+      "guest": "Karina Nguyen",
+      "title": "OpenAI researcher on why soft skills are the future of work | Karina Nguyen",
+      "video_id": "DeskgjrLxxs",
+      "publish_date": "2025-02-09",
+      "size_bytes": 71793
+    },
+    {
+      "slug": "karri-saarinen",
+      "guest": "Karri Saarinen",
+      "title": "Inside Linear: Building with taste, craft, and focus | Karri Saarinen (co-founder, designer, CEO)",
+      "video_id": "4muxFVZ4XfM",
+      "publish_date": "2023-10-08",
+      "size_bytes": 99490
+    },
+    {
+      "slug": "katie-dill",
+      "guest": "Katie Dill",
+      "title": "Building beautiful products with Stripe\u2019s Head of Design | Katie Dill (Stripe, Airbnb, Lyft)",
+      "video_id": "gfEEcssu304",
+      "publish_date": "2023-10-15",
+      "size_bytes": 97665
+    },
+    {
+      "slug": "kayvon-beykpour",
+      "guest": "Kayvon Beykpour",
+      "title": "Twitter\u2019s ex-Head of Product on Elon, consumer products, culture, more | Kayvon Beykpour",
+      "video_id": "MKDnDueTvKk",
+      "publish_date": "2024-04-28",
+      "size_bytes": 100510
+    },
+    {
+      "slug": "keith-coleman-jay-baxter",
+      "guest": "Keith Coleman & Jay Baxter",
+      "title": "An inside look at X\u2019s Community Notes | Keith Coleman & Jay Baxter",
+      "video_id": "8dgyqYHLcCI",
+      "publish_date": "2025-02-27",
+      "size_bytes": 112347
+    },
+    {
+      "slug": "keith-yandell",
+      "guest": "Keith Yandell",
+      "title": "Leading with empathy | Keith Yandell (DoorDash, Uber)",
+      "video_id": "tlCK9TuALtk",
+      "publish_date": "2023-02-09",
+      "size_bytes": 64218
+    },
+    {
+      "slug": "ken-norton",
+      "guest": "Ken Norton",
+      "title": "How to unlock your product leadership skills | Ken Norton, Ex-Google",
+      "video_id": "6P0Es02vIF4",
+      "publish_date": "2022-07-24",
+      "size_bytes": 78806
+    },
+    {
+      "slug": "kenneth-berger",
+      "guest": "Kenneth Berger",
+      "title": "Why not asking for what you want is holding you back | Kenneth Berger (exec coach, first PM @Slack)",
+      "video_id": "KSCjl_VIdak",
+      "publish_date": "2024-05-19",
+      "size_bytes": 81745
+    },
+    {
+      "slug": "kevin-aluwi",
+      "guest": "Kevin Aluwi",
+      "title": "Taxi mafias, cash vaults & 100% MoM growth: The story of SEA\u2019s biggest startup | Kevin Aluwi (Gojek)",
+      "video_id": "HVB-dqjUJks",
+      "publish_date": "2023-03-26",
+      "size_bytes": 56971
+    },
+    {
+      "slug": "kevin-weil",
+      "guest": "Kevin Weil",
+      "title": "OpenAI\u2019s CPO on how AI changes must-have skills, moats, coding, startup playbooks, more | Kevin Weil",
+      "video_id": "scsW6_2SPC4",
+      "publish_date": "2025-04-10",
+      "size_bytes": 97525
+    },
+    {
+      "slug": "kevin-yien",
+      "guest": "Kevin Yien",
+      "title": "Unorthodox PM tips: Automating user insights, unselling candidates, decision logs, more | Kevin Yien",
+      "video_id": "xOTO98MXG9o",
+      "publish_date": "2024-08-18",
+      "size_bytes": 96354
+    },
+    {
+      "slug": "kim-scott",
+      "guest": "Kim Scott",
+      "title": "Inside Devin: The AI engineer that's set to write 50% of its company\u2019s code this year | Scott Wu",
+      "video_id": "gI0ZNhA0rvE",
+      "publish_date": "2025-05-04",
+      "size_bytes": 88337
+    },
+    {
+      "slug": "kristen-berman",
+      "guest": "Kristen Berman",
+      "title": "Using behavioral science to improve your product | Kristen Berman (Irrational Labs)",
+      "video_id": "u53fplD_C30",
+      "publish_date": "2022-10-02",
+      "size_bytes": 63998
+    },
+    {
+      "slug": "krithika-shankarraman",
+      "guest": "Krithika Shankarraman",
+      "title": "Growth tactics from OpenAI and Stripe\u2019s first marketer | Krithika Shankarraman",
+      "video_id": "QaDsk4iH1aw",
+      "publish_date": "2025-05-25",
+      "size_bytes": 85118
+    },
+    {
+      "slug": "kunal-shah",
+      "guest": "Kunal Shah",
+      "title": "Kunal Shah on winning in India, second-order thinking, the philosophy of startups, and more",
+      "video_id": "EgBOVDzUUAA",
+      "publish_date": "2024-03-24",
+      "size_bytes": 98638
+    },
+    {
+      "slug": "lane-shackleton",
+      "guest": "Lane Shackleton",
+      "title": "What sets great teams apart | Lane Shackleton (CPO of Coda)",
+      "video_id": "XmgetFMgQZ0",
+      "publish_date": "2023-10-01",
+      "size_bytes": 90132
+    },
+    {
+      "slug": "laura-modi",
+      "guest": "Laura Modi",
+      "title": "Career frameworks, A/B testing, onboarding tips, selling to engineers |  Laura Schaffer (Amplitude)",
+      "video_id": "UMAmj1bciww",
+      "publish_date": "2023-03-09",
+      "size_bytes": 64258
+    },
+    {
+      "slug": "laura-schaffer",
+      "guest": "Laura Schaffer",
+      "title": "Career frameworks, A/B testing, onboarding tips, selling to engineers |  Laura Schaffer (Amplitude)",
+      "video_id": "UMAmj1bciww",
+      "publish_date": "2023-03-09",
+      "size_bytes": 88541
+    },
+    {
+      "slug": "lauren-ipsen",
+      "guest": "Lauren Ipsen",
+      "title": "Lessons from one of the world\u2019s top executive recruiters | Lauren Ipsen (Daversa Partners, GC)",
+      "video_id": "v3pofqabzhs",
+      "publish_date": "2022-11-03",
+      "size_bytes": 78839
+    },
+    {
+      "slug": "lauryn-isford",
+      "guest": "Lauryn Isford",
+      "title": "Mastering onboarding | Lauryn Isford (Head of Growth at Airtable)",
+      "video_id": "dLku0AiGPVA",
+      "publish_date": "2023-02-12",
+      "size_bytes": 68574
+    },
+    {
+      "slug": "logan-kilpatrick",
+      "guest": "Logan Kilpatrick",
+      "title": "Inside OpenAI | Logan Kilpatrick (head of developer relations)",
+      "video_id": "XkMbkWG2ca4",
+      "publish_date": "2024-02-08",
+      "size_bytes": 78809
+    },
+    {
+      "slug": "luc-levesque",
+      "guest": "Luc Levesque",
+      "title": "Leveraging growth advisors, mastering SEO, and honing your craft | Luc Levesque (Shopify, Meta)",
+      "video_id": "Xf_ZXIGCQb0",
+      "publish_date": "2023-06-15",
+      "size_bytes": 93320
+    },
+    {
+      "slug": "lulu-cheng-meservey",
+      "guest": "Lulu Cheng Meservey",
+      "title": "Gain attention as an underdog with this framework | Lulu Cheng Meservey",
+      "video_id": "qKXIBE7KRGo",
+      "publish_date": "2023-03-27",
+      "size_bytes": 66909
+    },
+    {
+      "slug": "madhavan-ramanujam",
+      "guest": "Madhavan Ramanujam",
+      "title": "Pricing your AI product: Lessons from 400+ companies and 50 unicorns | Madhavan Ramanujam",
+      "video_id": "NR85H55eYkM",
+      "publish_date": "2025-07-27",
+      "size_bytes": 81035
+    },
+    {
+      "slug": "madhavan-ramanujam-20",
+      "guest": "Madhavan Ramanujam 2.0",
+      "title": "The art and science of pricing | Madhavan Ramanujam (Monetizing Innovation, Simon-Kucher)",
+      "video_id": "A6veeCbKIzw",
+      "publish_date": "2022-12-08",
+      "size_bytes": 81034
+    },
+    {
+      "slug": "maggie-crowley",
+      "guest": "Maggie Crowley",
+      "title": "Mastering product strategy and growing as a PM | Maggie Crowley (Toast, Drift, TripAdvisor)",
+      "video_id": "4LjddcccYIo",
+      "publish_date": "2023-11-05",
+      "size_bytes": 93904
+    },
+    {
+      "slug": "manik-gupta",
+      "guest": "Manik Gupta",
+      "title": "Becoming more strategic, navigating difficult colleagues, founder mode, more | Anneka Gupta",
+      "video_id": "E3dUveqt9Bw",
+      "publish_date": "2024-10-17",
+      "size_bytes": 72762
+    },
+    {
+      "slug": "marc-benioff",
+      "guest": "Marc Benioff",
+      "title": "Behind the founder: Marc Benioff",
+      "video_id": "tOGK1nlHdFo",
+      "publish_date": "2024-12-22",
+      "size_bytes": 59783
+    },
+    {
+      "slug": "marily-nika",
+      "guest": "Marily Nika",
+      "title": "AI and product management | Marily Nika (Meta, Google)",
+      "video_id": "qNPPoj1qUG0",
+      "publish_date": "2023-02-05",
+      "size_bytes": 52132
+    },
+    {
+      "slug": "marty-cagan",
+      "guest": "Marty Cagan",
+      "title": "Product management theater | Marty Cagan (Silicon Valley Product Group)",
+      "video_id": "9N4ZgNaWvI0",
+      "publish_date": "2024-03-10",
+      "size_bytes": 83472
+    },
+    {
+      "slug": "marty-cagan-20",
+      "guest": "Marty Cagan 2.0",
+      "title": "The disease of process people | Marty Cagan",
+      "video_id": "gXDg88rSG8U",
+      "publish_date": "2023-02-06",
+      "size_bytes": 83410
+    },
+    {
+      "slug": "matt-abrahams",
+      "guest": "Matt Abrahams",
+      "title": "How to speak more confidently and persuasively | Matt Abrahams (professor, speaker, author)",
+      "video_id": "LpbBzmXrzEY",
+      "publish_date": "2024-03-31",
+      "size_bytes": 84159
+    },
+    {
+      "slug": "matt-dixon",
+      "guest": "Matt Dixon",
+      "title": "The surprising truth about what closes deals: Insights from 2.5m sales conversations | Matt Dixon",
+      "video_id": "cUzEgRetmC4",
+      "publish_date": "2024-05-30",
+      "size_bytes": 69497
+    },
+    {
+      "slug": "matt-lemay",
+      "guest": "Matt LeMay",
+      "title": "The one question that saves product careers | Matt LeMay",
+      "video_id": "ts9ZvlkeWGs",
+      "publish_date": "2025-08-14",
+      "size_bytes": 100368
+    },
+    {
+      "slug": "matt-macinnis",
+      "guest": "Matt MacInnis",
+      "title": "\"I deliberately understaff every project\" | Leadership lessons from Rippling's $16B journey",
+      "video_id": "O_W76LR77Vw",
+      "publish_date": "2025-12-28",
+      "size_bytes": 104962
+    },
+    {
+      "slug": "matt-mochary",
+      "guest": "Matt Mochary",
+      "title": "Are your fears giving you terrible advice? | Matt Mochary",
+      "video_id": "qOrwVtZvdaE",
+      "publish_date": "2023-01-17",
+      "size_bytes": 75604
+    },
+    {
+      "slug": "matt-mullenweg",
+      "guest": "Matt Mullenweg",
+      "title": "The one question that saves product careers | Matt LeMay",
+      "video_id": "ts9ZvlkeWGs",
+      "publish_date": "2025-08-14",
+      "size_bytes": 103935
+    },
+    {
+      "slug": "matthew-dicks",
+      "guest": "Matthew Dicks",
+      "title": "How to tell better stories | Matthew Dicks (Storyworthy)",
+      "video_id": "J4wguyJZI6A",
+      "publish_date": "2023-12-15",
+      "size_bytes": 118633
+    },
+    {
+      "slug": "maya-prohovnik",
+      "guest": "Maya Prohovnik",
+      "title": "Building Anchor, selling to Spotify, and lessons learned | Maya Prohovnik (Head of Podcast Product)",
+      "video_id": "1gXNOJEWajU",
+      "publish_date": "2023-09-28",
+      "size_bytes": 84649
+    },
+    {
+      "slug": "mayur-kamat",
+      "guest": "Mayur Kamat",
+      "title": "Unconventional product lessons from Binance, N26, Google, more | Mayur Kamat (CPO at N26)",
+      "video_id": "UVyfuSBwbNA",
+      "publish_date": "2025-05-22",
+      "size_bytes": 98443
+    },
+    {
+      "slug": "megan-cook",
+      "guest": "Megan Cook",
+      "title": "Lessons from Atlassian | Megan Cook (Head of Product, Jira)",
+      "video_id": "MQQ1wohqArk",
+      "publish_date": "2024-02-04",
+      "size_bytes": 84637
+    },
+    {
+      "slug": "melanie-perkins",
+      "guest": "Melanie Perkins",
+      "title": "She turned 100+ rejections into a $42B company | Melanie Perkins",
+      "video_id": "-LywX3T5Scc",
+      "publish_date": "2025-11-02",
+      "size_bytes": 77023
+    },
+    {
+      "slug": "melissa",
+      "guest": "Melissa",
+      "title": "Building high-performing teams | Melissa Tan (Webflow, Dropbox, Canva)",
+      "video_id": "DoEfXj1b_ko",
+      "publish_date": "2023-06-18",
+      "size_bytes": 61031
+    },
+    {
+      "slug": "melissa-perri",
+      "guest": "Melissa Perri",
+      "title": "Everything you\u2019ve ever wanted to know about SAFe and the product owner role | Melissa Perri",
+      "video_id": "wbi9chsAHp4",
+      "publish_date": "2024-11-10",
+      "size_bytes": 95462
+    },
+    {
+      "slug": "melissa-perri-denise-tilles",
+      "guest": "Melissa Perri + Denise Tilles",
+      "title": "The ultimate guide to product operations | Melissa Perri and Denise Tilles",
+      "video_id": "9VdixM9KPN4",
+      "publish_date": "2023-11-16",
+      "size_bytes": 90267
+    },
+    {
+      "slug": "melissa-tan",
+      "guest": "Melissa Tan",
+      "title": "Building high-performing teams | Melissa Tan (Webflow, Dropbox, Canva)",
+      "video_id": "DoEfXj1b_ko",
+      "publish_date": "2023-06-18",
+      "size_bytes": 84380
+    },
+    {
+      "slug": "meltem-kuran",
+      "guest": "Meltem Kuran",
+      "title": "An inside look at Deel\u2019s unprecedented growth | Meltem Kuran Berkowitz (Head of Growth)",
+      "video_id": "C1_sM0_ds2c",
+      "publish_date": "2023-08-27",
+      "size_bytes": 86390
+    },
+    {
+      "slug": "merci-grace",
+      "guest": "Merci Grace",
+      "title": "How to work through fear, give hard feedback, and doing layoffs with grace | Matt Mochary",
+      "video_id": "bCel0X2Ta7U",
+      "publish_date": "2022-11-10",
+      "size_bytes": 59260
+    },
+    {
+      "slug": "michael-truell",
+      "guest": "Michael Truell",
+      "title": "The rise of Cursor: The $300M ARR AI tool that engineers can\u2019t stop using | Michael Truell",
+      "video_id": "En5cSXgGvZM",
+      "publish_date": "2025-05-01",
+      "size_bytes": 76424
+    },
+    {
+      "slug": "mihika-kapoor",
+      "guest": "Mihika Kapoor",
+      "title": "Vision, conviction, and hype: How to build 0 to 1 inside a company | Mihika Kapoor (Product, Figma)",
+      "video_id": "uDq6_CPaRjM",
+      "publish_date": "2024-04-21",
+      "size_bytes": 105386
+    },
+    {
+      "slug": "mike-krieger",
+      "guest": "Mike Krieger",
+      "title": "Anthropic's CPO on what comes next | Mike Krieger (co-founder of Instagram)",
+      "video_id": "DKrBGOFs0GY",
+      "publish_date": "2025-06-05",
+      "size_bytes": 78387
+    },
+    {
+      "slug": "mike-maples-jr",
+      "guest": "Mike Maples Jr",
+      "title": "Pattern Breakers: How to find a breakthrough startup idea | Mike Maples, Jr. (Partner at Floodgate)",
+      "video_id": "h9o6gPQA6LA",
+      "publish_date": "2024-07-07",
+      "size_bytes": 112976
+    },
+    {
+      "slug": "molly-graham",
+      "guest": "Molly Graham",
+      "title": "\u201cI like being scared\u201d: Molly Graham\u2019s frameworks for rapid career growth | Molly Graham",
+      "video_id": "twzLDx9iers",
+      "publish_date": "2026-01-04",
+      "size_bytes": 100307
+    },
+    {
+      "slug": "nabeel-s-qureshi",
+      "guest": "Nabeel S. Qureshi",
+      "title": "How Palantir built the ultimate founder factory | Nabeel S. Qureshi (founder, writer, ex-Palantir)",
+      "video_id": "xQkSenlJvwA",
+      "publish_date": "2025-05-11",
+      "size_bytes": 111305
+    },
+    {
+      "slug": "nan-yu",
+      "guest": "Nan Yu",
+      "title": "Linear\u2019s secret to building beloved B2B products | Nan Yu (Head of Product)",
+      "video_id": "nTr21kgCFF4",
+      "publish_date": "2025-01-30",
+      "size_bytes": 94134
+    },
+    {
+      "slug": "nancy-duarte",
+      "guest": "Nancy Duarte",
+      "title": "Storytelling with Nancy Duarte: How to craft compelling presentations and tell a story that sticks",
+      "video_id": "-kHkWgjGD7U",
+      "publish_date": "2023-06-01",
+      "size_bytes": 84512
+    },
+    {
+      "slug": "naomi-gleit",
+      "guest": "Naomi Gleit",
+      "title": "Meta\u2019s head of product on working with Mark Zuckerberg, early growth tactics, and more | Naomi Gleit",
+      "video_id": "sTYuKgzZoL8",
+      "publish_date": "2024-10-27",
+      "size_bytes": 103717
+    },
+    {
+      "slug": "naomi-ionita",
+      "guest": "Naomi Ionita",
+      "title": "How to price your product | Naomi Ionita (Menlo Ventures)",
+      "video_id": "xvQadImf568",
+      "publish_date": "2023-01-12",
+      "size_bytes": 60260
+    },
+    {
+      "slug": "nick-turley",
+      "guest": "Nick Turley",
+      "title": "Inside ChatGPT: The fastest growing product in history | Nick Turley (OpenAI)",
+      "video_id": "ixY2PvQJ0To",
+      "publish_date": "2025-08-09",
+      "size_bytes": 108776
+    },
+    {
+      "slug": "nicole-forsgren",
+      "guest": "Nicole Forsgren",
+      "title": "How to measure AI developer productivity in 2025 | Nicole Forsgren",
+      "video_id": "SWcDfPVTizQ",
+      "publish_date": "2025-10-19",
+      "size_bytes": 76001
+    },
+    {
+      "slug": "nicole-forsgren-20",
+      "guest": "Nicole Forsgren 2.0",
+      "title": "How to measure AI developer productivity in 2025 | Nicole Forsgren",
+      "video_id": "SWcDfPVTizQ",
+      "publish_date": "2025-10-19",
+      "size_bytes": 75997
+    },
+    {
+      "slug": "nikhyl-singhal",
+      "guest": "Nikhyl Singhal",
+      "title": "Building a long and meaningful career | Nikhyl Singhal (Meta, Google)",
+      "video_id": "U_WQuUIYnJg",
+      "publish_date": "2023-06-11",
+      "size_bytes": 86388
+    },
+    {
+      "slug": "nikita-bier",
+      "guest": "Nikita Bier",
+      "title": "Driving alignment within teams, work-life balance, and the changing PM landscape | Nikita Miller",
+      "video_id": "4PhfAbRQpbI",
+      "publish_date": "2023-04-06",
+      "size_bytes": 90080
+    },
+    {
+      "slug": "nikita-miller",
+      "guest": "Nikita Miller",
+      "title": "Driving alignment within teams, work-life balance, and the changing PM landscape | Nikita Miller",
+      "video_id": "4PhfAbRQpbI",
+      "publish_date": "2023-04-06",
+      "size_bytes": 63541
+    },
+    {
+      "slug": "nilan-peiris",
+      "guest": "Nilan Peiris",
+      "title": "How to drive word of mouth | Nilan Peiris (CPO of Wise)",
+      "video_id": "xZifSLGOrrw",
+      "publish_date": "2023-09-24",
+      "size_bytes": 83130
+    },
+    {
+      "slug": "nir-eyal",
+      "guest": "Nir Eyal",
+      "title": "Strategies for becoming less distractible and improving focus | Nir Eyal",
+      "video_id": "WSscIIY609c",
+      "publish_date": "2023-12-29",
+      "size_bytes": 102782
+    },
+    {
+      "slug": "noah-weiss",
+      "guest": "Noah Weiss",
+      "title": "The 10 traits of great PMs, AI, and Slack\u2019s approach to product | Noah Weiss (Slack, Google)",
+      "video_id": "XrRlVOWe5GE",
+      "publish_date": "2023-07-23",
+      "size_bytes": 99850
+    },
+    {
+      "slug": "noam-lovinsky",
+      "guest": "Noam Lovinsky",
+      "title": "The happiness and pain of product management | Noam Lovinsky (Grammarly, FB, Thumbtack, YT)",
+      "video_id": "a_W5Rn0bJWE",
+      "publish_date": "2024-03-17",
+      "size_bytes": 69654
+    },
+    {
+      "slug": "oji-udezue",
+      "guest": "Oji Udezue",
+      "title": "Picking sharp problems, increasing virality, and unique product frameworks | Oji Udezue (Typeform)",
+      "video_id": "T8TQGbJhv6Q",
+      "publish_date": "2023-09-14",
+      "size_bytes": 75310
+    },
+    {
+      "slug": "paige-costello",
+      "guest": "Paige Costello",
+      "title": "How to ask the right questions, project confidence, and win over skeptics | Paige Costello (Asana)",
+      "video_id": "N7S6nSmOsUI",
+      "publish_date": "2023-07-09",
+      "size_bytes": 63599
+    },
+    {
+      "slug": "patrick-campbell",
+      "guest": "Patrick Campbell",
+      "title": "10 lessons on bootstrapping a $200m business | Patrick Campbell (ProfitWell)",
+      "video_id": "FjLSCrSg5QY",
+      "publish_date": "2023-02-19",
+      "size_bytes": 87279
+    },
+    {
+      "slug": "paul-adams",
+      "guest": "Paul Adams",
+      "title": "What AI means for your product strategy | Paul Adams (CPO of Intercom)",
+      "video_id": "R-Geamq9xc0",
+      "publish_date": "2023-10-26",
+      "size_bytes": 87371
+    },
+    {
+      "slug": "paul-millerd",
+      "guest": "Paul Millerd",
+      "title": "Redefining success, money, and belonging | Paul Millerd (The Pathless Path)",
+      "video_id": "yFckwBtiCUM",
+      "publish_date": "2023-11-19",
+      "size_bytes": 64677
+    },
+    {
+      "slug": "pete-kazanjy",
+      "guest": "Pete Kazanjy",
+      "title": "Founder-led sales | Pete Kazanjy (Founding Sales, Atrium)",
+      "video_id": "cZd5234Eem0",
+      "publish_date": "2022-12-15",
+      "size_bytes": 65909
+    },
+    {
+      "slug": "petra-wille",
+      "guest": "Petra Wille",
+      "title": "How to be the best coach to product people | Petra Wille (Strong Product People)",
+      "video_id": "4n3ybRqU5mU",
+      "publish_date": "2022-11-27",
+      "size_bytes": 79439
+    },
+    {
+      "slug": "phyl-terry",
+      "guest": "Phyl Terry",
+      "title": "Land your dream job in today\u2019s market: negotiation tactics, job search councils, more | Phyl Terry",
+      "video_id": "OH3nzRdwYPA",
+      "publish_date": "2024-09-12",
+      "size_bytes": 120134
+    },
+    {
+      "slug": "raaz-herzberg",
+      "guest": "Raaz Herzberg",
+      "title": "Building Wiz: the fastest-growing startup in history | Raaz Herzberg (CMO and VP Product Strategy)",
+      "video_id": "vnW3zIkrOvY",
+      "publish_date": "2024-11-17",
+      "size_bytes": 72117
+    },
+    {
+      "slug": "rachel-lockett",
+      "guest": "Rachel Lockett",
+      "title": "A guide to difficult conversations, building high-trust teams, and designing a life you love",
+      "video_id": "1GDVum5IarI",
+      "publish_date": "2025-11-23",
+      "size_bytes": 120102
+    },
+    {
+      "slug": "rahul-vohra",
+      "guest": "Rahul Vohra",
+      "title": "Superhuman's secret to success | Rahul Vohra (CEO and founder)",
+      "video_id": "0igjSRZyX-w",
+      "publish_date": "2025-03-23",
+      "size_bytes": 88126
+    },
+    {
+      "slug": "ramesh-johari",
+      "guest": "Ramesh Johari",
+      "title": "Marketplace lessons from Uber, Airbnb, Bumble, and more | Ramesh Johari (Stanford professor)",
+      "video_id": "BVzTfsUMaK8",
+      "publish_date": "2023-11-09",
+      "size_bytes": 95677
+    },
+    {
+      "slug": "ravi-mehta",
+      "guest": "Ravi Mehta",
+      "title": "How to build your product strategy stack | Ravi Mehta (Tinder, Facebook, Tripadvisor, Outpace)",
+      "video_id": "tncs0m5pmQg",
+      "publish_date": "2023-01-19",
+      "size_bytes": 96777
+    },
+    {
+      "slug": "ray-cao",
+      "guest": "Ray Cao",
+      "title": "Product management theater | Marty Cagan (Silicon Valley Product Group)",
+      "video_id": "9N4ZgNaWvI0",
+      "publish_date": "2024-03-10",
+      "size_bytes": 75329
+    },
+    {
+      "slug": "richard-rumelt",
+      "guest": "Richard Rumelt",
+      "title": "Good Strategy, Bad Strategy | Richard Rumelt",
+      "video_id": "4uWKEG0s9Kc",
+      "publish_date": "2024-01-21",
+      "size_bytes": 87568
+    },
+    {
+      "slug": "robby-stein",
+      "guest": "Robby Stein",
+      "title": "Inside Google's AI turnaround: AI Mode, AI Overviews, and vision for AI-powered search | Robby Stein",
+      "video_id": "kOnsqqVbIeY",
+      "publish_date": "2025-10-10",
+      "size_bytes": 99598
+    },
+    {
+      "slug": "roger-martin",
+      "guest": "Roger Martin",
+      "title": "5 essential questions to craft a winning strategy | Roger Martin (author, advisor, speaker)",
+      "video_id": "y7SN4FK8noY",
+      "publish_date": "2024-07-25",
+      "size_bytes": 74774
+    },
+    {
+      "slug": "ronny-kohavi",
+      "guest": "Ronny Kohavi",
+      "title": "The ultimate guide to A/B testing | Ronny Kohavi (Airbnb, Microsoft, Amazon)",
+      "video_id": "hEzpiDuYFoE",
+      "publish_date": "2023-07-27",
+      "size_bytes": 83316
+    },
+    {
+      "slug": "ryan-j-salva",
+      "guest": "Ryan J. Salva",
+      "title": "The role of AI in new product development | Ryan J. Salva (VP of Product at GitHub)",
+      "video_id": "awcd3P1DnX4",
+      "publish_date": "2022-09-04",
+      "size_bytes": 59761
+    },
+    {
+      "slug": "ryan-singer",
+      "guest": "Ryan Singer",
+      "title": "A better way to plan, build, and ship products | Ryan Singer (creator of \u201cShape Up\")",
+      "video_id": "GF-yUANql0c",
+      "publish_date": "2025-03-30",
+      "size_bytes": 109944
+    },
+    {
+      "slug": "sachin-monga",
+      "guest": "Sachin Monga",
+      "title": "Building Substack | Sachin Monga (Substack, Facebook)",
+      "video_id": "zKP2HrMc23s",
+      "publish_date": "2022-10-30",
+      "size_bytes": 74299
+    },
+    {
+      "slug": "sahil-mansuri",
+      "guest": "Sahil Mansuri",
+      "title": "How to hit revenue targets in a recession | Sahil Mansuri (Bravado)",
+      "video_id": "pYZ0S7a72po",
+      "publish_date": "2022-12-04",
+      "size_bytes": 91521
+    },
+    {
+      "slug": "sam-schillace",
+      "guest": "Sam Schillace",
+      "title": "How to be more innovative | Sam Schillace (Microsoft deputy CTO, creator of Google Docs)",
+      "video_id": "IOWDoDpQ7Xg",
+      "publish_date": "2024-01-11",
+      "size_bytes": 102134
+    },
+    {
+      "slug": "sanchan-saxena",
+      "guest": "Sanchan Saxena",
+      "title": "Why Uber\u2019s CPO delivers food on weekends | Sachin Kansal",
+      "video_id": "MnBZlEQ14fY",
+      "publish_date": "2025-06-01",
+      "size_bytes": 75900
+    },
+    {
+      "slug": "sander-schulhoff",
+      "guest": "Sander Schulhoff",
+      "title": "AI prompt engineering in 2025: What works and what doesn\u2019t | Sander Schulhoff",
+      "video_id": "eKuFqQKYRrA",
+      "publish_date": "2025-06-19",
+      "size_bytes": 100547
+    },
+    {
+      "slug": "sander-schulhoff-20",
+      "guest": "Sander Schulhoff 2.0",
+      "title": "Why securing AI is harder than anyone expected and guardrails are failing | HackAPrompt CEO",
+      "video_id": "J9982NLmTXg",
+      "publish_date": "2025-12-21",
+      "size_bytes": 84783
+    },
+    {
+      "slug": "sarah-tavel",
+      "guest": "Sarah Tavel",
+      "title": "The hierarchy of engagement | Sarah Tavel (Benchmark, Greylock, Pinterest)",
+      "video_id": "H9g4pzcz6Tk",
+      "publish_date": "2023-12-27",
+      "size_bytes": 108360
+    },
+    {
+      "slug": "scott-belsky",
+      "guest": "Scott Belsky",
+      "title": "Lessons on product sense, AI, the first mile experience, and the messy middle | Scott Belsky (Adobe)",
+      "video_id": "HCKosdV1J-8",
+      "publish_date": "2023-05-18",
+      "size_bytes": 68436
+    },
+    {
+      "slug": "scott-wu",
+      "guest": "Scott Wu",
+      "title": "Inside Devin: The AI engineer that's set to write 50% of its company\u2019s code this year | Scott Wu",
+      "video_id": "gI0ZNhA0rvE",
+      "publish_date": "2025-05-04",
+      "size_bytes": 108380
+    },
+    {
+      "slug": "sean-ellis",
+      "guest": "Sean Ellis",
+      "title": "The original growth hacker reveals his secrets | Sean Ellis (author of \u201cHacking Growth\u201d)",
+      "video_id": "VjJ6xcv7e8s",
+      "publish_date": "2024-09-05",
+      "size_bytes": 107995
+    },
+    {
+      "slug": "seth-godin",
+      "guest": "Seth Godin",
+      "title": "Seth Godin's best tactics for building remarkable products, strategies, brands and more",
+      "video_id": "UyWTDmDjNy4",
+      "publish_date": "2024-12-08",
+      "size_bytes": 47364
+    },
+    {
+      "slug": "shaun-clowes",
+      "guest": "Shaun Clowes",
+      "title": "Why great AI products are all about the data | Shaun Clowes (CPO at Confluent)",
+      "video_id": "yVS1gTAQYSU",
+      "publish_date": "2024-12-29",
+      "size_bytes": 93961
+    },
+    {
+      "slug": "shishir-mehrotra",
+      "guest": "Shishir Mehrotra",
+      "title": "The rituals of great teams | Shishir Mehrotra, Coda, YouTube, Microsoft",
+      "video_id": "7uSuMIJhONA",
+      "publish_date": "2022-08-14",
+      "size_bytes": 106222
+    },
+    {
+      "slug": "shreyas-doshi",
+      "guest": "Shreyas Doshi",
+      "title": "The art of product management | Shreyas Doshi (Stripe, Twitter, Google, Yahoo)",
+      "video_id": "YP_QghPLG-8",
+      "publish_date": "2022-08-25",
+      "size_bytes": 82165
+    },
+    {
+      "slug": "shreyas-doshi-live",
+      "guest": "Shreyas Doshi Live",
+      "title": "The art of product management | Shreyas Doshi (Stripe, Twitter, Google, Yahoo)",
+      "video_id": "YP_QghPLG-8",
+      "publish_date": "2022-08-25",
+      "size_bytes": 40038
+    },
+    {
+      "slug": "shweta-shriva",
+      "guest": "Shweta Shriva",
+      "title": "Product lessons from Waymo | Shweta Shrivastava (Waymo, Amazon, Cisco)",
+      "video_id": "VtNmAjNF3Tc",
+      "publish_date": "2023-04-09",
+      "size_bytes": 44047
+    },
+    {
+      "slug": "sri-batchu",
+      "guest": "Sri Batchu",
+      "title": "Lessons from scaling Ramp | Sri Batchu (Ramp, Instacart, Opendoor)",
+      "video_id": "RcYCU5UAZOk",
+      "publish_date": "2023-06-25",
+      "size_bytes": 81564
+    },
+    {
+      "slug": "sriram-and-aarthi",
+      "guest": "Sriram and Aarthi",
+      "title": "Hot takes and techno-optimism from tech\u2019s top power couple | Sriram and Aarthi",
+      "video_id": "HsD5ycT_umw",
+      "publish_date": "2023-03-12",
+      "size_bytes": 101296
+    },
+    {
+      "slug": "stewart-butterfield",
+      "guest": "Stewart Butterfield",
+      "title": "Mental models for building products people love ft. Stewart Butterfield",
+      "video_id": "kLe-zy5r0Mk",
+      "publish_date": "2025-11-20",
+      "size_bytes": 93656
+    },
+    {
+      "slug": "tamar-yehoshua",
+      "guest": "Tamar Yehoshua",
+      "title": "Lessons in product leadership and AI strategy from Glean, Google, Amazon, and Slack | Tamar Yehoshua",
+      "video_id": "ZoSeOltKqQk",
+      "publish_date": "2024-09-26",
+      "size_bytes": 80088
+    },
+    {
+      "slug": "tanguy-crusson",
+      "guest": "Tanguy Crusson",
+      "title": "Hard-won lessons building 0 to 1 inside Atlassian | Tanguy Crusson (Head of Jira Product Discovery)",
+      "video_id": "cZqpqb5qR5A",
+      "publish_date": "2024-06-16",
+      "size_bytes": 122131
+    },
+    {
+      "slug": "teresa-torres",
+      "guest": "Teresa Torres",
+      "title": "Build better products with continuous product discovery | Teresa Torres",
+      "video_id": "9RFaz9ZBXpk",
+      "publish_date": "2022-10-06",
+      "size_bytes": 54970
+    },
+    {
+      "slug": "tim-holley",
+      "guest": "Tim Holley",
+      "title": "Inside Etsy\u2019s product, growth, and marketplace evolution | Tim Holley (VP of Product)",
+      "video_id": "n4hRs2FsRug",
+      "publish_date": "2023-09-03",
+      "size_bytes": 78658
+    },
+    {
+      "slug": "timothy-davis",
+      "guest": "Timothy Davis",
+      "title": "The ultimate guide to paid growth | Timothy Davis (Shopify)",
+      "video_id": "zNJyb3R_Pnc",
+      "publish_date": "2024-07-28",
+      "size_bytes": 105519
+    },
+    {
+      "slug": "tobi-lutke",
+      "guest": "Tobi Lutke",
+      "title": "Tobi L\u00fctke's leadership playbook: First principles, infinite games, and maximizing human potential",
+      "video_id": "tq6vdDJQXvs",
+      "publish_date": "2025-02-02",
+      "size_bytes": 93255
+    },
+    {
+      "slug": "todd-jackson",
+      "guest": "Todd Jackson",
+      "title": "A framework for finding product-market fit | Todd Jackson (First Round Capital)",
+      "video_id": "yc1Uwhfxacs",
+      "publish_date": "2024-04-11",
+      "size_bytes": 100277
+    },
+    {
+      "slug": "tom-conrad",
+      "guest": "Tom Conrad",
+      "title": "Billion dollar failures, and billion dollar success | Tom Conrad (Quibi, Pandora, Pets.com, Zero)",
+      "video_id": "maK0XD9ARoI",
+      "publish_date": "2023-11-26",
+      "size_bytes": 96670
+    },
+    {
+      "slug": "tomer-cohen",
+      "guest": "Tomer Cohen",
+      "title": "Why AI is disrupting traditional product management | Tomer Cohen (LinkedIn CPO)",
+      "video_id": "R-zCfLQD_84",
+      "publish_date": "2025-12-04",
+      "size_bytes": 76295
+    },
+    {
+      "slug": "tomer-cohen-20",
+      "guest": "Tomer Cohen 2.0",
+      "title": "Why AI is disrupting traditional product management | Tomer Cohen (LinkedIn CPO)",
+      "video_id": "R-zCfLQD_84",
+      "publish_date": "2025-12-04",
+      "size_bytes": 75645
+    },
+    {
+      "slug": "tristan-de-montebello",
+      "guest": "Tristan de Montebello",
+      "title": "Why most public speaking advice is wrong\u2014and how to finally overcome anxiety | Tristan de Montebello",
+      "video_id": "BQM3Yq93nVc",
+      "publish_date": "2024-10-13",
+      "size_bytes": 119758
+    },
+    {
+      "slug": "upasna-gautam",
+      "guest": "Upasna Gautam",
+      "title": "An inside look at how CNN builds product | Upasna Gautam",
+      "video_id": "gRiCzfFEd7c",
+      "publish_date": "2023-02-23",
+      "size_bytes": 58262
+    },
+    {
+      "slug": "uri-levine",
+      "guest": "Uri Levine",
+      "title": "A founder\u2019s guide to crisis management | Uri Levine (Waze co-founder, serial entrepreneur)",
+      "video_id": "lQdogVBHMdA",
+      "publish_date": "2025-02-16",
+      "size_bytes": 82808
+    },
+    {
+      "slug": "uri-levine-20",
+      "guest": "Uri Levine 2.0",
+      "title": "A founder\u2019s guide to crisis management | Uri Levine (Waze co-founder, serial entrepreneur)",
+      "video_id": "lQdogVBHMdA",
+      "publish_date": "2025-02-16",
+      "size_bytes": 77471
+    },
+    {
+      "slug": "varun-mohan",
+      "guest": "Varun Mohan",
+      "title": "Building a magical AI code editor used by over 1m developers in 4 months: Inside Windsurf",
+      "video_id": "5Z0RCxDZdrE",
+      "publish_date": "2025-04-20",
+      "size_bytes": 91247
+    },
+    {
+      "slug": "varun-parmar",
+      "guest": "Varun Parmar",
+      "title": "An inside look at how Miro builds product | Varun Parmar (CPO of Miro)",
+      "video_id": "furNg4njlsg",
+      "publish_date": "2023-04-20",
+      "size_bytes": 91918
+    },
+    {
+      "slug": "vijay",
+      "guest": "Vijay",
+      "title": "An inside look at Mixpanel\u2019s product journey | Vijay Iyengar",
+      "video_id": "t-2oXtZrlEc",
+      "publish_date": "2023-01-26",
+      "size_bytes": 56879
+    },
+    {
+      "slug": "vikrama-dhiman",
+      "guest": "Vikrama Dhiman",
+      "title": "A framework for PM skill development | Vikrama Dhiman (Gojek)",
+      "video_id": "ImSvm11GR0Y",
+      "publish_date": "2024-05-12",
+      "size_bytes": 70107
+    },
+    {
+      "slug": "wes-kao",
+      "guest": "Wes Kao",
+      "title": "Persuasive communication and managing up | Wes Kao (Maven, altMBA, Section4)",
+      "video_id": "4jtGsyz4jLs",
+      "publish_date": "2022-08-28",
+      "size_bytes": 100567
+    },
+    {
+      "slug": "wes-kao-20",
+      "guest": "Wes Kao 2.0",
+      "title": "Persuasive communication and managing up | Wes Kao (Maven, altMBA, Section4)",
+      "video_id": "4jtGsyz4jLs",
+      "publish_date": "2022-08-28",
+      "size_bytes": 100563
+    },
+    {
+      "slug": "will-larson",
+      "guest": "Will Larson",
+      "title": "The engineering mindset | Will Larson (Carta, Stripe, Uber, Calm, Digg)",
+      "video_id": "Z9ftpRhRiJE",
+      "publish_date": "2024-01-07",
+      "size_bytes": 85397
+    },
+    {
+      "slug": "yamashata",
+      "guest": "Yamashata",
+      "title": "An inside look at how Figma builds product | Yuhki Yamashita (CPO of Figma)",
+      "video_id": "NepFo4zXyK4",
+      "publish_date": "2023-01-08",
+      "size_bytes": 74438
+    },
+    {
+      "slug": "yuhki-yamashata",
+      "guest": "Yuhki Yamashata",
+      "title": "An inside look at how Figma builds product | Yuhki Yamashita (CPO of Figma)",
+      "video_id": "NepFo4zXyK4",
+      "publish_date": "2023-01-08",
+      "size_bytes": 74436
+    },
+    {
+      "slug": "yuriy-timen",
+      "guest": "Yuriy Timen",
+      "title": "How to grow a subscription business | Yuriy Timen (Grammarly, Canva, Airtable)",
+      "video_id": "8-iN7sweFBM",
+      "publish_date": "2022-09-01",
+      "size_bytes": 65743
+    },
+    {
+      "slug": "zoelle-egner",
+      "guest": "Zoelle Egner",
+      "title": "Lessons from Airtable\u2019s unconventional growth strategy | Zoelle Egner",
+      "video_id": "0P8LMyeYl1U",
+      "publish_date": "2023-01-29",
+      "size_bytes": 89020
+    }
+  ],
+  "accepted_indexes": [
+    {
+      "file_name": "ab-testing.md",
+      "topic": "ab-testing",
+      "size_bytes": 897
+    },
+    {
+      "file_name": "agile.md",
+      "topic": "agile",
+      "size_bytes": 105
+    },
+    {
+      "file_name": "ai.md",
+      "topic": "ai",
+      "size_bytes": 1628
+    },
+    {
+      "file_name": "airbnb.md",
+      "topic": "airbnb",
+      "size_bytes": 627
+    },
+    {
+      "file_name": "analytics.md",
+      "topic": "analytics",
+      "size_bytes": 169
+    },
+    {
+      "file_name": "anxiety-management.md",
+      "topic": "anxiety-management",
+      "size_bytes": 147
+    },
+    {
+      "file_name": "bootstrapping.md",
+      "topic": "bootstrapping",
+      "size_bytes": 117
+    },
+    {
+      "file_name": "brand-building.md",
+      "topic": "brand-building",
+      "size_bytes": 173
+    },
+    {
+      "file_name": "branding.md",
+      "topic": "branding",
+      "size_bytes": 113
+    },
+    {
+      "file_name": "business-strategy.md",
+      "topic": "business-strategy",
+      "size_bytes": 417
+    },
+    {
+      "file_name": "career-development.md",
+      "topic": "career-development",
+      "size_bytes": 2419
+    },
+    {
+      "file_name": "career-growth.md",
+      "topic": "career-growth",
+      "size_bytes": 467
+    },
+    {
+      "file_name": "chatgpt.md",
+      "topic": "chatgpt",
+      "size_bytes": 577
+    },
+    {
+      "file_name": "communication.md",
+      "topic": "communication",
+      "size_bytes": 633
+    },
+    {
+      "file_name": "community-building.md",
+      "topic": "community-building",
+      "size_bytes": 490
+    },
+    {
+      "file_name": "company-culture.md",
+      "topic": "company-culture",
+      "size_bytes": 1400
+    },
+    {
+      "file_name": "creativity.md",
+      "topic": "creativity",
+      "size_bytes": 117
+    },
+    {
+      "file_name": "customer-experience.md",
+      "topic": "customer-experience",
+      "size_bytes": 191
+    },
+    {
+      "file_name": "customer-research.md",
+      "topic": "customer-research",
+      "size_bytes": 529
+    },
+    {
+      "file_name": "data-analytics.md",
+      "topic": "data-analytics",
+      "size_bytes": 178
+    },
+    {
+      "file_name": "decision-making.md",
+      "topic": "decision-making",
+      "size_bytes": 1343
+    },
+    {
+      "file_name": "design.md",
+      "topic": "design",
+      "size_bytes": 109
+    },
+    {
+      "file_name": "engineering.md",
+      "topic": "engineering",
+      "size_bytes": 243
+    },
+    {
+      "file_name": "enterprise-sales.md",
+      "topic": "enterprise-sales",
+      "size_bytes": 475
+    },
+    {
+      "file_name": "entrepreneurship.md",
+      "topic": "entrepreneurship",
+      "size_bytes": 3128
+    },
+    {
+      "file_name": "episodes.md",
+      "topic": "episodes",
+      "size_bytes": 168237
+    },
+    {
+      "file_name": "executive-coaching.md",
+      "topic": "executive-coaching",
+      "size_bytes": 593
+    },
+    {
+      "file_name": "executive-search.md",
+      "topic": "executive-search",
+      "size_bytes": 125
+    },
+    {
+      "file_name": "experimentation.md",
+      "topic": "experimentation",
+      "size_bytes": 1069
+    },
+    {
+      "file_name": "facebook.md",
+      "topic": "facebook",
+      "size_bytes": 865
+    },
+    {
+      "file_name": "feedback.md",
+      "topic": "feedback",
+      "size_bytes": 457
+    },
+    {
+      "file_name": "focus.md",
+      "topic": "focus",
+      "size_bytes": 179
+    },
+    {
+      "file_name": "founder-mode.md",
+      "topic": "founder-mode",
+      "size_bytes": 453
+    },
+    {
+      "file_name": "google.md",
+      "topic": "google",
+      "size_bytes": 1089
+    },
+    {
+      "file_name": "growth-strategy.md",
+      "topic": "growth-strategy",
+      "size_bytes": 1994
+    },
+    {
+      "file_name": "hiring.md",
+      "topic": "hiring",
+      "size_bytes": 1170
+    },
+    {
+      "file_name": "influence.md",
+      "topic": "influence",
+      "size_bytes": 117
+    },
+    {
+      "file_name": "innovation.md",
+      "topic": "innovation",
+      "size_bytes": 751
+    },
+    {
+      "file_name": "leadership.md",
+      "topic": "leadership",
+      "size_bytes": 4352
+    },
+    {
+      "file_name": "linkedin.md",
+      "topic": "linkedin",
+      "size_bytes": 107
+    },
+    {
+      "file_name": "machine-learning.md",
+      "topic": "machine-learning",
+      "size_bytes": 654
+    },
+    {
+      "file_name": "management.md",
+      "topic": "management",
+      "size_bytes": 103
+    },
+    {
+      "file_name": "marketing.md",
+      "topic": "marketing",
+      "size_bytes": 467
+    },
+    {
+      "file_name": "marketplaces.md",
+      "topic": "marketplaces",
+      "size_bytes": 123
+    },
+    {
+      "file_name": "media-relations.md",
+      "topic": "media-relations",
+      "size_bytes": 179
+    },
+    {
+      "file_name": "mental-health.md",
+      "topic": "mental-health",
+      "size_bytes": 173
+    },
+    {
+      "file_name": "mentorship.md",
+      "topic": "mentorship",
+      "size_bytes": 463
+    },
+    {
+      "file_name": "meta.md",
+      "topic": "meta",
+      "size_bytes": 491
+    },
+    {
+      "file_name": "microsoft.md",
+      "topic": "microsoft",
+      "size_bytes": 568
+    },
+    {
+      "file_name": "network-effects.md",
+      "topic": "network-effects",
+      "size_bytes": 531
+    },
+    {
+      "file_name": "networking.md",
+      "topic": "networking",
+      "size_bytes": 173
+    },
+    {
+      "file_name": "neuroscience.md",
+      "topic": "neuroscience",
+      "size_bytes": 119
+    },
+    {
+      "file_name": "okrs.md",
+      "topic": "okrs",
+      "size_bytes": 617
+    },
+    {
+      "file_name": "open-source.md",
+      "topic": "open-source",
+      "size_bytes": 119
+    },
+    {
+      "file_name": "openai.md",
+      "topic": "openai",
+      "size_bytes": 688
+    },
+    {
+      "file_name": "organizational-design.md",
+      "topic": "organizational-design",
+      "size_bytes": 567
+    },
+    {
+      "file_name": "personal-branding.md",
+      "topic": "personal-branding",
+      "size_bytes": 133
+    },
+    {
+      "file_name": "personal-development.md",
+      "topic": "personal-development",
+      "size_bytes": 401
+    },
+    {
+      "file_name": "personal-transformation.md",
+      "topic": "personal-transformation",
+      "size_bytes": 193
+    },
+    {
+      "file_name": "power.md",
+      "topic": "power",
+      "size_bytes": 109
+    },
+    {
+      "file_name": "prioritization.md",
+      "topic": "prioritization",
+      "size_bytes": 459
+    },
+    {
+      "file_name": "product-development.md",
+      "topic": "product-development",
+      "size_bytes": 2771
+    },
+    {
+      "file_name": "product-leadership.md",
+      "topic": "product-leadership",
+      "size_bytes": 593
+    },
+    {
+      "file_name": "product-led-growth.md",
+      "topic": "product-led-growth",
+      "size_bytes": 1423
+    },
+    {
+      "file_name": "product-management.md",
+      "topic": "product-management",
+      "size_bytes": 8517
+    },
+    {
+      "file_name": "product-market-fit.md",
+      "topic": "product-market-fit",
+      "size_bytes": 753
+    },
+    {
+      "file_name": "product-strategy.md",
+      "topic": "product-strategy",
+      "size_bytes": 3195
+    },
+    {
+      "file_name": "productivity.md",
+      "topic": "productivity",
+      "size_bytes": 377
+    },
+    {
+      "file_name": "psychology.md",
+      "topic": "psychology",
+      "size_bytes": 219
+    },
+    {
+      "file_name": "README.md",
+      "topic": "README",
+      "size_bytes": 4325
+    },
+    {
+      "file_name": "recruiting.md",
+      "topic": "recruiting",
+      "size_bytes": 113
+    },
+    {
+      "file_name": "remote-work.md",
+      "topic": "remote-work",
+      "size_bytes": 631
+    },
+    {
+      "file_name": "retention.md",
+      "topic": "retention",
+      "size_bytes": 599
+    },
+    {
+      "file_name": "sales.md",
+      "topic": "sales",
+      "size_bytes": 401
+    },
+    {
+      "file_name": "skill-building.md",
+      "topic": "skill-building",
+      "size_bytes": 139
+    },
+    {
+      "file_name": "slack.md",
+      "topic": "slack",
+      "size_bytes": 541
+    },
+    {
+      "file_name": "startup-culture.md",
+      "topic": "startup-culture",
+      "size_bytes": 119
+    },
+    {
+      "file_name": "startup-growth.md",
+      "topic": "startup-growth",
+      "size_bytes": 1475
+    },
+    {
+      "file_name": "storytelling.md",
+      "topic": "storytelling",
+      "size_bytes": 459
+    },
+    {
+      "file_name": "strategy.md",
+      "topic": "strategy",
+      "size_bytes": 701
+    },
+    {
+      "file_name": "stress-management.md",
+      "topic": "stress-management",
+      "size_bytes": 177
+    },
+    {
+      "file_name": "stripe.md",
+      "topic": "stripe",
+      "size_bytes": 619
+    },
+    {
+      "file_name": "team-building.md",
+      "topic": "team-building",
+      "size_bytes": 1247
+    },
+    {
+      "file_name": "time-management.md",
+      "topic": "time-management",
+      "size_bytes": 199
+    },
+    {
+      "file_name": "uber.md",
+      "topic": "uber",
+      "size_bytes": 569
+    },
+    {
+      "file_name": "user-experience.md",
+      "topic": "user-experience",
+      "size_bytes": 557
+    },
+    {
+      "file_name": "venture-capital.md",
+      "topic": "venture-capital",
+      "size_bytes": 1317
+    },
+    {
+      "file_name": "word-of-mouth.md",
+      "topic": "word-of-mouth",
+      "size_bytes": 119
+    },
+    {
+      "file_name": "work-life-balance.md",
+      "topic": "work-life-balance",
+      "size_bytes": 211
+    }
+  ],
+  "rejected": [
+    {
+      "file": "episodes\\adriel-frederick\\transcript.md",
+      "errors": [
+        "No timestamped speaker turns found in transcript body"
+      ]
+    },
+    {
+      "file": "episodes\\daniel-lereya\\transcript.md",
+      "errors": [
+        "Missing required field: 'publish_date'"
+      ]
+    },
+    {
+      "file": "episodes\\nickey-skarstad\\transcript.md",
+      "errors": [
+        "Missing required field: 'youtube_url'",
+        "Missing required field: 'video_id'",
+        "Missing required field: 'view_count'"
+      ]
+    },
+    {
+      "file": "episodes\\peter-deng\\transcript.md",
+      "errors": [
+        "Missing required field: 'publish_date'"
+      ]
+    },
+    {
+      "file": "episodes\\ryan-hoover\\transcript.md",
+      "errors": [
+        "No timestamped speaker turns found in transcript body"
+      ]
+    },
+    {
+      "file": "episodes\\teaser_2021\\transcript.md",
+      "errors": [
+        "Missing required field: 'title'",
+        "Missing required field: 'youtube_url'",
+        "Missing required field: 'video_id'",
+        "Missing required field: 'publish_date'",
+        "Missing required field: 'description'",
+        "Missing required field: 'duration'",
+        "Missing required field: 'duration_seconds'",
+        "Missing required field: 'view_count'",
+        "Missing required field: 'channel'"
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "file": "scripts\\build-index.sh",
+      "reason": "Executable / shell script skipped per security policy (NEVER executed)"
+    }
+  ],
+  "warnings": []
+}

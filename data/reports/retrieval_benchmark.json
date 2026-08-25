@@ -1,0 +1,366 @@
+{
+  "total_queries": 7,
+  "supported_queries": 6,
+  "hits": 6,
+  "hit_at_k": 1.0,
+  "average_latency_ms": 59.54,
+  "results": [
+    {
+      "id": "eval_01",
+      "query": "What does Lenny's Podcast say about MVPs?",
+      "category": "direct_topic",
+      "should_find_results": true,
+      "elapsed_ms": 118.21,
+      "retrieved_count": 3,
+      "top_guest": "Eric Ries",
+      "top_episode": "Reflections on a movement | Eric Ries (creator of the Lean Startup methodology)",
+      "top_timestamp": "00:24:29",
+      "top_source_url": "https://www.youtube.com/watch?v=xzebbzIntFc&t=1469",
+      "top_relevance_score": 0.8543,
+      "is_relevant": true,
+      "notes": [
+        "Retrieved relevant chunk from 'Eric Ries' - 'Reflections on a movement | Eric Ries (creator of the Lean Startup methodology)' (Score: 0.8543)"
+      ],
+      "all_retrieved": [
+        {
+          "chunk_id": "chunk_eric-ries_0005",
+          "guest": "Eric Ries",
+          "episode": "Reflections on a movement | Eric Ries (creator of the Lean Startup methodology)",
+          "timestamp": "00:24:29",
+          "relevance_score": 0.8543,
+          "source_url": "https://www.youtube.com/watch?v=xzebbzIntFc&t=1469",
+          "text_preview": "Lenny (00:24:29): So along those same lines, so you wrote the book 12 years ago. If you could go back and change something in the book, is there somet..."
+        },
+        {
+          "chunk_id": "chunk_nicole-forsgren_0024",
+          "guest": "Nicole Forsgren",
+          "episode": "How to measure AI developer productivity in 2025 | Nicole Forsgren",
+          "timestamp": "00:58:36",
+          "relevance_score": 0.5066,
+          "source_url": "https://www.youtube.com/watch?v=SWcDfPVTizQ&t=3516",
+          "text_preview": "Lenny Rachitsky (00:58:36): It's so interesting. For example, Claude Code, \"Find ways to clean up storage on my laptop,\" and it just tells you there's..."
+        },
+        {
+          "chunk_id": "chunk_nicole-forsgren-20_0024",
+          "guest": "Nicole Forsgren 2.0",
+          "episode": "How to measure AI developer productivity in 2025 | Nicole Forsgren",
+          "timestamp": "00:58:36",
+          "relevance_score": 0.5066,
+          "source_url": "https://www.youtube.com/watch?v=SWcDfPVTizQ&t=3516",
+          "text_preview": "Lenny Rachitsky (00:58:36): It's so interesting. For example, Claude Code, \"Find ways to clean up storage on my laptop,\" and it just tells you there's..."
+        }
+      ]
+    },
+    {
+      "id": "eval_02",
+      "query": "How should a startup decide what NOT to build?",
+      "category": "strategic_question",
+      "should_find_results": true,
+      "elapsed_ms": 52.28,
+      "retrieved_count": 5,
+      "top_guest": "Ravi Mehta",
+      "top_episode": "How to build your product strategy stack | Ravi Mehta (Tinder, Facebook, Tripadvisor, Outpace)",
+      "top_timestamp": "00:06:03",
+      "top_source_url": "https://www.youtube.com/watch?v=tncs0m5pmQg&t=363",
+      "top_relevance_score": 0.5444,
+      "is_relevant": true,
+      "notes": [
+        "Retrieved relevant chunk from 'Ravi Mehta' - 'How to build your product strategy stack | Ravi Mehta (Tinder, Facebook, Tripadvisor, Outpace)' (Score: 0.5444)"
+      ],
+      "all_retrieved": [
+        {
+          "chunk_id": "chunk_ravi-mehta_0001",
+          "guest": "Ravi Mehta",
+          "episode": "How to build your product strategy stack | Ravi Mehta (Tinder, Facebook, Tripadvisor, Outpace)",
+          "timestamp": "00:06:03",
+          "relevance_score": 0.5444,
+          "source_url": "https://www.youtube.com/watch?v=tncs0m5pmQg&t=363",
+          "text_preview": "Spent about six years there, worked on stuff on the platform side, on the content side. It was a really great experience, but I knew I wanted to go ea..."
+        },
+        {
+          "chunk_id": "chunk_uri-levine-20_0001",
+          "guest": "Uri Levine 2.0",
+          "episode": "A founder\u2019s guide to crisis management | Uri Levine (Waze co-founder, serial entrepreneur)",
+          "timestamp": "00:05:08",
+          "relevance_score": 0.5427,
+          "source_url": "https://www.youtube.com/watch?v=lQdogVBHMdA&t=308",
+          "text_preview": "Lenny Rachitsky (00:05:08): I should have said welcome back to the podcast, this is your second time here, which is a pretty rare feat. And the reason..."
+        },
+        {
+          "chunk_id": "chunk_dalton-caldwell_0008",
+          "guest": "Dalton Caldwell",
+          "episode": "Lessons from 1,000+ YC startups: Resilience, tar pit ideas, pivoting, more | Dalton Caldwell (YC)",
+          "timestamp": "00:25:10",
+          "relevance_score": 0.5225,
+          "source_url": "https://www.youtube.com/watch?v=m7LvNTbaqSI&t=1510",
+          "text_preview": "For people that are familiar with this terminology from us, sometimes they get defensive and don't get what we were saying. By definition it is only a..."
+        },
+        {
+          "chunk_id": "chunk_guillermo-rauch_0017",
+          "guest": "Guillermo Rauch",
+          "episode": "Everyone\u2019s an engineer now: Inside v0\u2019s mission to create 100 million builders | Guillermo Rauch",
+          "timestamp": "01:02:40",
+          "relevance_score": 0.5187,
+          "source_url": "https://www.youtube.com/watch?v=-QsTmu2CqhA&t=3760",
+          "text_preview": "And by the way, I'll tell you for people out there building products, my number one guidance or piece of advice I would give to any startup founder wa..."
+        },
+        {
+          "chunk_id": "chunk_anton-osika_0000",
+          "guest": "Anton Osika",
+          "episode": "Building Lovable: $10M ARR in 60 days with 15 people | Anton Osika (CEO and co-founder)",
+          "timestamp": "00:00:00",
+          "relevance_score": 0.5175,
+          "source_url": "https://www.youtube.com/watch?v=DZtGxNs9AVg&t=0",
+          "text_preview": "Anton Osika (00:00:00): ... Lovable is your personal AI software engineer. You describe an idea and then you get a fully working product. The reason i..."
+        }
+      ]
+    },
+    {
+      "id": "eval_03",
+      "query": "How do you know when a product has product-market fit?",
+      "category": "pmf_definition",
+      "should_find_results": true,
+      "elapsed_ms": 52.64,
+      "retrieved_count": 5,
+      "top_guest": "Naomi Gleit",
+      "top_episode": "Meta\u2019s head of product on working with Mark Zuckerberg, early growth tactics, and more | Naomi Gleit",
+      "top_timestamp": "00:41:56",
+      "top_source_url": "https://www.youtube.com/watch?v=sTYuKgzZoL8&t=2516",
+      "top_relevance_score": 1.0623,
+      "is_relevant": true,
+      "notes": [
+        "Retrieved relevant chunk from 'Naomi Gleit' - 'Meta\u2019s head of product on working with Mark Zuckerberg, early growth tactics, and more | Naomi Gleit' (Score: 1.0623)"
+      ],
+      "all_retrieved": [
+        {
+          "chunk_id": "chunk_naomi-gleit_0013",
+          "guest": "Naomi Gleit",
+          "episode": "Meta\u2019s head of product on working with Mark Zuckerberg, early growth tactics, and more | Naomi Gleit",
+          "timestamp": "00:41:56",
+          "relevance_score": 1.0623,
+          "source_url": "https://www.youtube.com/watch?v=sTYuKgzZoL8&t=2516",
+          "text_preview": "Lenny Rachitsky (00:41:56): I love that framework of micro barriers and macro barriers, just thinking about ways to make this accessible to more peopl..."
+        },
+        {
+          "chunk_id": "chunk_naomi-gleit_0009",
+          "guest": "Naomi Gleit",
+          "episode": "Meta\u2019s head of product on working with Mark Zuckerberg, early growth tactics, and more | Naomi Gleit",
+          "timestamp": "00:28:17",
+          "relevance_score": 0.91,
+          "source_url": "https://www.youtube.com/watch?v=sTYuKgzZoL8&t=1697",
+          "text_preview": "Lenny Rachitsky (00:28:17): One of the most interesting lessons from this activation metric that people talk about, because right now everyone's like,..."
+        },
+        {
+          "chunk_id": "chunk_elena-verna-40_0018",
+          "guest": "Elena Verna 4.0",
+          "episode": "The new AI growth playbook for 2026 | How Lovable hit $200M ARR in one year",
+          "timestamp": "01:00:22",
+          "relevance_score": 0.7966,
+          "source_url": "https://www.youtube.com/watch?v=6qAB6aUMIeA&t=3622",
+          "text_preview": "Lenny Rachitsky (01:00:22): Awesome. Okay, great segue too. I want to talk about product-market fit in competition. You have this really interesting p..."
+        },
+        {
+          "chunk_id": "chunk_todd-jackson_0015",
+          "guest": "Todd Jackson",
+          "episode": "A framework for finding product-market fit | Todd Jackson (First Round Capital)",
+          "timestamp": "00:59:11",
+          "relevance_score": 0.7084,
+          "source_url": "https://www.youtube.com/watch?v=yc1Uwhfxacs&t=3551",
+          "text_preview": "Hearing level three again tells me level two is basically your pivot from: I'm just grinding customers, selling, pitching, constantly trying to find n..."
+        },
+        {
+          "chunk_id": "chunk_nikita-bier_0011",
+          "guest": "Nikita Bier",
+          "episode": "Driving alignment within teams, work-life balance, and the changing PM landscape | Nikita Miller",
+          "timestamp": "00:34:52",
+          "relevance_score": 0.6897,
+          "source_url": "https://www.youtube.com/watch?v=4PhfAbRQpbI&t=2092",
+          "text_preview": "I think the thing that is hard to really understand for first-time founders that hit breakout success with a consumer product is how draining and how ..."
+        }
+      ]
+    },
+    {
+      "id": "eval_04",
+      "query": "What does Andy Johns say about burnout?",
+      "category": "guest_specific",
+      "should_find_results": true,
+      "elapsed_ms": 47.83,
+      "retrieved_count": 3,
+      "top_guest": "Andy Johns",
+      "top_episode": "When enough is enough | Andy Johns (ex-FB, Twitter, Quora)",
+      "top_timestamp": "00:13:48",
+      "top_source_url": "https://www.youtube.com/watch?v=_93m4PriHyc&t=828",
+      "top_relevance_score": 1.1062,
+      "is_relevant": true,
+      "notes": [
+        "Retrieved relevant chunk from 'Andy Johns' - 'When enough is enough | Andy Johns (ex-FB, Twitter, Quora)' (Score: 1.1062)"
+      ],
+      "all_retrieved": [
+        {
+          "chunk_id": "chunk_andy-johns_0002",
+          "guest": "Andy Johns",
+          "episode": "When enough is enough | Andy Johns (ex-FB, Twitter, Quora)",
+          "timestamp": "00:13:48",
+          "relevance_score": 1.1062,
+          "source_url": "https://www.youtube.com/watch?v=_93m4PriHyc&t=828",
+          "text_preview": "For the last two years, I've been doing a lot of writing, and most of my writing has really just been me opening up and sharing this personal side of ..."
+        },
+        {
+          "chunk_id": "chunk_jonny-miller_0027",
+          "guest": "Jonny Miller",
+          "episode": "Managing nerves, anxiety, and burnout | Jonny Miller (Nervous Systems Mastery)",
+          "timestamp": "00:51:28",
+          "relevance_score": 0.5048,
+          "source_url": "https://www.youtube.com/watch?v=-kN8Agqee4w&t=3088",
+          "text_preview": "Yeah, it's a good question. And some people do have a very high interoceptive capacity, and that can be overwhelming. In which case I would recommend ..."
+        },
+        {
+          "chunk_id": "chunk_brian-chesky_0006",
+          "guest": "Brian Chesky",
+          "episode": "Brian Chesky\u2019s new playbook",
+          "timestamp": "00:49:04",
+          "relevance_score": 0.5013,
+          "source_url": "https://www.youtube.com/watch?v=4ef0juAMqoE&t=2944",
+          "text_preview": "But the last thing I'll say about adding a zero, Lenny, is I remember there was a story about a great basketball coach named John Wooden. He was one o..."
+        }
+      ]
+    },
+    {
+      "id": "eval_05",
+      "query": "What do different guests say about product roadmaps?",
+      "category": "cross_episode",
+      "should_find_results": true,
+      "elapsed_ms": 49.06,
+      "retrieved_count": 4,
+      "top_guest": "Nancy Duarte",
+      "top_episode": "Storytelling with Nancy Duarte: How to craft compelling presentations and tell a story that sticks",
+      "top_timestamp": "01:09:41",
+      "top_source_url": "https://www.youtube.com/watch?v=-kHkWgjGD7U&t=4181",
+      "top_relevance_score": 0.5047,
+      "is_relevant": true,
+      "notes": [
+        "Retrieved relevant chunk from 'Nancy Duarte' - 'Storytelling with Nancy Duarte: How to craft compelling presentations and tell a story that sticks' (Score: 0.5047)"
+      ],
+      "all_retrieved": [
+        {
+          "chunk_id": "chunk_nancy-duarte_0021",
+          "guest": "Nancy Duarte",
+          "episode": "Storytelling with Nancy Duarte: How to craft compelling presentations and tell a story that sticks",
+          "timestamp": "01:09:41",
+          "relevance_score": 0.5047,
+          "source_url": "https://www.youtube.com/watch?v=-kHkWgjGD7U&t=4181",
+          "text_preview": "And it was just because they actually thought about, okay. She goes, brushes their teeth, they do this. They were just literally walking through the l..."
+        },
+        {
+          "chunk_id": "chunk_alex-komoroske_0014",
+          "guest": "Alex Komoroske",
+          "episode": "Thinking like a gardener, slime mold, the adjacent possible: Product advice from Alex Komoroske",
+          "timestamp": "00:40:08",
+          "relevance_score": 0.5024,
+          "source_url": "https://www.youtube.com/watch?v=PoWRYBWSqpU&t=2408",
+          "text_preview": "And sometimes I get it wrong, especially if I try to do it earlier, but when people feel very seen and they feel acknowledged for that, they now are w..."
+        },
+        {
+          "chunk_id": "chunk_lauryn-isford_0000",
+          "guest": "Lauryn Isford",
+          "episode": "Mastering onboarding | Lauryn Isford (Head of Growth at Airtable)",
+          "timestamp": "00:00:00",
+          "relevance_score": 0.5015,
+          "source_url": "https://www.youtube.com/watch?v=dLku0AiGPVA&t=0",
+          "text_preview": "Lauryn Isford (00:00:00): An activation rate that falls in a lower percentage range, maybe for most companies five to 15%, is better than one that fal..."
+        },
+        {
+          "chunk_id": "chunk_john-mark-nickels_0002",
+          "guest": "John Mark Nickels",
+          "episode": "Conscious leadership: Unlocking vision, strategy and purpose | JM Nickels (Uber, Waymo, DoorDash)",
+          "timestamp": "00:06:18",
+          "relevance_score": 0.5014,
+          "source_url": "https://www.youtube.com/watch?v=W7o40qcYHlM&t=378",
+          "text_preview": "First, Pendo is built around product analytics, seeing what your users are actually doing in your apps so that you can optimize their experience. Next..."
+        }
+      ]
+    },
+    {
+      "id": "eval_06",
+      "query": "What are useful approaches to user research?",
+      "category": "user_research",
+      "should_find_results": true,
+      "elapsed_ms": 46.94,
+      "retrieved_count": 5,
+      "top_guest": "Judd Antin",
+      "top_episode": "The UX Research reckoning is here | Judd Antin (Airbnb, Meta)",
+      "top_timestamp": "00:23:55",
+      "top_source_url": "https://www.youtube.com/watch?v=L6RKi9ZvkT4&t=1435",
+      "top_relevance_score": 0.5308,
+      "is_relevant": true,
+      "notes": [
+        "Retrieved relevant chunk from 'Judd Antin' - 'The UX Research reckoning is here | Judd Antin (Airbnb, Meta)' (Score: 0.5308)"
+      ],
+      "all_retrieved": [
+        {
+          "chunk_id": "chunk_judd-antin_0008",
+          "guest": "Judd Antin",
+          "episode": "The UX Research reckoning is here | Judd Antin (Airbnb, Meta)",
+          "timestamp": "00:23:55",
+          "relevance_score": 0.5308,
+          "source_url": "https://www.youtube.com/watch?v=L6RKi9ZvkT4&t=1435",
+          "text_preview": "Lenny (00:23:55): Such a good point. And you have this actual term that you call user-centered performance, where it's the performance of being user-c..."
+        },
+        {
+          "chunk_id": "chunk_noah-weiss_0029",
+          "guest": "Noah Weiss",
+          "episode": "The 10 traits of great PMs, AI, and Slack\u2019s approach to product | Noah Weiss (Slack, Google)",
+          "timestamp": "00:46:24",
+          "relevance_score": 0.5171,
+          "source_url": "https://www.youtube.com/watch?v=XrRlVOWe5GE&t=2784",
+          "text_preview": "Noah Weiss (00:46:24): We did a lot of user research. We looked at all these cohort curves, which you can imagine suddenly they're like, \"Huh, they're..."
+        },
+        {
+          "chunk_id": "chunk_noah-weiss_0027",
+          "guest": "Noah Weiss",
+          "episode": "The 10 traits of great PMs, AI, and Slack\u2019s approach to product | Noah Weiss (Slack, Google)",
+          "timestamp": "00:42:57",
+          "relevance_score": 0.5112,
+          "source_url": "https://www.youtube.com/watch?v=XrRlVOWe5GE&t=2577",
+          "text_preview": "Noah Weiss (00:42:57): Fine. Usability. I'm a big believer in you want to be data-informed, but you don't want to be so data-driven that you actually ..."
+        },
+        {
+          "chunk_id": "chunk_noah-weiss_0010",
+          "guest": "Noah Weiss",
+          "episode": "The 10 traits of great PMs, AI, and Slack\u2019s approach to product | Noah Weiss (Slack, Google)",
+          "timestamp": "00:15:26",
+          "relevance_score": 0.5079,
+          "source_url": "https://www.youtube.com/watch?v=XrRlVOWe5GE&t=926",
+          "text_preview": "Noah Weiss (00:15:26): Yeah. I mean I think that does happen. The ship is maybe ... the end of the year is the level of engagement and often that last..."
+        },
+        {
+          "chunk_id": "chunk_casey-winters_0005",
+          "guest": "Casey Winters",
+          "episode": "Why most product managers are unprepared for the demands of a real startup | Casey Winters",
+          "timestamp": "18:26",
+          "relevance_score": 0.5047,
+          "source_url": "https://www.youtube.com/watch?v=WlRfyEpAKxw&t=1106",
+          "text_preview": "Absolutely. I mean, for better or worse, the way that a lot of key decisions are made inside companies are through these types of forums and meetings...."
+        }
+      ]
+    },
+    {
+      "id": "eval_07",
+      "query": "Explain quantum computing algorithms.",
+      "category": "unsupported",
+      "should_find_results": false,
+      "elapsed_ms": 49.82,
+      "retrieved_count": 0,
+      "top_guest": null,
+      "top_episode": null,
+      "top_timestamp": null,
+      "top_source_url": null,
+      "top_relevance_score": 0.0,
+      "is_relevant": true,
+      "notes": [
+        "Unsupported query correctly yielded no/low-confidence results (top score: 0.0)"
+      ],
+      "all_retrieved": []
+    }
+  ]
+}

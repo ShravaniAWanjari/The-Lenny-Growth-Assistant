@@ -1,0 +1,59 @@
+[
+  {
+    "id": "eval_01",
+    "category": "direct_topic",
+    "query": "What does Lenny's Podcast say about MVPs?",
+    "expected_topics": ["product-development", "product-strategy", "startup-growth"],
+    "expected_keywords": ["mvp", "minimum viable product", "build", "iterate"],
+    "should_find_results": true
+  },
+  {
+    "id": "eval_02",
+    "category": "strategic_question",
+    "query": "How should a startup decide what NOT to build?",
+    "expected_topics": ["prioritization", "product-strategy", "decision-making"],
+    "expected_keywords": ["prioritization", "roadmap", "focus", "build"],
+    "should_find_results": true
+  },
+  {
+    "id": "eval_03",
+    "category": "pmf_definition",
+    "query": "How do you know when a product has product-market fit?",
+    "expected_topics": ["product-market-fit", "growth-strategy", "retention"],
+    "expected_keywords": ["product-market fit", "pmf", "retention", "demand", "pull"],
+    "should_find_results": true
+  },
+  {
+    "id": "eval_04",
+    "category": "guest_specific",
+    "query": "What does Andy Johns say about burnout?",
+    "expected_guest": "Andy Johns",
+    "expected_topics": ["mental-health", "burnout"],
+    "expected_keywords": ["burnout", "mental health", "pressure", "recovery"],
+    "should_find_results": true
+  },
+  {
+    "id": "eval_05",
+    "category": "cross_episode",
+    "query": "What do different guests say about product roadmaps?",
+    "expected_topics": ["product-management", "product-strategy", "roadmap"],
+    "expected_keywords": ["roadmap", "planning", "vision", "strategy"],
+    "should_find_results": true
+  },
+  {
+    "id": "eval_06",
+    "category": "user_research",
+    "query": "What are useful approaches to user research?",
+    "expected_topics": ["customer-research", "user-experience", "experimentation"],
+    "expected_keywords": ["user research", "interviews", "customer", "feedback"],
+    "should_find_results": true
+  },
+  {
+    "id": "eval_07",
+    "category": "unsupported",
+    "query": "Explain quantum computing algorithms.",
+    "expected_topics": [],
+    "expected_keywords": ["quantum", "qubit", "shor"],
+    "should_find_results": false
+  }
+]

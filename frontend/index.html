@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Lenny Growth Assistant — Intelligent Archive</title>
+  <meta name="description" content="Explore the ideas, experiences, and lessons shared across Lenny's Podcast transcripts with grounded AI retrieval." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
+  
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" type="image/png" href="/static/assets/logo-iris-white.png" />
+  <link rel="apple-touch-icon" href="/static/assets/logo-iris-white.png" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <!-- Atmospheric Texture Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Main Container -->
+  <div class="app-root">
+
+    <!-- Global Top Navigation Bar (Always Sticky Across Hero & Conversation Workspace) -->
+    <nav class="hero-nav" aria-label="Main Navigation">
+      <div class="nav-spacer" aria-hidden="true"></div>
+
+      <div class="nav-controls">
+        <!-- Session Drawer Toggle -->
+        <button id="sessionsToggleBtn" class="nav-btn sessions-btn" aria-label="Open Conversation Sessions" aria-haspopup="dialog">
+          <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <span>Sessions</span>
+          <span id="sessionCountBadge" class="session-badge">0</span>
+        </button>
+
+        <!-- Local / Cloud Provider Selector & Live Readiness Status -->
+        <div class="provider-group">
+          <div class="provider-selector" role="radiogroup" aria-label="Select AI Provider">
+            <div id="providerSlider" style="display:none;" aria-hidden="true"></div>
+            <button type="button" id="providerLocalBtn" class="provider-option active" role="radio" aria-checked="true" data-provider="ollama">
+              Local
+            </button>
+            <span class="provider-divider" aria-hidden="true">&bull;</span>
+            <button type="button" id="providerCloudBtn" class="provider-option" role="radio" aria-checked="false" data-provider="gemini">
+              Cloud
+            </button>
+          </div>
+
+          <!-- Application Status: ready / setting up -->
+          <div class="app-status-badge" id="appStatusBadge" title="System Ingestion & Readiness Status" aria-live="polite">
+            <span class="status-pulse-dot setting-up" id="statusDot"></span>
+            <span class="status-badge-text" id="statusBadgeText">Application: Setting up...</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================================================================= -->
+    <!-- 1. HERO SECTION (Minimal, Spacious, Cinematic)                     -->
+    <!-- ================================================================= -->
+    <header class="hero-section" id="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-gradient" aria-hidden="true"></div>
+
+      <!-- Left-Aligned Hero Message (approx 1/4th width of hero section) -->
+      <div class="hero-content">
+        <h1 class="hero-title">The Lenny Growth Assistant</h1>
+        <p class="hero-tagline">Explore the ideas, experiences, and lessons shared across Lenny's Podcast.</p>
+        <p class="hero-subtext">297 episodes &bull; 14,933 transcript passages &bull; Grounded retrieval with video timestamps</p>
+        <a href="#conversation" class="hero-scroll-cue" aria-label="Scroll to conversation workspace">
+          <span class="scroll-cue-text">Enter Workspace</span>
+          <svg class="scroll-cue-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- ================================================================= -->
+    <!-- 2. CONVERSATION WORKSPACE (Below Hero)                            -->
+    <!-- ================================================================= -->
+    <main class="conversation-workspace" id="conversation" aria-label="Conversation Workspace">
+      <div class="workspace-inner">
+
+        <!-- Active Session Header Bar -->
+        <div class="workspace-header">
+          <div class="active-session-meta">
+            <span class="session-label">CURRENT CONVERSATION:</span>
+            <h2 id="activeSessionTitle" class="active-title">New Conversation</h2>
+          </div>
+          <div class="workspace-actions">
+            <button id="newChatTopBtn" class="btn-subtle" title="Start New Conversation">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              <span>New Chat</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Messages Flow Container -->
+        <div class="messages-container" id="messagesContainer" role="log" aria-live="polite">
+          
+          <!-- Empty / Welcome State -->
+          <div class="empty-state" id="emptyState">
+            <h3 class="empty-title">What are we learning today?</h3>
+            <p class="empty-desc">Get verified, timestamped insights from top product leaders and founders, or turn conversations into Ship 30 essays and visual artifacts.</p>
+
+            <div class="suggestion-chips" aria-label="Sample Prompts">
+              <button type="button" class="chip" data-prompt="What do Lenny's guests say about MVPs?">
+                <span>&ldquo;What do Lenny's guests say about MVPs?&rdquo;</span>
+              </button>
+              <button type="button" class="chip" data-prompt="How do you know when a product has product-market fit?">
+                <span>&ldquo;How do you know when you have product-market fit?&rdquo;</span>
+              </button>
+              <button type="button" class="chip" data-prompt="What does Andy Johns say about burnout in tech?">
+                <span>&ldquo;What does Andy Johns say about burnout?&rdquo;</span>
+              </button>
+              <button type="button" class="chip" data-prompt="Turn what we learned about MVPs into a Ship 30 essay.">
+                <span>&ldquo;Turn what we learned into a Ship 30 essay&rdquo;</span>
+              </button>
+              <button type="button" class="chip" data-prompt="Create a visual HTML card comparing PMF signals.">
+                <span>&ldquo;Create a visual HTML card comparing PMF signals&rdquo;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Message Items will be dynamically inserted here -->
+          <div class="chat-thread" id="chatThread"></div>
+        </div>
+
+        <!-- Sticky Composer Area -->
+        <div class="composer-container">
+          <!-- Dynamic Suggested Questions (Directly Above Input Box) -->
+          <div class="context-chips-container" id="contextChipsContainer" style="display: none;" aria-label="Suggested Follow-up Prompts"></div>
+
+          <form id="chatForm" class="composer-form" action="#">
+            <div class="composer-box">
+              <textarea
+                id="promptInput"
+                class="composer-input"
+                placeholder="Ask about product strategy, growth loops, PMF, or request a Ship 30 essay..."
+                rows="1"
+                required
+                aria-label="Message prompt"
+              ></textarea>
+
+              <button type="submit" id="sendBtn" class="send-btn" aria-label="Send Message">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </div>
+            
+            <div class="composer-footer">
+              <span class="footer-hint">Press <kbd>Enter</kbd> to send &bull; <kbd>Shift + Enter</kbd> for new line</span>
+              <span class="active-provider-indicator" id="activeProviderIndicator">
+                Provider: <strong id="activeProviderLabel">Local (Ollama)</strong>
+              </span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- 3. SESSION DRAWER (Overlay / Slide-in)                            -->
+    <!-- ================================================================= -->
+    <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+    <aside class="session-drawer" id="sessionDrawer" aria-label="Session History" aria-hidden="true">
+      <div class="drawer-header">
+        <div class="drawer-title-row">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <h3>Conversations</h3>
+        </div>
+        <button id="closeDrawerBtn" class="close-btn" aria-label="Close Sessions Drawer">&times;</button>
+      </div>
+
+      <div class="drawer-actions">
+        <button id="newChatDrawerBtn" class="btn-primary new-chat-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          <span>New Conversation</span>
+        </button>
+        <button id="deleteAllChatsBtn" class="delete-all-btn" title="Delete All Conversations" aria-label="Delete All Conversations">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="3 6 5 6 21 6"></polyline>
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+          </svg>
+          <span>Clear All</span>
+        </button>
+      </div>
+
+      <div class="drawer-list" id="sessionList" role="list">
+        <!-- Session item list rendered here -->
+      </div>
+    </aside>
+
+    <!-- ================================================================= -->
+    <!-- 4. ARTIFACT VIEWER MODAL (Isolated, Sandboxed)                    -->
+    <!-- ================================================================= -->
+    <div class="modal-backdrop" id="artifactModalBackdrop" aria-hidden="true"></div>
+    <div class="artifact-modal" id="artifactModal" role="dialog" aria-modal="true" aria-labelledby="modalArtifactTitle" aria-hidden="true">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="artifact-badge" id="modalArtifactBadge">HTML Visual</span>
+          <span class="sanitized-badge" id="modalSanitizedBadge" title="Verified safe by backend nh3 sanitization">Sanitized &bull; Safe</span>
+          <h2 id="modalArtifactTitle" class="modal-title">Artifact Title</h2>
+        </div>
+
+        <div class="modal-actions">
+          <button id="downloadArtifactBtn" class="btn-download" title="Download Artifact">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span id="downloadBtnLabel">Download</span>
+          </button>
+          <button id="closeModalBtn" class="close-modal-btn" aria-label="Close Artifact Modal">&times;</button>
+        </div>
+      </div>
+
+      <div class="modal-body" id="modalBody">
+        <!-- Sandboxed HTML iframe (NO allow-scripts) -->
+        <iframe
+          id="artifactIframe"
+          class="artifact-iframe"
+          sandbox="allow-same-origin"
+          title="Sandboxed HTML Visual Artifact Viewer"
+        ></iframe>
+
+        <!-- Markdown container -->
+        <div id="markdownArtifactContainer" class="markdown-artifact-view"></div>
+
+        <!-- Rejected error banner -->
+        <div id="rejectedArtifactView" class="rejected-artifact-view">
+          <div class="rejected-card">
+            <div class="rejected-icon-wrap">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="rejected-title">Failed to Render HTML Artifact</h3>
+            <p class="rejected-desc">This visual could not be displayed safely because the generated code contained restricted elements (such as executable scripts) that violate security guardrails.</p>
+            
+            <div class="rejected-details-box">
+              <span class="rejected-details-label">Issue:</span>
+              <code id="rejectedReason" class="rejected-reason-code">Unsafe HTML elements detected in generated artifact.</code>
+            </div>
+
+            <div class="rejected-tip">
+              <span><strong>Suggestion:</strong> Ask the assistant: <em>&ldquo;Create this visual using clean standard HTML and CSS without script tags.&rdquo;</em></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- 5. CONFIRMATION DIALOG (Custom Delete Modal)                      -->
+    <!-- ================================================================= -->
+    <div class="confirm-backdrop" id="confirmModalBackdrop" aria-hidden="true"></div>
+    <div class="confirm-dialog" id="confirmDialog" role="dialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="confirmDesc" aria-hidden="true">
+      <h3 class="confirm-title" id="confirmTitle">Delete this conversation?</h3>
+      <p class="confirm-desc" id="confirmDesc">This will permanently remove the chat and its messages. You won’t be able to recover it.</p>
+      <div class="confirm-actions">
+        <button type="button" class="btn-confirm-cancel" id="confirmCancelBtn">No, keep it</button>
+        <button type="button" class="btn-confirm-delete" id="confirmDeleteBtn">Yes, delete</button>
+      </div>
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- 6. RENAME CONVERSATION DIALOG                                     -->
+    <!-- ================================================================= -->
+    <div class="confirm-backdrop" id="renameModalBackdrop" aria-hidden="true"></div>
+    <div class="confirm-dialog" id="renameDialog" role="dialog" aria-modal="true" aria-labelledby="renameTitle" aria-describedby="renameDesc" aria-hidden="true">
+      <h3 class="confirm-title" id="renameTitle">Rename conversation</h3>
+      <p class="confirm-desc" id="renameDesc">Enter a new title for this conversation.</p>
+      <div class="rename-input-wrap">
+        <input type="text" id="renameInput" class="rename-input" maxlength="100" autocomplete="off" placeholder="Conversation title..." />
+      </div>
+      <div class="confirm-actions">
+        <button type="button" class="btn-confirm-cancel" id="renameCancelBtn">Cancel</button>
+        <button type="button" class="btn-confirm-save" id="renameSaveBtn">Save</button>
+      </div>
+    </div>
+
+    <!-- Toast Notification Banner -->
+    <div class="toast-container" id="toastContainer" aria-live="assertive"></div>
+
+  </div>
+
+  <!-- Vendored Libraries & Application JS -->
+  <script src="/static/vendor/marked.min.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

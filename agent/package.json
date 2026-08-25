@@ -1,0 +1,29 @@
+{
+  "name": "lenny-pi-agent",
+  "version": "0.1.0",
+  "description": "Pi Agent service for Lenny Growth Assistant",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "dev": "tsx watch src/server.ts",
+    "test:minimal": "tsx src/test_minimal.ts",
+    "test:ollama": "tsx src/test_ollama.ts",
+    "test:gemini": "tsx src/test_gemini.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@earendil-works/pi-ai": "^0.84.3",
+    "@earendil-works/pi-coding-agent": "^0.84.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
