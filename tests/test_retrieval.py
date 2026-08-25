@@ -39,3 +39,10 @@ def test_retrieval_unsupported_query():
     results = search("Explain quantum computing algorithms in Hilbert space", top_k=5)
     # Unsupported query should return 0 results or near-zero scores
     assert len(results) == 0 or all(r["relevance_score"] < 0.1 for r in results)
+
+
+def test_retrieval_meta_only_prompt_constructs_a_valid_tsquery():
+    # Artifact-oriented prompts can contain only stopwords. They must not cause
+    # PostgreSQL `to_tsquery` syntax errors before the Pi Agent is reached.
+    results = search("Create a visual", top_k=5)
+    assert isinstance(results, list)

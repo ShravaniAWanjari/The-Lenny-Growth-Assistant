@@ -303,6 +303,8 @@ body {
   width: 100%;
   max-width: 420px;
   margin: 0;
+  /* Visual offset only: preserves the hero's height and button dimensions. */
+  transform: translateY(-1.25rem);
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -479,7 +481,8 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 2rem 1rem 1rem;
+  /* Lower the welcome flow and composer while leaving the workspace header fixed. */
+  padding: 6rem 1rem 1rem;
   background: transparent;
   border: none;
   box-shadow: none;
@@ -1914,6 +1917,7 @@ body {
   .hero-content {
     max-width: 100%;
     margin: 0;
+    transform: translateY(-0.75rem);
   }
 
   .hero-title {
@@ -1937,6 +1941,10 @@ body {
   .hero-scroll-cue {
     padding: 0.45rem 0.85rem;
     font-size: 0.75rem;
+  }
+
+  .empty-state {
+    padding-top: 4rem;
   }
 
   .conversation-workspace {

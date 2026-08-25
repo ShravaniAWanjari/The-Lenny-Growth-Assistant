@@ -61,10 +61,14 @@ def extract_search_terms(raw_query: str) -> Dict[str, Any]:
 
     unique_terms = list(dict.fromkeys(expanded))
     clean_phrase = " ".join(meaningful) if meaningful else " ".join(tokens)
-    or_tsquery = " | ".join(unique_terms) if unique_terms else clean_phrase
+    # `to_tsquery` requires explicit operators. If a prompt consists only of
+    # meta words (for example, "create a visual"), retain its tokens but still
+    # form a valid OR query instead of passing a whitespace-separated phrase.
+    or_tsquery = " | ".join(unique_terms) if unique_terms else " | ".join(tokens)
 
     return {
         "clean_phrase": clean_phrase,
+        "original_terms": meaningful,
         "terms": unique_terms,
         "or_tsquery": or_tsquery,
     }
@@ -131,6 +135,7 @@ def search(
         search_meta = extract_search_terms(raw_query)
         clean_phrase = search_meta["clean_phrase"]
         or_tsquery = search_meta["or_tsquery"]
+        original_terms = search_meta["original_terms"]
 
         if not clean_phrase and not or_tsquery and not guest_boost_slugs:
             return []
@@ -191,6 +196,23 @@ def search(
         # Score and rank candidates
         scored_candidates = []
         for r in results:
+            # A disjunctive FTS query is useful for recall, but a long query
+            # should not be accepted merely because one generic term appears in
+            # a transcript. Require evidence for at least two original
+            # meaningful terms, unless a named guest creates an explicit match.
+            searchable_text = f"{r.text or ''} {r.episode_title or ''}".lower()
+            term_matches = sum(
+                1 for term in original_terms
+                if re.search(rf"\b{re.escape(term)}\b", searchable_text)
+            )
+            # Require every original content term for a non-entity query. The
+            # OR query remains useful to build a candidate set, but accepting a
+            # partial lexical match makes unrelated prompts appear grounded.
+            # Guest-specific prompts remain eligible via their explicit boost.
+            required_matches = max(1, len(original_terms))
+            if r.episode_slug not in guest_boost_slugs and term_matches < required_matches:
+                continue
+
             plain_r = float(r.plain_rank or 0.0)
             or_r = float(r.or_rank or 0.0)
 

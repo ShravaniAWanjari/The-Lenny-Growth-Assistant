@@ -1,0 +1,582 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.82in,headheight=22pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{pifont}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+
+% -----------------------------------------------------------------------------
+% Brand and document styling
+% -----------------------------------------------------------------------------
+\definecolor{Ink}{HTML}{172033}
+\definecolor{Muted}{HTML}{667085}
+\definecolor{Rule}{HTML}{D9E0EA}
+\definecolor{Brand}{HTML}{5B4FDB}
+\definecolor{BrandDark}{HTML}{3D35A3}
+\definecolor{BrandPale}{HTML}{F0EEFF}
+\definecolor{Teal}{HTML}{087E8B}
+\definecolor{TealPale}{HTML}{E9F7F7}
+\definecolor{Amber}{HTML}{B25E09}
+\definecolor{AmberPale}{HTML}{FFF4E5}
+\definecolor{Red}{HTML}{B42318}
+\definecolor{RedPale}{HTML}{FEECEB}
+\definecolor{Green}{HTML}{067647}
+\definecolor{GreenPale}{HTML}{EAF8F1}
+\definecolor{SlatePale}{HTML}{F6F8FB}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=BrandDark,
+  urlcolor=Teal,
+  pdftitle={The Lenny Growth Assistant — Product Requirements Document},
+  pdfauthor={Forward Deployed Engineer Take-Home}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small\color{Muted}\textbf{LENNY GROWTH ASSISTANT} \enspace/\enspace PRODUCT REQUIREMENTS}
+\rhead{\small\color{Muted}FINAL}
+\cfoot{\small\color{Muted}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Rule}\leaders\hrule height \headrulewidth\hfill}}
+
+\titleformat{\section}
+  {\Large\bfseries\color{Ink}}
+  {\color{Brand}\thesection}{0.65em}{}
+  [\vspace{0.15em}{\color{Rule}\titlerule}]
+\titleformat{\subsection}
+  {\large\bfseries\color{Ink}}
+  {\thesubsection}{0.55em}{}
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\color{BrandDark}}
+  {\thesubsubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{2.1em}{0.9em}
+\titlespacing*{\subsection}{0pt}{1.55em}{0.55em}
+\titlespacing*{\subsubsection}{0pt}{1.1em}{0.35em}
+
+\setlist[itemize]{leftmargin=1.45em,itemsep=0.28em,topsep=0.35em}
+\setlist[enumerate]{leftmargin=1.65em,itemsep=0.32em,topsep=0.35em}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.58em}
+\renewcommand{\arraystretch}{1.28}
+\emergencystretch=2em
+
+\newcommand{\status}[1]{\textcolor{Green}{\textbf{#1}}}
+\newcommand{\checkbox}{\textcolor{Muted}{\ding{113}}}
+\newcommand{\flowarrow}{\textcolor{Brand}{\ensuremath{\rightarrow}}}
+\newcommand{\yes}{\textcolor{Green}{\ding{52}}}
+
+\newtcolorbox{decisionbox}{
+  enhanced,breakable,
+  colback=BrandPale,colframe=Brand,
+  boxrule=0.7pt,arc=2mm,
+  left=3mm,right=3mm,top=2.5mm,bottom=2.5mm,
+  title={\textbf{Builder decision}},
+  coltitle=white,fonttitle=\bfseries
+}
+\newtcolorbox{statusbox}[1]{
+  enhanced,breakable,
+  colback=SlatePale,colframe=Rule,
+  boxrule=0.6pt,arc=2mm,
+  left=3mm,right=3mm,top=2mm,bottom=2mm,
+  title={\textbf{Status:} #1},
+  coltitle=Ink
+}
+\newtcolorbox{principlebox}[1]{
+  enhanced,breakable,
+  colback=TealPale,colframe=Teal,
+  boxrule=0.7pt,arc=2mm,
+  left=3mm,right=3mm,top=2.5mm,bottom=2.5mm,
+  title={\textbf{#1}},coltitle=Teal
+}
+
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+
+\begin{document}
+
+% -----------------------------------------------------------------------------
+% Cover
+% -----------------------------------------------------------------------------
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[Ink] (current page.south west) rectangle (current page.north east);
+  \fill[Brand] (current page.north west) rectangle ([xshift=0.28in]current page.south west);
+  \fill[Teal] ([xshift=0.28in]current page.south west) rectangle ([xshift=0.40in]current page.north west);
+  \draw[Brand,line width=1.2pt,opacity=.55]
+    ([xshift=-3.7in,yshift=-1.0in]current page.north east) circle (2.25in);
+  \draw[Teal,line width=1.2pt,opacity=.45]
+    ([xshift=-1.1in,yshift=1.0in]current page.south east) circle (1.8in);
+\end{tikzpicture}
+
+\vspace*{0.85in}
+\hspace*{0.25in}\begin{minipage}{0.84\textwidth}
+  {\small\bfseries\color{Teal}\MakeUppercase{Forward Deployed Engineer Take-Home}}\\[1.1em]
+  {\fontsize{32}{37}\selectfont\bfseries\color{white}The Lenny\\Growth Assistant}\\[0.45em]
+  {\fontsize{18}{23}\selectfont\color{white!78}Product Requirements Document}\\[2.1em]
+
+  {\color{white!55}\rule{\linewidth}{0.5pt}}\\[1.5em]
+  \begin{tabular}{@{}L{1.15in}L{3.8in}@{}}
+    \color{white!55}\textbf{STATUS} & \color{white}\textbf{Final — Implementation Audit}\\
+    \color{white!55}\textbf{DATE} & \color{white}25 August 2026\\
+    \color{white!55}\textbf{PURPOSE} & \color{white}Define a grounded conversational assistant, content skill, and secure artifact-generation experience built on Lenny's Podcast transcripts.\\
+  \end{tabular}
+\end{minipage}
+
+\vfill
+\hspace*{0.25in}{\small\color{white!55}Implemented product specification \enspace•\enspace Version 1.0}
+\newpage
+
+% -----------------------------------------------------------------------------
+% Front matter
+% -----------------------------------------------------------------------------
+\thispagestyle{plain}
+\begin{principlebox}{Document intent}
+This PRD captures the product requirements, working assumptions, explicit trade-offs, and unresolved decisions for an AI-powered internal assistant based on Lenny's Podcast transcripts. The target outcome is a system that another team can understand, run, test, and extend.
+\end{principlebox}
+
+\begin{tabularx}{\textwidth}{@{}L{1.55in}Y@{}}
+\toprule
+\textbf{Document field} & \textbf{Value} \\
+\midrule
+Status & Final — Implementation Audit \\
+Assignment & Forward Deployed Engineer Take-Home \\
+Last updated & 25 August 2026 \\
+Primary audience & Product, growth, and engineering evaluators \\
+Decision state & Implementation decisions recorded; runtime evidence is identified separately \\
+\bottomrule
+\end{tabularx}
+
+\vspace{1em}
+\tableofcontents
+\newpage
+
+% -----------------------------------------------------------------------------
+\section{Product Overview}
+
+The Lenny Growth Assistant is an AI-powered internal assistant that enables product and growth teams to interact with knowledge drawn from Lenny's Podcast transcripts.
+
+The product will:
+\begin{itemize}
+  \item Let users ask product and growth questions conversationally through a chat interface.
+  \item Return answers grounded in the available transcript corpus using retrieval-augmented generation (RAG).
+  \item Continue conversations while preserving independent session context in a database.
+  \item Transform transcript-grounded knowledge and conversation context into structured written content, including Ship 30 for 30--style essays.
+  \item Generate Markdown and HTML/CSS artifacts, from concise summaries to small visual or UI pieces.
+  \item Treat generated HTML as untrusted content and isolate or sanitize it before rendering.
+  \item Display generated artifacts directly inside the application.
+\end{itemize}
+
+The product should make reasonable assumptions visible, communicate trade-offs, and leave behind a system another team can operate and extend.
+
+% -----------------------------------------------------------------------------
+\section{Discovery Brief}
+
+\subsection{Primary User}
+\begin{statusbox}{\status{Completed}}
+The initial audience spans product managers, growth professionals, startup founders, research-oriented product/growth teams, and internal teams looking for actionable product advice.
+\end{statusbox}
+
+\begin{decisionbox}
+Design for a broad product audience—from interns and evaluators to beta users and product leads—who want conversational access to Lenny's Podcast knowledge and interactive generated visuals. The experience should emphasize easy setup, straightforward use, safety guardrails, content quality, and application stability.
+\end{decisionbox}
+
+\subsection{User Problem}
+\begin{statusbox}{\status{Completed}}
+Users need grounded answers, reusable written content, and rendered artifacts without having to understand prompting, model selection, or infrastructure.
+\end{statusbox}
+
+The product should make it easy to explore Lenny's Podcast knowledge conversationally and convert that knowledge into useful, structured outputs.
+
+\subsection{User Jobs-to-be-Done}
+\begin{statusbox}{\status{Completed}}
+Six core scenarios define the initial jobs-to-be-done.
+\end{statusbox}
+
+\subsubsection{Scenario 1 — Solve a product or growth problem}
+When I am trying to solve a product or growth problem, I want to find relevant insights from Lenny's Podcast so that I can make a better-informed decision.
+
+\subsubsection{Scenario 2 — Discover relevant episodes}
+When I want to learn about a product or growth topic, I want to discover the most relevant episodes and experts so that I do not have to search through the entire podcast myself.
+
+\subsubsection{Scenario 3 — Compare perspectives}
+When I want to understand a product or growth topic from multiple perspectives, I want to compare insights across Lenny's guests so that I can identify patterns, disagreements, and useful approaches.
+
+\subsubsection{Scenario 4 — Explore an expert}
+When I want to understand an expert's thinking on a topic, I want to explore their relevant podcast conversations interactively so that I can go deeper without manually searching the transcript.
+
+\subsubsection{Scenario 5 — Create structured written content}
+When I have gathered useful product or growth insights, I want to turn them into structured written content so that I can reuse those insights without starting from scratch.
+
+\subsubsection{Scenario 6 — Create a usable artifact}
+When I have useful information from the conversation, I want to turn it into a usable document or artifact so that I can take the knowledge beyond the chat.
+
+% -----------------------------------------------------------------------------
+\section{Product Goals}
+
+The product must:
+\begin{enumerate}
+  \item Provide reliable answers grounded in Lenny's transcript knowledge.
+  \item Maintain independent conversational sessions.
+  \item Allow users to generate useful written content from grounded knowledge.
+  \item Allow users to generate and view artifacts within the application.
+  \item Make model and provider configuration understandable to the evaluator.
+  \item Fail clearly when the available knowledge does not support an answer.
+  \item Be reproducible and operable by another engineer.
+\end{enumerate}
+
+\begin{decisionbox}
+Use Docker for single-command setup. Ground generated content with RAG, use structured outputs where appropriate, and validate generated HTML against the user's request and safety rules. If validation fails, discard the artifact and present a safe fallback. Users should be able to write natural-language requests while the system handles prompt construction, retrieval, reliability checks, and content formatting.
+\end{decisionbox}
+
+% -----------------------------------------------------------------------------
+\section{Non-Goals}\label{sec:non-goals}
+
+\begin{statusbox}{\status{Completed}}
+The following boundaries are final for this take-home implementation and define the initial scope.
+\end{statusbox}
+
+\begin{itemize}
+  \item General-purpose web search.
+  \item Knowledge outside the supplied transcript corpus.
+  \item Autonomous execution of external actions; this is not a general-purpose autonomous agent.
+  \item Multi-user collaboration or authentication in the initial version.
+  \item Production-scale traffic and production-hardening beyond the take-home requirements.
+  \item Complex document editing; the product is not intended to be a full document editor.
+  \item Persistent user profiles beyond assignment requirements.
+\end{itemize}
+
+% -----------------------------------------------------------------------------
+\section{Core User Tasks}
+
+The initial product comprises three major capabilities.
+
+\subsection{Grounded Conversational Assistant}
+Users should be able to:
+\begin{enumerate}
+  \item Start a new chat.
+  \item Ask a product or growth question.
+  \item Receive an answer grounded in the transcript knowledge base.
+  \item Ask follow-up questions.
+  \item Receive answers that preserve session context.
+  \item See the relevant transcript or source used.
+  \item Be told when the available material does not support an answer.
+  \item Generate a reusable structured document, such as an article, information table, or key-point summary.
+  \item Generate HTML pages, infographics, or Markdown when a visual or structured format communicates the answer more effectively.
+\end{enumerate}
+
+The implementation must use a RAG or long-context approach and provide source grounding.
+
+\subsection{Ship 30 for 30 Content Skill}
+Users should be able to request a Ship 30 for 30--style essay based on grounded knowledge. The writing principles will be encoded from \emph{How to Start Writing Online — The Ship 30 for 30 Ultimate Guide}.
+
+The generated content should approximately:
+\begin{itemize}
+  \item Contain 1,250 words.
+  \item Begin with a strong hook.
+  \item Maintain clear narrative progression.
+  \item Be easy to skim.
+  \item Use headings, bullets, and selective emphasis.
+  \item Provide a specific, useful takeaway.
+  \item Ground its claims in the transcript knowledge base.
+\end{itemize}
+
+These principles must be implemented as a dedicated skill or tool rather than relying solely on an unstructured prompt.
+
+\subsection{Artifact Generation}
+Users should be able to request Markdown documents and HTML/CSS artifacts, including:
+\begin{itemize}
+  \item Small UI pieces.
+  \item Information summaries.
+  \item Key summary points in Markdown.
+  \item Visual representations of information.
+  \item Infographics or visual explanations where appropriate.
+\end{itemize}
+
+Generated artifacts should appear in an Artifact Viewer modal launched from the chat rather than only as raw code or in another application. Generated HTML must be treated as untrusted and rendered through an explicit isolation or sanitization strategy.
+
+% -----------------------------------------------------------------------------
+\section{User Flows}
+
+\begin{tcolorbox}[colback=SlatePale,colframe=Rule,boxrule=.6pt,arc=2mm]
+\textbf{Flow A — Ask a question}\\[0.2em]
+New Chat \flowarrow{} Ask Question \flowarrow{} Retrieve Knowledge \flowarrow{} Generate Answer \flowarrow{} Show Sources
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=SlatePale,colframe=Rule,boxrule=.6pt,arc=2mm]
+\textbf{Flow B — Follow-up}\\[0.2em]
+Existing Session \flowarrow{} Follow-up Question \flowarrow{} Session Context + Relevant Knowledge \flowarrow{} Answer
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=SlatePale,colframe=Rule,boxrule=.6pt,arc=2mm]
+\textbf{Flow C — Generate essay}\\[0.2em]
+Conversation \flowarrow{} Request Ship 30 Essay \flowarrow{} Grounded Content Generation \flowarrow{} Display Result
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=SlatePale,colframe=Rule,boxrule=.6pt,arc=2mm]
+\textbf{Flow D — Generate artifact}\\[0.2em]
+Conversation \flowarrow{} Request Artifact \flowarrow{} Generate Markdown/HTML/CSS \flowarrow{} Artifact Viewer
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=AmberPale,colframe=Amber,boxrule=.6pt,arc=2mm]
+\textbf{Flow E — Unsupported question}\\[0.2em]
+Question \flowarrow{} Insufficient Knowledge \flowarrow{} Explain Limitation \flowarrow{} Avoid Unsupported Claim
+\end{tcolorbox}
+
+% -----------------------------------------------------------------------------
+\section{Success Metrics}
+
+\begin{statusbox}{\status{Completed}}
+The product will track quality, reliability, and operational readiness rather than relying on a single aggregate metric.
+\end{statusbox}
+
+\subsection{Product Quality}
+\begin{itemize}
+  \item Percentage of evaluated answers that are correctly grounded.
+  \item Percentage of answers containing an appropriate source citation.
+  \item Percentage of unsupported questions correctly identified rather than hallucinated.
+\end{itemize}
+
+\subsection{Reliability}
+\begin{itemize}
+  \item Successful request completion rate.
+  \item Retrieval failure rate.
+  \item Model failure rate.
+  \item Database failure recovery rate.
+\end{itemize}
+
+\subsection{Operational Readiness}
+\begin{itemize}
+  \item Time required for a fresh evaluator to get the application running.
+  \item Percentage of critical workflows covered by automated tests.
+\end{itemize}
+
+% -----------------------------------------------------------------------------
+\section{Assumptions}
+
+\begin{statusbox}{\status{Completed}}
+The assignment is intentionally incomplete. Every material implementation assumption will be documented rather than hidden in code.
+\end{statusbox}
+
+Assumptions must be made explicit for:
+\begin{itemize}
+  \item Primary user and expected usage.
+  \item Transcript corpus and knowledge freshness.
+  \item Authentication and user identity.
+  \item Session lifetime.
+  \item Model availability and local machine capabilities.
+  \item Supported artifact types.
+  \item Security boundaries.
+  \item Expected evaluation environment.
+\end{itemize}
+
+% -----------------------------------------------------------------------------
+\section{Scope}
+
+\subsection{In Scope}
+\begin{itemize}
+  \item Conversational assistant with session isolation and context.
+  \item Transcript knowledge base, grounded answers, and source identification.
+  \item Ship 30 for 30 content skill.
+  \item Markdown and HTML/CSS generation with an in-app Artifact Viewer.
+  \item Cloud model and local Ollama configuration.
+  \item PostgreSQL persistence.
+  \item API validation and structured errors.
+  \item Health endpoints, logging, observability, and failure handling.
+  \item Reproducible startup, automated tests, and documentation.
+\end{itemize}
+
+\subsubsection{Finalized Technology Decisions}
+\begin{tabularx}{\textwidth}{@{}L{2.05in}Y@{}}
+\toprule
+\textbf{Area} & \textbf{Decision} \\
+\midrule
+Backend API & \textbf{FastAPI} \\
+Database & \textbf{PostgreSQL 16} \\
+Cloud LLM & \textbf{Google Gemini} \\
+Local LLM & \textbf{Ollama} \\
+Local model & \textbf{llama3.2} (configured default; \texttt{llama3.2:latest} is accepted) \\
+Agent framework & \textbf{Pi Agent} using the \texttt{@earendil-works} Pi packages \\
+Frontend & \textbf{Vanilla HTML, CSS, and JavaScript} served by FastAPI \\
+Retrieval implementation & \textbf{PostgreSQL full-text search}: normalized query terms, \texttt{tsquery} ranking, topic/guest boosting, and a relevance threshold \\
+Embedding model & \textbf{None}; this implementation does not use embeddings \\
+Vector storage/indexing & \textbf{PostgreSQL \texttt{TSVECTOR}} with a GIN index on transcript chunks \\
+Deployment topology & \textbf{Local Docker Compose}: FastAPI/static frontend, Pi Agent, PostgreSQL, and Ollama on a private bridge network \\
+Observability stack & \textbf{Process logs plus FastAPI health/status endpoints}; no external observability service \\
+Testing stack & \textbf{Pytest} with FastAPI \texttt{TestClient}, mocks, and static configuration/UI contract checks \\
+CI/CD & \textbf{Not configured}; reproducible local Compose startup is the take-home delivery path \\
+\bottomrule
+\end{tabularx}
+
+\subsection{Out of Scope}
+The out-of-scope boundary is final for this take-home and is defined in Section~\ref{sec:non-goals}.
+
+% -----------------------------------------------------------------------------
+\section{Risks and Trade-offs}
+
+\small
+\begin{longtable}{@{}L{1.60in}L{0.78in}L{3.18in}L{0.72in}@{}}
+\toprule
+\textbf{Risk} & \textbf{Impact} & \textbf{Mitigation} & \textbf{State} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Risk} & \textbf{Impact} & \textbf{Mitigation} & \textbf{State} \\
+\midrule
+\endhead
+Hallucinated answers & \textcolor{Red}{High} & Retrieved transcript context, source metadata, and a corpus-limited refusal instruction & \status{Implemented; unmeasured} \\
+Weak local model & \textcolor{Red}{High} & Configurable Ollama endpoint/model; \texttt{llama3.2} is documented for the evaluator & \status{Implemented; hardware-dependent} \\
+Retrieval misses relevant context & \textcolor{Red}{High} & PostgreSQL FTS, topic/guest boosting, follow-up query enrichment, and relevance thresholds & \status{Implemented; benchmark unmeasured} \\
+High latency & \textcolor{Amber}{Med.--high} & Local FTS and a 90-second Pi Agent request timeout; provider selection is visible & \status{Mitigated; latency unmeasured} \\
+Cloud model cost & \textcolor{Amber}{Medium} & Explicit Cloud selection and bring-your-own Gemini API key & \status{Implemented; no cost telemetry} \\
+Unsafe HTML & \textcolor{Red}{High} & \texttt{nh3} allowlist/sanitization or rejection plus iframe sandbox without scripts & \status{Implemented} \\
+Database failure & \textcolor{Red}{High} & PostgreSQL health check, Compose dependency checks, and database health endpoint & \status{Implemented; recovery unmeasured} \\
+Missing model/API credentials & \textcolor{Amber}{Medium} & Documented environment variables and provider-specific errors; no silent provider fallback & \status{Implemented} \\
+\bottomrule
+\end{longtable}
+\normalsize
+
+% -----------------------------------------------------------------------------
+\section{Acceptance Criteria}
+
+\begin{statusbox}{\status{Finalized for the implemented take-home}}
+The following checklist defines the current minimum acceptance boundary.
+\end{statusbox}
+
+\subsection{Conversational Assistant}
+\begin{itemize}[label=\checkbox]
+  \item User can start a new session.
+  \item Sessions maintain independent context.
+  \item User can ask product and growth questions.
+  \item Answers are grounded in transcript knowledge.
+  \item Relevant sources are identified.
+  \item Unsupported questions are acknowledged appropriately.
+  \item User can request structured outputs from the conversation.
+\end{itemize}
+
+\subsection{Content Skill}
+\begin{itemize}[label=\checkbox]
+  \item User can request a Ship 30 for 30--style essay.
+  \item Output follows the defined content requirements.
+  \item Claims remain grounded in available knowledge.
+  \item Ship 30 for 30 writing principles are implemented as a dedicated skill or tool.
+\end{itemize}
+
+\subsection{Artifacts}
+\begin{itemize}[label=\checkbox]
+  \item User can request Markdown.
+  \item User can request HTML/CSS.
+  \item Generated artifacts render inside the application.
+  \item HTML rendering does not expose the host application to untrusted content.
+  \item Invalid, unsafe, or broken generated HTML is handled through the defined fallback behavior.
+\end{itemize}
+
+\subsection{Models}
+\begin{itemize}[label=\checkbox]
+  \item Gemini cloud model can be selected and configured.
+  \item Ollama/local model can be used for the demo.
+  \item Provider selection is visible and documented.
+  \item Failure behavior is understandable.
+\end{itemize}
+
+\subsection{Database}
+\begin{itemize}[label=\checkbox]
+  \item PostgreSQL stores sessions.
+  \item PostgreSQL stores conversation messages.
+  \item Sessions maintain independent context.
+  \item Database failures are handled gracefully.
+\end{itemize}
+
+\subsection{Operations}
+\begin{itemize}[label=\checkbox]
+  \item Application can be started through the documented setup process.
+  \item No secrets are committed.
+  \item Health endpoints exist.
+  \item Important failures are observable.
+  \item Critical workflows have automated tests.
+\end{itemize}
+
+% -----------------------------------------------------------------------------
+\section{Implementation Plan}
+
+The implementation was delivered in six completed phases. The remaining human submission tasks are tracked separately in \texttt{docs/FINAL\_DELIVERABLE\_CHECKLIST.md}.
+\begin{enumerate}
+  \item \textbf{Foundation} --- FastAPI, the Pi Agent service, environment configuration, PostgreSQL Compose setup, and health endpoints.
+  \item \textbf{Knowledge Base / RAG} --- transcript validation, normalization, timestamp-preserving chunking, PostgreSQL loading, FTS vectors, GIN index, and topic indexes.
+  \item \textbf{Sessions / Persistence} --- isolated session/message storage, recent-history retrieval, title updates, and cascading deletion.
+  \item \textbf{Skills / Artifacts / Security} --- Ship 30 and structured-content skills, Markdown/HTML artifacts, \texttt{nh3} sanitization/rejection, and sandboxed rendering.
+  \item \textbf{Frontend} --- cinematic hero, named provider selector, conversation workspace, session drawer, source cards, and artifact modal.
+  \item \textbf{Production / Deliverables} --- local production Docker Compose, health checks, documentation, automated-test suite, manual UI plan, and redacted agent transcripts.
+\end{enumerate}
+
+\begin{principlebox}{Decision framework}
+\centering
+\textbf{Requirement} \flowarrow{} \textbf{Options} \flowarrow{} \textbf{Trade-offs} \flowarrow{} \textbf{Decision} \flowarrow{} \textbf{Reason}
+\end{principlebox}
+
+% -----------------------------------------------------------------------------
+\section{Resolved Decisions}
+
+\begin{enumerate}
+  \item \textbf{Primary user:} a broad product-and-growth audience, including evaluators, founders, and product leads, using the app as an individual local user.
+  \item \textbf{Primary job:} obtain corpus-grounded product/growth insight and turn it into reusable written or visual output.
+  \item \textbf{Ideal interaction:} ask a question, receive a grounded answer with sources, follow up in an isolated session, and optionally generate a Ship 30 essay or artifact.
+  \item \textbf{Refusal boundary:} refuse unsupported corpus questions and prevent unsafe HTML from rendering; the product does not perform web search or external actions.
+  \item \textbf{MVP boundary:} grounded chat, session persistence, visible provider selection, dedicated skills, artifacts, and security controls; collaboration, authentication, web search, and complex editing remain excluded.
+  \item \textbf{Success measurement:} evaluate grounded-answer accuracy, citation rate, unsupported-question refusal rate, request completion/failure rates, evaluator setup time, and critical-workflow coverage. No unmeasured metric is presented as a result.
+  \item \textbf{Operating assumptions:} local Docker-capable machine, supplied corpus, bring-your-own Gemini key for Cloud mode, and installed/pulled Ollama model for Local mode.
+  \item \textbf{Failure behavior:} provider-specific UI errors, structured API errors, health/status diagnostics, corpus-limited refusal, and artifact valid/sanitized/rejected states.
+\end{enumerate}
+
+% -----------------------------------------------------------------------------
+\section{Decision Log}
+
+\footnotesize
+\begin{longtable}{@{}L{1.18in}L{1.72in}L{1.20in}L{2.18in}@{}}
+\toprule
+\textbf{Decision} & \textbf{Options considered} & \textbf{Current decision} & \textbf{Reason} \\
+\midrule
+Primary user & Intern/evaluator, product manager, growth practitioner, founder & \textbf{Broad individual product/growth audience} & Matches the supplied PRD and local, unauthenticated experience \\
+Core user job & Search transcripts, grounded answer, reusable output & \textbf{Grounded insight plus reusable writing/artifacts} & Combines the implemented chat, sources, skills, and artifact viewer \\
+MVP scope & Narrow retrieval chat versus full workflow & \textbf{RAG, sessions, providers, skills, artifacts, security} & These capabilities are implemented; excluded scope remains documented \\
+Success metrics & Quality, reliability, operational readiness & \textbf{All listed target metrics; no fabricated results} & Supports evaluator review without inventing measurements \\
+Backend API & FastAPI / alternatives & \textbf{FastAPI} & Implemented API and static-file server \\
+Database & PostgreSQL / SQLite & \textbf{PostgreSQL 16} & Required persistence and FTS implementation \\
+Cloud LLM & Gemini / other cloud providers & \textbf{Gemini} & Implemented Cloud provider with API-key configuration \\
+Local LLM & Ollama / other runtimes & \textbf{Ollama} & Required Local provider and demo path \\
+Local model & Candidate Ollama models & \textbf{llama3.2} & Current configured default for the repository \\
+Frontend & Framework / no framework & \textbf{Vanilla HTML, CSS, JavaScript} & Implemented static frontend served by FastAPI \\
+Agent layer & Pi / other agent SDKs & \textbf{Pi Agent} & Implemented Node/TypeScript orchestration service \\
+Retrieval & FTS / embeddings / vector DB & \textbf{PostgreSQL FTS with topic/guest boosting} & Uses the existing chunk corpus without an embedding dependency \\
+Embeddings & Embedding model / none & \textbf{None} & No embedding model is implemented \\
+Vector storage & Vector DB / PostgreSQL FTS & \textbf{PostgreSQL \texttt{TSVECTOR} and GIN} & Matches the implemented schema and query path \\
+Artifact isolation & Sanitization / sandboxing / both & \textbf{Both} & Backend sanitization/rejection and browser iframe sandbox are implemented \\
+Deployment & Cloud / local Compose & \textbf{Local production Compose} & Reproducible take-home topology with no public deployment \\
+Observability & External platform / local diagnostics & \textbf{Logs plus health/status endpoints} & Sufficient for the assignment; no large monitoring system added \\
+Testing & Unit/integration/manual checks & \textbf{Pytest plus manual UI plan} & Existing test suite and submission checklist support evaluator validation \\
+CI/CD & Hosted pipeline / none & \textbf{No CI/CD configured} & Not required for the local take-home delivery \\\bottomrule
+\end{longtable}
+\normalsize
+
+\vfill
+\begin{center}
+  {\color{Rule}\rule{0.7\textwidth}{0.5pt}}\\[0.7em]
+  {\small\color{Muted}End of working product requirements document}
+\end{center}
+
+\end{document}

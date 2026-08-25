@@ -16,10 +16,10 @@ client = TestClient(app)
 def test_health():
     response = client.get("/health")
     assert response.status_code == 200
-    assert response.json() == {
-        "status": "ok",
-        "service": "lenny-growth-assistant",
-    }
+    data = response.json()
+    assert data["status"] == "ok"
+    assert data["service"] == "lenny-growth-assistant"
+    assert {"app_status", "db_ready", "pi_agent_ready", "ollama_ready", "episodes_count", "chunks_count"} <= data.keys()
 
 
 def test_database_health():

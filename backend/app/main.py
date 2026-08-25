@@ -723,6 +723,12 @@ async def chat(request: ChatRequest, db: Session = Depends(get_db)):
 # -----------------------------------------------------------------------------
 
 if FRONTEND_DIR.exists():
+    # Public assets are kept separately from the HTML/CSS/JS source. Mount this
+    # more-specific path first so `/static/assets/...` resolves as referenced by
+    # the application shell and tests.
+    PUBLIC_ASSETS_DIR = FRONTEND_DIR / "public" / "assets"
+    if PUBLIC_ASSETS_DIR.exists():
+        app.mount("/static/assets", StaticFiles(directory=str(PUBLIC_ASSETS_DIR)), name="public-assets")
     app.mount("/static", StaticFiles(directory=str(FRONTEND_DIR)), name="static")
 
     @app.get("/", include_in_schema=False)
