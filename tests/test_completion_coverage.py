@@ -114,12 +114,14 @@ def test_validation_preserves_source_metadata_and_commit(tmp_path):
 
 def test_production_compose_declares_required_services_and_health_checks():
     compose = (ROOT / "docker-compose.prod.yml").read_text(encoding="utf-8")
-    for service in ("ollama:", "postgres:", "pi-agent:", "backend:"):
+    for service in ("ollama:", "ollama-init:", "postgres:", "pi-agent:", "backend:"):
         assert service in compose
     assert "pg_isready -U lenny -d lenny" in compose
     assert "http://localhost:3001/health" in compose
     assert '"8000:8000"' in compose
     assert "lenny_prod_pgdata" in compose
+    assert 'ollama pull "$${OLLAMA_MODEL}"' in compose
+    assert "service_completed_successfully" in compose
 
 
 def test_frontend_assets_and_artifact_download_contract_are_present():

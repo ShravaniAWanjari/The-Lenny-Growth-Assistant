@@ -40,13 +40,7 @@ Set `GEMINI_API_KEY` in `.env`, start the stack, then select **Cloud**. A missin
 
 ### Ollama / Local
 
-Install Ollama, then pull the required model:
-
-```bash
-ollama pull llama3.2
-```
-
-Compose includes an Ollama service but does not automatically pull a model. If its volume is empty, run `docker exec -it lenny-prod-ollama ollama pull llama3.2` after startup. Local provider failure does not silently fall back to Cloud.
+Compose provisions Ollama and automatically pulls `OLLAMA_MODEL` (default: `llama3.2`) on the first startup. The model is retained in the named Docker volume, so later startups do not download it again. The first run needs network access and may take several minutes; the Pi Agent and backend wait until the pull succeeds. Local provider failure does not silently fall back to Cloud.
 
 ## Start
 

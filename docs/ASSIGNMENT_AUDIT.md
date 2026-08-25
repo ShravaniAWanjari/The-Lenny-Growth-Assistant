@@ -34,7 +34,7 @@ The project also has a GitHub remote configured as `ShravaniAWanjari/The-Lenny-G
 These are not missing repository files, but should be completed before submission:
 
 1. Push the current working tree and make the GitHub repository public. Verify it from a signed-out browser session.
-2. Complete the local-model demonstration: Ollama is healthy but currently has no installed model. Run `docker compose -f docker-compose.prod.yml exec ollama ollama pull llama3.2`, then verify a local response.
+2. Record the local-model demonstration in the video. Compose now provisions `llama3.2` automatically on first startup and the Local chat path has been verified.
 3. Follow `tests/MANUAL_UI_TEST_PLAN.md` and record the remaining browser-level evidence, including source inspection and artifact preview.
 4. Record and upload the required 2–3 minute, camera-enabled YouTube demo. Use `docs/DEMO_SCRIPT.md`; include the local-model demonstration and one technical trade-off.
 5. Submit the public repository and YouTube link through the assignment form.
@@ -42,7 +42,7 @@ These are not missing repository files, but should be completed before submissio
 ## Implementation risks to mention or address
 
 - Application logging currently uses console/print output rather than a structured logging format. It provides basic operational output but does not fully meet a strict interpretation of the observability requirement.
-- The production Docker stack was rebuilt and exercised on 26 August 2026. The remaining runtime gap is local inference: the Ollama server is healthy but no model has finished downloading.
+- The production Docker stack was rebuilt and exercised on 26 August 2026. Compose now provisions `llama3.2` through a one-shot initializer, and Local inference has completed successfully.
 - The assignment calls for graceful failure behavior. The Pi-agent connection path has timeout/error handling, but a live walkthrough should deliberately demonstrate the missing-key, unavailable-Ollama, and empty-retrieval states.
 
 ## Submission decision

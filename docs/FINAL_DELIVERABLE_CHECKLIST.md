@@ -12,7 +12,7 @@ Audit date: 26 August 2026. Checked items are repository artifacts verified in t
 - [x] Manual UI test plan
 - [ ] 2–3 minute demo video
 - [ ] Camera enabled in demo
-- [ ] Local Ollama demonstrated (model download still required)
+- [ ] Local Ollama demonstrated (ready to record in the video)
 - [ ] Technical trade-off explained
 - [ ] YouTube upload
 - [ ] Submission form
@@ -25,7 +25,7 @@ Audit date: 26 August 2026. Checked items are repository artifacts verified in t
 - [x] PostgreSQL persists
 - [x] Sessions persist
 - [x] RAG works
-- [ ] Local model works (Ollama is running but has no installed model)
+- [x] Local model works
 - [x] Cloud model works
 - [x] Artifact security works
 - [x] Production Docker works
@@ -37,5 +37,5 @@ Audit date: 26 August 2026. Checked items are repository artifacts verified in t
 - On 26 August 2026, `docker compose -f docker-compose.prod.yml up --build -d` rebuilt and started the backend, PostgreSQL, Pi agent, and Ollama. `/health` then reported `ready`, 297 episodes, and 14,933 chunks.
 - A grounded retrieval returned three results, including Todd Jackson. Gemini completed a chat request, and an unsupported black-hole question returned zero sources and the explicit refusal: insufficient transcript information.
 - A chat session retained its two messages after restarting the production backend, verifying PostgreSQL-backed session persistence.
-- Ollama is healthy but `/api/tags` returned no installed models. The local-model path and the video demonstration remain unchecked until `llama3.2` finishes downloading and a local response succeeds.
+- The `ollama-init` Compose service automatically pulled `llama3.2` into the persistent volume. `/api/tags` listed `llama3.2:latest`, and a Local chat request completed successfully. The video demonstration remains a human-recording task.
 - Real Antigravity IDE transcripts for Phases 1–5 and Phase 6 are included in `agent-transcripts/`; see `agent-transcripts/README.md` for source session IDs and redaction details.

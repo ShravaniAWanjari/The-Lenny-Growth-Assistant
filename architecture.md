@@ -17,9 +17,9 @@ The vanilla frontend is split by responsibility rather than a component framewor
 | Method | Path | Purpose | Request | Response / errors |
 | --- | --- | --- | --- | --- |
 | GET | `/` | Serve app shell | None | `index.html`; fallback message if missing. |
-| GET | `/health` | Lightweight service probe | None | service status; note duplicate route definitions mean the later minimal response is active. |
+| GET | `/health` | Detailed system readiness probe | None | service status, dependency readiness, and corpus counts. |
 | GET | `/status` | Readiness state | None | DB/Pi/Ollama readiness and corpus counts. |
-| GET | `/health/db` | PostgreSQL probe | None | `200` database status; `500` on DB exception (later route definition is active). |
+| GET | `/health/db` | PostgreSQL probe | None | `200` database status; `503` on database exception. |
 | GET | `/sessions` | List sessions | None | Session summaries, newest first. |
 | POST | `/sessions` | Create a session | optional `{metadata}` | `201` session summary. |
 | GET | `/sessions/{session_id}` | Fetch session metadata | Path ID | `200` summary; `404` unknown ID. |
@@ -84,5 +84,4 @@ The local production topology is PostgreSQL + Pi Agent + FastAPI/static frontend
 docker compose -f docker-compose.prod.yml up --build
 ```
 
-`backend` is the only app service published at `:8000`; Ollama is published at `:11434` and PostgreSQL is loopback-bound at `:5432`. Compose healthchecks gate backend startup on PostgreSQL and Pi Agent; Ollama model download remains an operator step.
-
+`backend` is the only app service published at `:8000`; Ollama is published at `:11434` and PostgreSQL is loopback-bound at `:5432`. On a fresh Docker volume, the one-shot `ollama-init` service pulls `OLLAMA_MODEL` (default `llama3.2`) before Pi Agent and backend startup. The named volume retains the model for subsequent startups.
