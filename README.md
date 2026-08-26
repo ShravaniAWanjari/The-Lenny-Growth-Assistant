@@ -106,15 +106,7 @@ There are 78 pytest tests covering API, retrieval/routing, persistence/sessions,
 
 ## Known limitations
 
-No web search or corpus freshness mechanism exists. There is no authentication, multi-user collaboration, public deployment, autonomous action, or complex document editing. Retrieval is FTS rather than semantic embeddings. Artifact data is response/message metadata, not a dedicated database record. Local model quality/latency depend on host hardware and the installed Ollama model.
-
-## Extending the system
-
-- Add ingestion-compatible transcript sources through `backend/app/ingestion`, retaining timestamp/source tracing.
-- Change ranking in `backend/app/retrieval.py` and update retrieval tests.
-- Add a skill under `agent/skills/<name>/SKILL.md`; `agent/src/skills.ts` loads trigger metadata.
-- Add endpoints/schemas in `backend/app/main.py`, with contract documentation and tests.
-- Preserve untrusted-data prompting and artifact sanitization/sandbox boundaries.
+No web search or corpus freshness mechanism exists. There is no authentication, multi-user collaboration, public deployment, autonomous action, or complex document editing. Retrieval is FTS rather than semantic embeddings. Artifact data is response/message metadata, not a dedicated database record. Local model quality/latency depends on host hardware.
 
 ## Submission documents
 
