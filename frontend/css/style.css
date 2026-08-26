@@ -1941,7 +1941,15 @@ body {
   .hero-nav {
     top: 0;
     justify-content: space-between;
-    padding: 0.85rem 1rem 0;
+    min-height: 4.5rem;
+    padding: 0.65rem 1rem;
+    box-sizing: border-box;
+    background:
+      linear-gradient(135deg, rgba(20, 27, 35, 0.54), rgba(7, 10, 19, 0.42));
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(18px) saturate(125%);
+    -webkit-backdrop-filter: blur(18px) saturate(125%);
   }
 
   .nav-controls {
@@ -1963,6 +1971,16 @@ body {
   .app-status-badge {
     font-size: 0.625rem;
     padding: 0.05rem 0.2rem;
+  }
+
+  .session-drawer {
+    top: 4.5rem;
+    height: calc(100dvh - 4.5rem);
+    padding-top: 1.25rem;
+  }
+
+  .close-btn {
+    touch-action: manipulation;
   }
 
   .hero-content {
@@ -1999,7 +2017,8 @@ body {
   }
 
   .conversation-workspace {
-    padding: 4.5rem 1rem 11.5rem;
+    /* Keep a small mobile landing area below the composer without a long empty tail. */
+    padding: 4.5rem 1rem 3.5rem;
     min-height: 100vh;
     min-height: 100dvh;
     box-sizing: border-box;

@@ -158,3 +158,27 @@ def test_frontend_assets_and_artifact_download_contract_are_present():
     assert "allow-scripts" not in iframe_tag
     assert "downloadCurrentArtifact" in js
     assert "URL.createObjectURL" in js
+    assert "const providerName = data.model" in js
+    assert "data.provider === 'gemini' ? 'Gemini 2.5 Flash'" not in js
+
+    css = client.get("/static/css/style.css").text
+    assert "min-height: 4.5rem;" in css
+    assert "top: 4.5rem;" in css
+    assert "linear-gradient(135deg, rgba(20, 27, 35, 0.54), rgba(7, 10, 19, 0.42))" in css
+    assert "blur(18px) saturate(125%)" in css
+    assert "height: calc(100dvh - 4.5rem);" in css
+    assert "touch-action: manipulation;" in css
+    mobile_workspace_header = css.split("@media (max-width: 768px)", 1)[1].split(".active-session-meta", 1)[0]
+    assert "position: sticky" not in mobile_workspace_header.split(".workspace-header", 1)[1]
+    assert "elements.closeDrawerBtn.addEventListener('click', (e) => {" in js
+    assert "elements.drawerBackdrop.addEventListener('click', closeDrawer);" in js
+
+
+def test_pi_agent_has_distinct_explicit_and_ordinary_out_of_scope_copy():
+    agent = (ROOT / "agent" / "src" / "agent.ts").read_text(encoding="utf-8")
+
+    assert "function isExplicitOutOfScopePrompt" in agent
+    assert "While I'd love to chat about that" in agent
+    assert "my scope of discussions is limited to product management, growth, and company building" in agent
+    assert "if (isExplicitOutOfScopePrompt(prompt))" in agent
+    assert "return `${scope} ${invitation}`" in agent

@@ -114,7 +114,7 @@
       elements.providerCloudBtn.setAttribute('aria-checked', 'true');
       elements.providerLocalBtn.classList.remove('active');
       elements.providerLocalBtn.setAttribute('aria-checked', 'false');
-      elements.activeProviderLabel.textContent = 'Cloud (Gemini 2.5 Flash)';
+      elements.activeProviderLabel.textContent = 'Cloud (Gemini)';
     } else {
       elements.providerSelector.classList.remove('cloud-active');
       elements.providerLocalBtn.classList.add('active');
@@ -649,7 +649,9 @@
     const row = document.createElement('div');
     row.className = 'message-row assistant';
 
-    const providerName = data.provider === 'gemini' ? 'Gemini 2.5 Flash' : (data.model || 'Ollama Local');
+    // Display the exact model selected by the provider. Gemini may fall back
+    // through several candidates, so a hard-coded family label is misleading.
+    const providerName = data.model || (data.provider === 'gemini' ? 'Gemini' : 'Ollama Local');
     let responseText = data.response || '';
     if (data.artifact && data.artifact.type === 'html') {
       responseText = responseText
@@ -1050,7 +1052,12 @@
 
     // Drawer Toggle
     elements.sessionsToggleBtn.addEventListener('click', openDrawer);
-    elements.closeDrawerBtn.addEventListener('click', closeDrawer);
+    elements.closeDrawerBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      closeDrawer();
+    });
+    // Preserve click-outside-to-close behavior on the drawer backdrop.
     elements.drawerBackdrop.addEventListener('click', closeDrawer);
     // Delegated fallback keeps the close control working if the drawer header
     // is re-rendered or the click originates on the × text node.
