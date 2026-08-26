@@ -104,6 +104,17 @@ function isConversationalPrompt(prompt: string): boolean {
   return patterns.some((re) => re.test(p));
 }
 
+function isGraphRequest(prompt: string): boolean {
+  return /\b(graph|chart|plot|bar\s+graph|pie\s+chart|data\s+visuali[sz]ation)\b/i.test(prompt);
+}
+
+function stripSpeakerLabels(text: string): string {
+  return text
+    .replace(/^\s*(user|assistant)\s*:\s*/gim, "")
+    .replace(/\n\s*(user|assistant)\s*:\s*/gi, "\n")
+    .trim();
+}
+
 export function buildSystemPrompt(activeSkill?: SkillDefinition | null): string {
   let basePrompt = `You are The Lenny Growth Assistant, an expert AI advisor in product management, growth strategy, and company building powered exclusively by Lenny's Podcast transcripts.
 
@@ -116,6 +127,10 @@ CRITICAL OPERATIONAL & GROUNDING RULES:
    - Answer using ONLY the provided transcript evidence in <RETRIEVED_TRANSCRIPT_CONTEXT> and previous conversation context in <CONVERSATION_HISTORY>.
    - Ground your answer in the specific perspectives shared by the guests. Explicitly cite the guest name(s) and episode context when presenting their ideas or quotes.
    - When multiple guests have contrasting or complementary viewpoints, clearly distinguish their perspectives.
+   - Preserve every qualifier on numerical or time-based claims exactly. For example, never turn "five to seven years in tech" into "five to seven years in leadership."
+   - Do not infer extra symptoms, causes, recommendations, surveys, or career details unless a provided passage directly supports them.
+   - Multiple retrieved passages from the same episode are still one episode. Never invent numbered episodes, source titles, or citations. Refer only to the episode names and timestamps supplied in the source headers.
+   - Prefer a concise synthesis of two to four evidence-backed points. Cite claims inline as "Guest (timestamp)" so the user can match them to the returned source cards.
    - Do NOT invent, assume, or hallucinate facts, metrics, or advice not present in the transcripts.
    - If the transcript context does not contain enough information to answer a domain question reliably, respond with:
      "I couldn't find enough information in the available Lenny's Podcast transcripts to answer that reliably."
@@ -142,6 +157,18 @@ function getConversationalGreetingResponse(prompt: string): string {
 export async function generateChatResponse(options: GenerateOptions): Promise<GenerateResult> {
   const provider = (options.provider || process.env.LLM_PROVIDER || "gemini").toLowerCase();
 
+  if (isGraphRequest(options.prompt)) {
+    return {
+      response: "I can't generate graphs or charts in this chat. I can write the analysis as Markdown or create a visual HTML card/table instead.",
+      provider,
+      model: options.model || (provider === "gemini" ? "gemini-3.6-flash" : process.env.OLLAMA_MODEL || "ollama"),
+      sources: [],
+      skill_invoked: null,
+      content: null,
+      artifact: null,
+    };
+  }
+
   // 1. Detect Active Skill
   loadSkills();
   const activeSkill = detectSkill(options.prompt);
@@ -162,7 +189,7 @@ export async function generateChatResponse(options: GenerateOptions): Promise<Ge
     return {
       response: "I couldn't find enough information in the available Lenny's Podcast transcripts to answer that reliably.",
       provider,
-      model: options.model || (provider === "gemini" ? "gemini-2.5-flash" : process.env.OLLAMA_MODEL || "ollama"),
+      model: options.model || (provider === "gemini" ? "gemini-3.6-flash" : process.env.OLLAMA_MODEL || "ollama"),
       sources: [],
       skill_invoked: activeSkill ? activeSkill.name : null,
       content: null,
@@ -208,7 +235,7 @@ Please provide your answer based on the transcripts and active skill rules:`;
       return {
         response: getConversationalGreetingResponse(options.prompt),
         provider,
-        model: options.model || (provider === "gemini" ? "gemini-2.5-flash" : "llama3.2"),
+        model: options.model || (provider === "gemini" ? "gemini-3.6-flash" : "llama3.2"),
         sources: [],
         skill_invoked: null,
         content: null,
@@ -217,6 +244,9 @@ Please provide your answer based on the transcripts and active skill rules:`;
     }
     throw err;
   }
+
+  // Models occasionally echo prompt transcript labels into their answer.
+  rawResult.response = stripSpeakerLabels(rawResult.response);
 
   // If conversational prompt and model returned empty, use greeting response
   if (isConversational && (!rawResult.response || !rawResult.response.trim())) {
@@ -331,9 +361,9 @@ async function generateGeminiResponse(
   }
 
   const modelCandidates = [
-    options.model || "gemini-2.5-flash",
-    "gemini-3.5-flash",
-    "gemini-3.5-flash-lite",
+    options.model || "gemini-3.6-flash",
+    "gemini-3.6-flash",
+    "gemini-3.6-flash-lite",
     "gemini-3-flash-preview",
     "gemini-2.5-pro",
   ];

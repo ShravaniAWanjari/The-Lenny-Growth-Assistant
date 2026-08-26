@@ -27,11 +27,34 @@ def _pi_response(data: dict, status_code: int = 200) -> Mock:
 
 
 def test_pi_agent_unavailable_returns_service_unavailable():
+    title = "What does Lenny say about uniquely-offline-MVPs?"
     with patch("httpx.AsyncClient.post", new_callable=AsyncMock, side_effect=__import__("httpx").ConnectError("offline")):
-        response = client.post("/chat", json={"prompt": "What does Lenny say about MVPs?", "provider": "gemini"})
+        response = client.post("/chat", json={"prompt": title, "provider": "gemini"})
 
     assert response.status_code == 503
     assert "Unable to connect to Pi Agent" in response.json()["detail"]
+    sessions = client.get("/sessions").json()
+    assert all(session.get("metadata", {}).get("title") != title for session in sessions)
+
+
+def test_ollama_uses_extended_cold_start_timeout():
+    pi_response = _pi_response({
+        "status": "ok",
+        "response": "Grounded local answer.",
+        "provider": "ollama",
+        "model": "llama3.2",
+        "sources": [],
+    })
+    with patch("httpx.AsyncClient", autospec=True) as client_class:
+        client_instance = client_class.return_value.__aenter__.return_value
+        client_instance.post = AsyncMock(return_value=pi_response)
+        response = client.post(
+            "/chat",
+            json={"prompt": "What does Andy Johns say about burnout?", "provider": "ollama"},
+        )
+
+    assert response.status_code == 200
+    assert client_class.call_args.kwargs["timeout"] == 180.0
 
 
 def test_pi_agent_error_is_forwarded_cleanly():

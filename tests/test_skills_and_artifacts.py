@@ -14,6 +14,28 @@ from app.security import sanitize_and_validate_html, validate_and_sanitize_html
 client = TestClient(app)
 
 
+def test_html_artifact_skill_matches_site_design_system():
+    skill_text = (
+        Path(__file__).resolve().parent.parent
+        / "agent"
+        / "skills"
+        / "artifact-html"
+        / "SKILL.md"
+    ).read_text(encoding="utf-8")
+
+    for required_token in (
+        "The Lenny Growth Assistant",
+        "#09090b",
+        "#141416",
+        "#f8fafc",
+        "#94a3b8",
+        "Newsreader",
+        "lenny-artifact",
+        "NO JAVASCRIPT",
+    ):
+        assert required_token in skill_text
+
+
 def make_mock_response(data: dict, status_code: int = 200):
     mock_resp = Mock()
     mock_resp.status_code = status_code

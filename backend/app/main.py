@@ -123,8 +123,6 @@ def _check_system_readiness():
             # All services must be online
             if _app_state["db_ready"] and _app_state["pi_agent_ready"] and _app_state["ollama_ready"]:
                 _app_state["status"] = "ready"
-                print("[System Init] Full stack online (Postgres, Pi-Agent, Ollama). System: READY.")
-                break
             else:
                 _app_state["status"] = "setting_up"
         except Exception as e:
@@ -145,6 +143,17 @@ def startup_db_init():
 # -----------------------------------------------------------------------------
 @app.get("/health", tags=["System"])
 def health():
+    # Refresh the Pi-agent signal on every health request so a cached READY
+    # state cannot survive a dependency outage between monitor intervals.
+    try:
+        with httpx.Client(timeout=0.75) as client:
+            _app_state["pi_agent_ready"] = client.get(
+                f"{settings.pi_agent_url.rstrip('/')}/health"
+            ).status_code == 200
+    except Exception:
+        _app_state["pi_agent_ready"] = False
+    if not (_app_state["db_ready"] and _app_state["pi_agent_ready"] and _app_state["ollama_ready"]):
+        _app_state["status"] = "setting_up"
     return {
         "status": "ok",
         "service": "lenny-growth-assistant",
@@ -508,6 +517,7 @@ async def chat(request: ChatRequest, db: Session = Depends(get_db)):
     now = datetime.now(timezone.utc)
 
     # 1. Resolve Session
+    auto_created_session = request.session_id is None
     if request.session_id:
         session_obj = db.query(DBSession).filter(DBSession.session_id == request.session_id).first()
         if not session_obj:
@@ -593,8 +603,26 @@ async def chat(request: ChatRequest, db: Session = Depends(get_db)):
         "conversationHistory": conversation_history,
     }
 
+    def cleanup_empty_auto_session() -> None:
+        """Do not leave an empty conversation behind when first-turn generation fails."""
+        if not auto_created_session:
+            return
+        db.rollback()
+        empty_session = db.query(DBSession).filter(
+            DBSession.session_id == session_obj.session_id
+        ).first()
+        if empty_session:
+            message_count = db.query(DBMessage).filter(
+                DBMessage.session_id == session_obj.session_id
+            ).count()
+            if message_count == 0:
+                db.delete(empty_session)
+                db.commit()
+
     try:
-        async with httpx.AsyncClient(timeout=90.0) as client:
+        # Local models may need extra time to load weights for the first prompt.
+        provider_timeout = 180.0 if selected_provider == "ollama" else 90.0
+        async with httpx.AsyncClient(timeout=provider_timeout) as client:
             resp = await client.post(pi_chat_url, json=payload)
             if resp.status_code != 200:
                 detail_msg = resp.text
@@ -711,7 +739,22 @@ async def chat(request: ChatRequest, db: Session = Depends(get_db)):
                 content=structured_content_obj,
                 artifact=artifact_obj,
             )
+    except HTTPException:
+        cleanup_empty_auto_session()
+        raise
+    except httpx.TimeoutException as exc:
+        cleanup_empty_auto_session()
+        raise HTTPException(
+            status_code=status.HTTP_504_GATEWAY_TIMEOUT,
+            detail=f"The selected {selected_provider} model did not respond before the timeout: {str(exc)}",
+        )
     except httpx.RequestError as exc:
+        cleanup_empty_auto_session()
+        # A failed request is immediate evidence that the Pi agent is not
+        # reachable; readiness must not remain stale until the next poll.
+        if isinstance(exc, (httpx.ConnectError, httpx.ConnectTimeout)):
+            _app_state["pi_agent_ready"] = False
+            _app_state["status"] = "setting_up"
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
             detail=f"Unable to connect to Pi Agent service at {pi_chat_url}: {str(exc)}",

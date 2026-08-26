@@ -1133,6 +1133,13 @@ body {
   flex-shrink: 0;
 }
 
+/* The composer uses the native hidden attribute to swap send/stop states.
+   Keep it authoritative over the flex layout above so only one control is
+   ever visible at a time. */
+.send-btn[hidden] {
+  display: none !important;
+}
+
 .send-btn:hover:not(:disabled) {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
@@ -1146,6 +1153,25 @@ body {
   border-color: transparent;
   cursor: not-allowed;
   opacity: 0.4;
+}
+
+.stop-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.stop-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.stop-btn span {
+  width: 12px;
+  height: 12px;
+  display: block;
+  border-radius: 2px;
+  background: currentColor;
 }
 
 .composer-footer {
@@ -1230,6 +1256,31 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
   line-height: 1;
+  min-width: 2rem;
+  min-height: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Raw Markdown artifact preview */
+.markdown-raw-view {
+  margin: 0;
+  padding: 1.25rem 1.4rem;
+  max-height: 62vh;
+  overflow: auto;
+  color: #e2e8f0;
+  background: rgba(0, 0, 0, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  font: 0.78rem/1.65 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+
+.markdown-raw-view code {
+  font: inherit;
+  color: inherit;
 }
 
 .close-btn:hover {

@@ -72,8 +72,9 @@ services:
     restart: unless-stopped
     environment:
       PI_AGENT_PORT: 3001
+      FASTAPI_URL: http://backend:8000
       GEMINI_API_KEY: ${GEMINI_API_KEY:-}
-      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://ollama:11434}
+      OLLAMA_BASE_URL: http://ollama:11434
       OLLAMA_MODEL: ${OLLAMA_MODEL:-llama3.2}
       NODE_ENV: production
     extra_hosts:

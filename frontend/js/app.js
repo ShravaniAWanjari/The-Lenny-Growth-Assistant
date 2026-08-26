@@ -14,6 +14,7 @@
     sessions: [],
     currentArtifact: null,
     isLoading: false,
+    abortController: null,
   };
 
   // ---------------------------------------------------------------------------
@@ -40,6 +41,7 @@
     chatForm: document.getElementById('chatForm'),
     promptInput: document.getElementById('promptInput'),
     sendBtn: document.getElementById('sendBtn'),
+    stopBtn: document.getElementById('stopBtn'),
     contextChipsContainer: document.getElementById('contextChipsContainer'),
 
     // Session Drawer
@@ -856,9 +858,10 @@
       elements.rejectedArtifactView.style.display = 'none';
       elements.artifactIframe.style.display = 'none';
       elements.markdownArtifactContainer.style.display = 'block';
-      elements.markdownArtifactContainer.innerHTML = (typeof marked !== 'undefined' ? marked.parse(artifact.content || '') : escapeHtml(artifact.content || ''))
-        .replace(/<table>/gi, '<div class="table-wrapper"><table>')
-        .replace(/<\/table>/gi, '</table></div>');
+      // Show the source Markdown exactly as generated. The artifact card and
+      // download remain available, while the preview no longer transforms it
+      // into a rendered document.
+      elements.markdownArtifactContainer.innerHTML = `<pre class="markdown-raw-view"><code>${escapeHtml(artifact.content || '')}</code></pre>`;
     }
 
     // Open Modal
@@ -911,7 +914,10 @@
     if (!cleanPrompt || state.isLoading) return;
 
     state.isLoading = true;
+    state.abortController = new AbortController();
     elements.sendBtn.disabled = true;
+    elements.sendBtn.hidden = true;
+    elements.stopBtn.hidden = false;
     elements.promptInput.value = '';
     elements.promptInput.style.height = 'auto';
 
@@ -929,6 +935,7 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
+        signal: state.abortController.signal,
       });
 
       removeLoadingIndicator();
@@ -996,11 +1003,27 @@
 
     } catch (err) {
       removeLoadingIndicator();
-      showToast(`Network error: ${err.message}`, 'error');
+      if (err.name === 'AbortError') {
+        appendAssistantMessage({ response: 'Response generation stopped. You can ask another question now.', provider: state.activeProvider });
+      } else {
+        showToast(`Network error: ${err.message}`, 'error');
+      }
     } finally {
+      const wasAborted = state.abortController?.signal.aborted;
+      if (wasAborted) await new Promise((resolve) => setTimeout(resolve, 1000));
       state.isLoading = false;
+      state.abortController = null;
       elements.sendBtn.disabled = false;
+      elements.sendBtn.hidden = false;
+      elements.stopBtn.hidden = true;
       elements.promptInput.focus();
+    }
+  }
+
+  function stopResponseGeneration() {
+    if (state.isLoading && state.abortController) {
+      state.abortController.abort();
+      showToast('Stopping response generation…');
     }
   }
 
@@ -1029,6 +1052,15 @@
     elements.sessionsToggleBtn.addEventListener('click', openDrawer);
     elements.closeDrawerBtn.addEventListener('click', closeDrawer);
     elements.drawerBackdrop.addEventListener('click', closeDrawer);
+    // Delegated fallback keeps the close control working if the drawer header
+    // is re-rendered or the click originates on the × text node.
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('#closeDrawerBtn')) {
+        e.preventDefault();
+        e.stopPropagation();
+        closeDrawer();
+      }
+    });
     elements.newChatDrawerBtn.addEventListener('click', startNewConversation);
     if (elements.deleteAllChatsBtn) {
       elements.deleteAllChatsBtn.addEventListener('click', deleteAllSessions);
@@ -1063,6 +1095,7 @@
       e.preventDefault();
       handleSendMessage(elements.promptInput.value);
     });
+    elements.stopBtn.addEventListener('click', stopResponseGeneration);
 
     elements.promptInput.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' && !e.shiftKey) {
@@ -1109,9 +1142,10 @@
         text.textContent = 'Application: Ready';
       } else {
         dot.className = 'status-pulse-dot setting-up';
-        text.textContent = 'Application: Setting up...';
-        setTimeout(checkAppStatus, 2000);
+        text.textContent = 'Application: In progress...';
       }
+      // Keep polling after readiness so dependency outages are reflected.
+      setTimeout(checkAppStatus, data.app_status === 'ready' ? 3000 : 2000);
     } catch {
       setTimeout(checkAppStatus, 3000);
     }
