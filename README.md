@@ -12,7 +12,7 @@ Product managers, growth practitioners, founders, and evaluators can ask for pro
 
 ## Prerequisites
 
-- Docker Desktop with Compose (recommended), or Python 3.12+, Node.js 20+, and PostgreSQL 16.
+- Docker Desktop with Compose, Python 3.12+, Node.js 20+, and PostgreSQL 16.
 - Ollama for Local mode. The required local model is `llama3.2` (the configured default; `llama3.2:latest` also works).
 - A Gemini API key only for Cloud mode.
 
@@ -20,15 +20,15 @@ Product managers, growth practitioners, founders, and evaluators can ask for pro
 
 Copy `.env.example` to `.env`, then replace its placeholders. `.env` is ignored by Git.
 
-| Variable | Purpose |
-| --- | --- |
-| `POSTGRES_PASSWORD` / `DATABASE_URL` | PostgreSQL credentials/connection. |
-| `GEMINI_API_KEY` | Required for Cloud provider. |
-| `LLM_PROVIDER` | Default `ollama` or `gemini`; the UI begins on Local. |
-| `OLLAMA_BASE_URL`, `OLLAMA_MODEL` | Local endpoint/model; model is `llama3.2`. |
-| `PI_AGENT_URL`, `PI_AGENT_PORT` | Pi Agent connection. |
-| `ARTIFACT_SANITIZATION_MODE` | `sanitize` or `reject`. |
-| `ALLOWED_ORIGINS` | Comma-separated CORS origins or `*` for local evaluation. |
+| Variable                             | Purpose                                                   |
+| ------------------------------------ | --------------------------------------------------------- |
+| `POSTGRES_PASSWORD` / `DATABASE_URL` | PostgreSQL credentials/connection.                        |
+| `GEMINI_API_KEY`                     | Required for Cloud provider.                              |
+| `LLM_PROVIDER`                       | Default `ollama` or `gemini`; the UI begins on Local.     |
+| `OLLAMA_BASE_URL`, `OLLAMA_MODEL`    | Local endpoint/model; model is `llama3.2`.                |
+| `PI_AGENT_URL`, `PI_AGENT_PORT`      | Pi Agent connection.                                      |
+| `ARTIFACT_SANITIZATION_MODE`         | `sanitize` or `reject`.                                   |
+| `ALLOWED_ORIGINS`                    | Comma-separated CORS origins or `*` for local evaluation. |
 
 ### PostgreSQL
 
