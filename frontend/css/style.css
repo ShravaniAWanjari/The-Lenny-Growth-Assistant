@@ -2010,6 +2010,7 @@ body {
   .hero-scroll-cue {
     padding: 0.45rem 0.85rem;
     font-size: 0.75rem;
+    transform: translateY(-1rem);
   }
 
   .empty-state {

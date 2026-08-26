@@ -168,6 +168,7 @@ def test_frontend_assets_and_artifact_download_contract_are_present():
     assert "blur(18px) saturate(125%)" in css
     assert "height: calc(100dvh - 4.5rem);" in css
     assert "touch-action: manipulation;" in css
+    assert "transform: translateY(-1rem);" in css
     mobile_workspace_header = css.split("@media (max-width: 768px)", 1)[1].split(".active-session-meta", 1)[0]
     assert "position: sticky" not in mobile_workspace_header.split(".workspace-header", 1)[1]
     assert "elements.closeDrawerBtn.addEventListener('click', (e) => {" in js
